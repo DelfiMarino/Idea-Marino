@@ -2,7 +2,7 @@ body{
     font-family: $fuente;
 }
 #header{	
-	background-color: #ffff;	
+	background-color: $color-white;	
 	position: fixed;
 	width: 100%;
 	height: auto;
@@ -13,7 +13,7 @@ body{
     margin-left: 33px;
     height: auto;
     width: auto;
-    background-color:  #ffff; 
+    background-color: $color-white; 
   }
   .navbar-nav{
     margin-left: -170px;
@@ -25,11 +25,11 @@ body{
     width: 154px;
   }
   li a{
-    color: #ed2d38; 
+    color: $color-title-menu; 
     font-size: 1.5rem;
     font-weight: 400;
     &:hover {
-      color: #3f4042;
+      color: $color-hover
     }
   }
 }
@@ -41,23 +41,19 @@ body{
     margin-bottom: 195px;  
   }
 }  
-/*HISTORIA*/
-.bgHistoria{
-  @include bg-historia;
-  @include parallax;    
-}  
+/*HISTORIA*/  
 #historia{
-  background-color: $color-bordo;
-  color: $color-bgBlack;
   width: 100%;
   margin: auto;
   min-height: 113px;
+  @include bg-historia;
+  @include parallax; 
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
   .titleHistoria{
-    @include titulo-hueso;
+    @include titulo-light-gray;
     margin-top: 60px;
     margin-left: 30px;
   }
@@ -72,7 +68,7 @@ body{
   margin: auto;
   padding-top: 70px;
   padding-bottom: 70px;
-  background-color: $color-hueso;
+  @include bg-light-gray (300px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -114,7 +110,7 @@ body{
   @include bg-madera;
   @include parallax;
   .tituloPromociones{
-    @include titulo-hueso;
+    @include titulo-light-gray;
     margin-top: 60px;
     margin-bottom: 50px;
     padding-left: 30px;
@@ -134,12 +130,9 @@ body{
   }
 }
 /*DESTACADOS*/
-.bgProdPar{
-  background-color: $color-hueso;
-}
 #destacados{
   max-width: 100%;
-  background-color: $color-hueso;
+  @include bg-light-gray;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -150,6 +143,8 @@ body{
   .tituloDestaacados{
     @include titulo-rojo;
     padding-left: 53px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
   .destacados-1{
     @include text-hover;
@@ -178,7 +173,7 @@ body{
   background-size: cover;
   background-attachment: fixed;  
   .tituloMarcas{
-    @include titulo-hueso;
+    @include titulo-light-gray;
     margin-top: 60px;
     margin-left: 30px; 
   }
@@ -222,9 +217,10 @@ body{
   flex-direction: column;
   @include parallax;
   .tituloParrillas{
-    @include titulo-hueso;
+    @include titulo-light-gray;
     margin-top: 60px;
     padding-left: 30px;
+    padding-bottom: 50px;
   }
   .row{
     margin-left: 26px;
@@ -262,8 +258,9 @@ body{
   background-size: cover;
   background-attachment: fixed;
   .tituloSalamandras{
-    @include titulo-hueso;
+    @include titulo-light-gray;
     margin-top: 60px;
+    padding-bottom: 50px;
     padding-left: 30px;
   }
   .row{
@@ -285,53 +282,50 @@ body{
   }
 }
 /*SECCIÓN INSTALACIONES*/
-.fondoInsta{
-   @include bg-instalaciones;
-   background-position: 50% 50%;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-attachment: fixed; 
-}
 #introInsta{
+  @include bg-instalaciones;
+  @include parallax;
   padding-top: 125px;  
   width: 100%;
-  height:450px;  
-  #introInsta .titulo{
-    margin-bottom:45px;
-    margin-left: 30px; 
-    color: $color-bgBlack;    
-  }
+  height:500px;  
   .tituloIns{
-    @include titulo-hueso(#000);
-    margin-left: 30px; 
+    @include titulo-light-gray;
+    margin-top: 30px;
+    margin-bottom:35px;
+    margin-left: 25px; 
   }
   .textIns{
-    @include text-his(#000);
+    @include text-his;
     margin-bottom: 30px;  
     margin-left: 30px; 
   }
 } 
 #galeria {
+  background-color: $color-light-gray;
+  width: 100%;
   .tituloServicio{
     @include subtitulo-rojo;
-     margin-top: 55px; 
-     margin-left: 50px;
+    padding-top: 50px;
+     padding-left: 25px;
   }
-  .col-lg-4{
-    margin: 0!important;
-    padding: 25px;
-  }
-  img{
-    width: 100%;
-    height: 250px;
-    &:hover{
-      border: 5px solid #fff;
+  .row{
+    margin-left: 20px;
+    .col-lg-4{
+      margin: 0!important;
+      padding: 40px;
+    }
+    img{
+      width: 90%;
+      height: 250px;
+      border: 3px solid #3f4042;
+      &:hover{
+        border: 5px solid #3f4042;
+      }
     }
   }
 }   
 /*SECCION CONTACTO*/
 #contacto{
-  height: 550px;
   display: grid;
   grid-template-areas: 
   ". rel suc map ."
@@ -344,7 +338,7 @@ body{
   grid-row-gap: 2%;
   justify-items: center;
   align-items:center;
-  background-color: $color-white;
+  @include bg-light-gray (600px);
   .reloj{
     grid-area: rel;
     justify-self: stretch;
@@ -453,6 +447,7 @@ body{
 #gFormularios{
   width: 100%;
   height: 460px;
+  @include bg-light-gray;
   display: grid;
   grid-template-areas: 
   ". tex tex ."
@@ -465,7 +460,6 @@ body{
   grid-row-gap: 2%;
   justify-items: center;
   background-image: linear-gradient(90deg, rgba(84,84,84,1) 1%, rgba(84,84,84,0.9009978991596639) 55%), url("../multimedia/fgris.jpg");
-  margin-top: 20px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -478,7 +472,7 @@ body{
     font-size: 2.5rem; 
     font-style: normal;
     font-weight: bold;
-    color: $color-bordo;
+    color: $color-light-gray;
     margin-right: 185px;
   }
   .nombre{
@@ -487,12 +481,12 @@ body{
     background-color: $bg-form;
     width: 400px;
     height: 61px;
-    border: 2px solid $border-form;
+    border: 2px solid $color-light-gray;
   }
   .estilotextarea{
     background-color: $bg-form;
     width:395px;
-    height: 130px;
+    height: 153px;
     border: none;
   }
   .correo{
@@ -501,7 +495,7 @@ body{
     background-color: $bg-form;
     width: 400px;
     height: 61px;
-    border: 2px solid $border-form;
+    border: 2px solid $color-light-gray;
   }
   .opciones{
     grid-area: ads;
@@ -509,15 +503,15 @@ body{
     background-color: $bg-form;
     width: 400px;
     height: 61px;
-    border: 2px solid $border-form;
+    border: 2px solid $color-light-gray;
   }
   .mensaje{
     grid-area: men;
     justify-self: stretch;
     background-color: $bg-form;
     width:400px;
-    height:134px;
-    border: 2px solid $border-form;
+    height:167px;
+    border: 2px solid $color-light-gray;
   }
   .botonFo{
     grid-area: footer;
@@ -527,10 +521,11 @@ body{
     height:39px;
     background-color: $bg-form;
     margin-bottom: 9px;
-    border: 2px solid $border-form;
+    border: 2px solid $color-light-gray;
     }
     .sus{
       text-align: left;
+      color: $color-light-gray;
     }
   }  
 }
@@ -555,11 +550,17 @@ body{
     width: 100%;
     height: 400px;
   }
-  .tituloHueso{
-    text-align:  center;
-  }
-  .textHis{
-    text-align: center;
+  /*HISTORIA*/  
+  #historia{
+    .titleHistoria{
+      @include titulo-light-gray(1.7rem);
+      margin-top: 27px;
+      margin-left: 1px;
+    }
+    .textoHistoria{
+      @include  text-his(.9rem);
+      margin-left: 4px;
+    }   
   }
   #seccionDos{
     width: 100%;
@@ -738,7 +739,7 @@ body{
     grid-row-gap: 2%;
     justify-items: center;
     align-items: center;
-    background-color: $color-hueso; 
+    background-color: $color-light-gray; 
     overflow: hidden; 
     padding-left: 25px;
   }
@@ -755,7 +756,7 @@ body{
     justify-self: stretch;  
     width: 300px;
     height: 65px;
-    border: 1px solid $border-form;
+    border: 1px solid $color-light-gray;
     margin-top: 9px;
     margin-left: 205px;
   }
@@ -772,7 +773,7 @@ body{
     justify-self: stretch;
     width: 300px;
     height: 65px;
-    border: 1px solid $border-form;
+    border: 1px solid $color-light-gray;
     margin-left: 205px;
     margin-top: 9px;
   }
@@ -780,7 +781,7 @@ body{
     justify-self: stretch;
     width: 300px;
     height: 65px;
-    border: 1px solid $border-form;
+    border: 1px solid $color-light-gray;
     margin-left: 205px;
     margin-top: 9px;
   }
@@ -801,7 +802,7 @@ body{
     width: 300px;
     height: 46px;
     margin-bottom: 9px;
-    border: 2px solid $border-form;
+    border: 2px solid $color-light-gray;
     margin-left: 204px;
   }
   .sus{
@@ -835,7 +836,7 @@ body{
     font-size: 1.5rem;
     font-style: normal;
     font-weight: bold;
-    color: $color-hueso;
+    color: $color-light-gray;
     text-align:  center;
   }
   .textHis{
@@ -843,7 +844,7 @@ body{
     font-size: .8rem; 
     font-style: normal;
     text-align: center;
-    color: $color-hueso;
+    color: $color-light-gray;
   }
   #seccionDos{
     width: 100%;
@@ -1036,7 +1037,7 @@ body{
     grid-row-gap: 2%;
     justify-items: center;
     align-items: center;
-    background-color: $color-hueso; 
+    background-color: $color-light-gray; 
     overflow: hidden;
     padding-left:10px; 
   }
@@ -1070,7 +1071,7 @@ body{
     justify-self: stretch;
     width: 200px;
     height: 45px;
-    border: 1px solid $border-form;
+    border: 1px solid $color-light-gray;
     margin-left: 70px;
     margin-top: 9px;
   }
@@ -1078,7 +1079,7 @@ body{
     justify-self: stretch;
     width: 200px;
     height: 45px;
-    border: 1px solid $border-form;
+    border: 1px solid $color-light-gray;
     margin-left: 70px;
     margin-top: 9px;
   }
@@ -1098,7 +1099,7 @@ body{
     width: 201px;
     height: 30px;
     margin-bottom: 11px;
-    border: 2px solid $border-form;
+    border: 2px solid $color-light-gray;
     margin-left: 70px;
     margin-top: 9px;
   }

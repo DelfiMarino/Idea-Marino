@@ -3,10 +3,9 @@
     background-color: $color-white;
     height: 400px;
 }
-@mixin bg-hueso {
-    background-color: $color-hueso;
-    color: $color-bgBlack;
-    height: 400px;
+@mixin bg-light-gray($h: 550px) {
+    background-color: $color-light-gray;
+    height: $h;
 }
 @mixin bg-madera{
     background-image: url("../multimedia/bgwood.jpg");
@@ -27,8 +26,8 @@
     background-size: cover;
     background-position: center;
 }
-@mixin titulo-hueso($colhue: #f1eeee){
-    font-size: 2.5rem;
+@mixin titulo-light-gray($t: 2.5rem, $colhue: #f1eeee){
+    font-size: $t;
     font-style: normal;
     font-weight: bold;
     color: $colhue;    
@@ -41,13 +40,13 @@
     color: $color-bordo;    
 }
 @mixin subtitulo-rojo{
-    font-size: 1.8rem; 
+    font-size: 2.2rem; 
     font-style: normal;
     font-weight: bold;
     text-align: left;
     color: $color-bordo;    
 }
-@mixin text-his ($colhis: #f1eeee){
+@mixin text-his ($t: 1.2rem, $colhis: #f1eeee){
     display: inline-block;
     font-size: 1.2rem; 
     font-style: normal;
@@ -57,19 +56,20 @@
 @mixin tex-ti{
     text-align: center;
     font-size: .9rem;
+    color: $color-bgBlack;
 }
 @mixin tex-al{
     text-align: center;
     font-size: .8rem;
-    color: $color-title-menu;
+    color: $color-bgBlack;
 } 
 @mixin title-contact{
-    font-size: .8rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: bold;
 }
 @mixin text-contact{
-    font-size: .5rem;
+    font-size: .8rem;
     font-style: normal;
 }
 @mixin efecto {
@@ -95,6 +95,7 @@
     display: block;
     margin-right: auto;
     margin-left: -280px;
+    margin-top: 20px;
     overflow: hidden;
     position:relative; 
     top:125px; 
@@ -103,8 +104,8 @@
     background:$bgd; 
     background-size:100% 100%;
     overflow:hidden;
-    color:#000;
-    border: 2px solid #3f4042;
+    color:$color-text-bottom;
+    border: 2px solid $color-text-bottom;
     &:hover{
         background-image: $gradiente-rojo, $bgd;
         background-size: 110% 110%;
@@ -113,6 +114,14 @@
           transform:translateX(0%); 
           transition:all .3s ease;
         }
+        button{
+            transform:translateX(0%); 
+            transition:all .3s ease;
+            border: transparent;
+            background-color: transparent;
+            font-size: 1.7rem;
+            font-weight: bold;
+          }
         &:before, &:after{
           width: 90%;
         } 
@@ -124,7 +133,7 @@
         content:""; 
         width:0%; 
         height:3px; 
-        background:#000;
+        background:$color-text-bottom;
         transition:all .3s ease;
       }
       &:after{
@@ -134,7 +143,7 @@
         content:""; 
         width:0%; 
         height:3px; 
-        background:#000;
+        background:$color-text-bottom;
         transition:all .3s ease;
       }
       h1{
@@ -142,17 +151,24 @@
         position:absolute; 
         left:-18px;
         top:30px; 
+        font-size: 2rem;
+        font-weight: bold;
         transform:translateX(-120%);
         transition:all .5s ease;
       }
-      button{
-        margin: 90px 0px 0px 40px;
-        position:absolute; 
-        left:112px;
-        top:100px; 
+      .btn-primary {
+        color: $color-light-gray;
+        background-color: transparent;
+        border-color: transparent;
+    }
+    button{
+        margin: 133px 0px 0px 44px;
+        position: absolute;
+        left: 65px;
+        top: 60px;
         transform:translateX(-334%); 
-        transition:all .4s ease;  
-      }
+        transition:all .4s ease;       
+    } 
     }
 @mixin cards-hover {
     &:hover{
@@ -162,6 +178,10 @@
         button{
           transform:translateX(0%); 
           transition:all .3s ease;
+          border: transparent;
+          background-color: transparent;
+          font-size: 1.7rem;
+          font-weight: bold;
         }
         .tituloCard, .card-text{
           display: none;
@@ -177,7 +197,7 @@
         content:""; 
         width:0%; 
         height:3px; 
-        background:#000;
+        background:$color-text-bottom;
         transition:all .3s ease;    
     }
     &:after{
@@ -187,15 +207,20 @@
         content:""; 
         width:0%; 
         height:3px; 
-        background:#000;
+        background:$color-text-bottom;
         transition:all .3s ease;    
+    }
+    .btn-primary {
+        color: $color-text-bottom;
+        background-color: transparent;
+        border-color: transparent;
     }
     button{
         margin: 133px 0px 0px 44px;
         position: absolute;
-        left: 26px;
-        top: 100px;
+        left: 5px;
+        top: 95px;
         transform:translateX(-334%); 
         transition:all .4s ease;       
-    }
+    }     
 } 
