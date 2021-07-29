@@ -5,7 +5,7 @@ body {
 }
 
 #header {
-  background-color: #ffff;
+  background-color: #fff;
   position: fixed;
   width: 100%;
   height: auto;
@@ -20,7 +20,7 @@ body {
   margin-left: 33px;
   height: auto;
   width: auto;
-  background-color: #ffff;
+  background-color: #fff;
 }
 
 #header .navbar-nav {
@@ -35,13 +35,13 @@ body {
 }
 
 #header li a {
-  color: #ed2d38;
+  color: #3f4042;
   font-size: 1.5rem;
   font-weight: 400;
 }
 
 #header li a:hover {
-  color: #3f4042;
+  color: #ed2d38;
 }
 
 #carouselExampleCaptions {
@@ -55,7 +55,10 @@ body {
 }
 
 /*HISTORIA*/
-.bgHistoria {
+#historia {
+  width: 100%;
+  margin: auto;
+  min-height: 113px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(169, 50, 38, 0.8)), to(rgba(169, 50, 38, 0.8))), url("../multimedia/fondohistoria.jpeg");
   background-image: -o-linear-gradient(rgba(169, 50, 38, 0.8), rgba(169, 50, 38, 0.8)), url("../multimedia/fondohistoria.jpeg");
   background-image: linear-gradient(rgba(169, 50, 38, 0.8), rgba(169, 50, 38, 0.8)), url("../multimedia/fondohistoria.jpeg");
@@ -64,14 +67,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-}
-
-#historia {
-  background-color: #A93226;
-  color: #f1eeee;
-  width: 100%;
-  margin: auto;
-  min-height: 113px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,6 +107,7 @@ body {
   padding-top: 70px;
   padding-bottom: 70px;
   background-color: #f1eeee;
+  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,12 +146,13 @@ body {
 #envios .contentEnvios .texTi {
   text-align: center;
   font-size: .9rem;
+  color: #000;
 }
 
 #envios .contentEnvios .textAl {
   text-align: center;
   font-size: .8rem;
-  color: #D73816;
+  color: #000;
 }
 
 /*PROMOCIONES*/
@@ -208,12 +205,13 @@ body {
 #promociones .row .card .tituloCard {
   text-align: center;
   font-size: .9rem;
+  color: #000;
 }
 
 #promociones .row .card .card-text {
   text-align: center;
   font-size: .8rem;
-  color: #D73816;
+  color: #000;
 }
 
 #promociones .row .card:hover {
@@ -233,6 +231,10 @@ body {
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
+  border: transparent;
+  background-color: transparent;
+  font-size: 1.7rem;
+  font-weight: bold;
 }
 
 #promociones .row .card:hover .tituloCard, #promociones .row .card:hover .card-text {
@@ -250,7 +252,7 @@ body {
   content: "";
   width: 0%;
   height: 3px;
-  background: #000;
+  background: #1c1c1d;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
@@ -263,17 +265,23 @@ body {
   content: "";
   width: 0%;
   height: 3px;
-  background: #000;
+  background: #1c1c1d;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
 }
 
+#promociones .row .card .btn-primary {
+  color: #1c1c1d;
+  background-color: transparent;
+  border-color: transparent;
+}
+
 #promociones .row .card button {
   margin: 133px 0px 0px 44px;
   position: absolute;
-  left: 26px;
-  top: 100px;
+  left: 5px;
+  top: 95px;
   -webkit-transform: translateX(-334%);
       -ms-transform: translateX(-334%);
           transform: translateX(-334%);
@@ -283,13 +291,10 @@ body {
 }
 
 /*DESTACADOS*/
-.bgProdPar {
-  background-color: #f1eeee;
-}
-
 #destacados {
   max-width: 100%;
   background-color: #f1eeee;
+  height: 550px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -316,12 +321,15 @@ body {
   text-align: left;
   color: #A93226;
   padding-left: 53px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 #destacados .destacados-1 {
   display: block;
   margin-right: auto;
   margin-left: -280px;
+  margin-top: 20px;
   overflow: hidden;
   position: relative;
   top: 125px;
@@ -330,8 +338,8 @@ body {
   background: url("../multimedia/destacados-1.jpg");
   background-size: 100% 100%;
   overflow: hidden;
-  color: #000;
-  border: 2px solid #3f4042;
+  color: #1c1c1d;
+  border: 2px solid #1c1c1d;
 }
 
 #destacados .destacados-1:hover {
@@ -353,6 +361,19 @@ body {
   transition: all .3s ease;
 }
 
+#destacados .destacados-1:hover button {
+  -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  border: transparent;
+  background-color: transparent;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
 #destacados .destacados-1:hover:before, #destacados .destacados-1:hover:after {
   width: 90%;
 }
@@ -364,7 +385,7 @@ body {
   content: "";
   width: 0%;
   height: 3px;
-  background: #000;
+  background: #1c1c1d;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
@@ -377,7 +398,7 @@ body {
   content: "";
   width: 0%;
   height: 3px;
-  background: #000;
+  background: #1c1c1d;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
@@ -388,6 +409,8 @@ body {
   position: absolute;
   left: -18px;
   top: 30px;
+  font-size: 2rem;
+  font-weight: bold;
   -webkit-transform: translateX(-120%);
       -ms-transform: translateX(-120%);
           transform: translateX(-120%);
@@ -396,11 +419,17 @@ body {
   transition: all .5s ease;
 }
 
+#destacados .destacados-1 .btn-primary {
+  color: #f1eeee;
+  background-color: transparent;
+  border-color: transparent;
+}
+
 #destacados .destacados-1 button {
-  margin: 90px 0px 0px 40px;
+  margin: 133px 0px 0px 44px;
   position: absolute;
-  left: 112px;
-  top: 100px;
+  left: 65px;
+  top: 60px;
   -webkit-transform: translateX(-334%);
       -ms-transform: translateX(-334%);
           transform: translateX(-334%);
@@ -413,6 +442,7 @@ body {
   display: block;
   margin-right: auto;
   margin-left: -280px;
+  margin-top: 20px;
   overflow: hidden;
   position: relative;
   top: 125px;
@@ -421,8 +451,8 @@ body {
   background: url("../multimedia/destacados-2.jpeg");
   background-size: 100% 100%;
   overflow: hidden;
-  color: #000;
-  border: 2px solid #3f4042;
+  color: #1c1c1d;
+  border: 2px solid #1c1c1d;
 }
 
 #destacados .destacados-2:hover {
@@ -444,6 +474,19 @@ body {
   transition: all .3s ease;
 }
 
+#destacados .destacados-2:hover button {
+  -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  border: transparent;
+  background-color: transparent;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
 #destacados .destacados-2:hover:before, #destacados .destacados-2:hover:after {
   width: 90%;
 }
@@ -455,7 +498,7 @@ body {
   content: "";
   width: 0%;
   height: 3px;
-  background: #000;
+  background: #1c1c1d;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
@@ -468,7 +511,7 @@ body {
   content: "";
   width: 0%;
   height: 3px;
-  background: #000;
+  background: #1c1c1d;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
@@ -479,6 +522,8 @@ body {
   position: absolute;
   left: -18px;
   top: 30px;
+  font-size: 2rem;
+  font-weight: bold;
   -webkit-transform: translateX(-120%);
       -ms-transform: translateX(-120%);
           transform: translateX(-120%);
@@ -487,11 +532,17 @@ body {
   transition: all .5s ease;
 }
 
+#destacados .destacados-2 .btn-primary {
+  color: #f1eeee;
+  background-color: transparent;
+  border-color: transparent;
+}
+
 #destacados .destacados-2 button {
-  margin: 90px 0px 0px 40px;
+  margin: 133px 0px 0px 44px;
   position: absolute;
-  left: 112px;
-  top: 100px;
+  left: 65px;
+  top: 60px;
   -webkit-transform: translateX(-334%);
       -ms-transform: translateX(-334%);
           transform: translateX(-334%);
@@ -504,6 +555,7 @@ body {
   display: block;
   margin-right: auto;
   margin-left: -280px;
+  margin-top: 20px;
   overflow: hidden;
   position: relative;
   top: 125px;
@@ -512,8 +564,8 @@ body {
   background: url("../multimedia/destacados-3.jpeg");
   background-size: 100% 100%;
   overflow: hidden;
-  color: #000;
-  border: 2px solid #3f4042;
+  color: #1c1c1d;
+  border: 2px solid #1c1c1d;
 }
 
 #destacados .destacados-3:hover {
@@ -535,6 +587,19 @@ body {
   transition: all .3s ease;
 }
 
+#destacados .destacados-3:hover button {
+  -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  border: transparent;
+  background-color: transparent;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
 #destacados .destacados-3:hover:before, #destacados .destacados-3:hover:after {
   width: 90%;
 }
@@ -546,7 +611,7 @@ body {
   content: "";
   width: 0%;
   height: 3px;
-  background: #000;
+  background: #1c1c1d;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
@@ -559,7 +624,7 @@ body {
   content: "";
   width: 0%;
   height: 3px;
-  background: #000;
+  background: #1c1c1d;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
@@ -570,6 +635,8 @@ body {
   position: absolute;
   left: -18px;
   top: 30px;
+  font-size: 2rem;
+  font-weight: bold;
   -webkit-transform: translateX(-120%);
       -ms-transform: translateX(-120%);
           transform: translateX(-120%);
@@ -578,11 +645,17 @@ body {
   transition: all .5s ease;
 }
 
+#destacados .destacados-3 .btn-primary {
+  color: #f1eeee;
+  background-color: transparent;
+  border-color: transparent;
+}
+
 #destacados .destacados-3 button {
-  margin: 90px 0px 0px 40px;
+  margin: 133px 0px 0px 44px;
   position: absolute;
-  left: 112px;
-  top: 100px;
+  left: 65px;
+  top: 60px;
   -webkit-transform: translateX(-334%);
       -ms-transform: translateX(-334%);
           transform: translateX(-334%);
@@ -651,11 +724,11 @@ body {
 #footer .texFi {
   text-align: center;
   font-size: .8rem;
-  color: #f1eeee;
+  color: #000;
 }
 
 #footer .texFi:hover {
-  color: #D73816;
+  color: #3f4042;
   text-decoration: none;
 }
 
@@ -698,6 +771,7 @@ body {
   color: #f1eeee;
   margin-top: 60px;
   padding-left: 30px;
+  padding-bottom: 50px;
 }
 
 #productosParrillas .row {
@@ -715,12 +789,13 @@ body {
 #productosParrillas .row .card .tituloCard {
   text-align: center;
   font-size: .9rem;
+  color: #000;
 }
 
 #productosParrillas .row .card .card-text {
   text-align: center;
   font-size: .8rem;
-  color: #D73816;
+  color: #000;
 }
 
 #productosParrillas .row .card:hover {
@@ -740,6 +815,10 @@ body {
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
+  border: transparent;
+  background-color: transparent;
+  font-size: 1.7rem;
+  font-weight: bold;
 }
 
 #productosParrillas .row .card:hover .tituloCard, #productosParrillas .row .card:hover .card-text {
@@ -757,7 +836,7 @@ body {
   content: "";
   width: 0%;
   height: 3px;
-  background: #000;
+  background: #1c1c1d;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
@@ -770,17 +849,23 @@ body {
   content: "";
   width: 0%;
   height: 3px;
-  background: #000;
+  background: #1c1c1d;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
 }
 
+#productosParrillas .row .card .btn-primary {
+  color: #1c1c1d;
+  background-color: transparent;
+  border-color: transparent;
+}
+
 #productosParrillas .row .card button {
   margin: 133px 0px 0px 44px;
   position: absolute;
-  left: 26px;
-  top: 100px;
+  left: 5px;
+  top: 95px;
   -webkit-transform: translateX(-334%);
       -ms-transform: translateX(-334%);
           transform: translateX(-334%);
@@ -823,6 +908,7 @@ body {
   font-weight: bold;
   color: #f1eeee;
   margin-top: 60px;
+  padding-bottom: 50px;
   padding-left: 30px;
 }
 
@@ -841,12 +927,13 @@ body {
 #productosSalamandras .row .card .tituloCard {
   text-align: center;
   font-size: .9rem;
+  color: #000;
 }
 
 #productosSalamandras .row .card .card-text {
   text-align: center;
   font-size: .8rem;
-  color: #D73816;
+  color: #000;
 }
 
 #productosSalamandras .row .card:hover {
@@ -866,6 +953,10 @@ body {
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
+  border: transparent;
+  background-color: transparent;
+  font-size: 1.7rem;
+  font-weight: bold;
 }
 
 #productosSalamandras .row .card:hover .tituloCard, #productosSalamandras .row .card:hover .card-text {
@@ -883,7 +974,7 @@ body {
   content: "";
   width: 0%;
   height: 3px;
-  background: #000;
+  background: #1c1c1d;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
@@ -896,17 +987,23 @@ body {
   content: "";
   width: 0%;
   height: 3px;
-  background: #000;
+  background: #1c1c1d;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
 }
 
+#productosSalamandras .row .card .btn-primary {
+  color: #1c1c1d;
+  background-color: transparent;
+  border-color: transparent;
+}
+
 #productosSalamandras .row .card button {
   margin: 133px 0px 0px 44px;
   position: absolute;
-  left: 26px;
-  top: 100px;
+  left: 5px;
+  top: 95px;
   -webkit-transform: translateX(-334%);
       -ms-transform: translateX(-334%);
           transform: translateX(-334%);
@@ -916,7 +1013,7 @@ body {
 }
 
 /*SECCIÓN INSTALACIONES*/
-.fondoInsta {
+#introInsta {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(1%, #545454), color-stop(55%, rgba(84, 84, 84, 0.900998))), url("../multimedia/living.jpeg");
   background-image: -o-linear-gradient(left, #545454 1%, rgba(84, 84, 84, 0.900998) 55%), url("../multimedia/living.jpeg");
   background-image: linear-gradient(90deg, #545454 1%, rgba(84, 84, 84, 0.900998) 55%), url("../multimedia/living.jpeg");
@@ -926,26 +1023,19 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-}
-
-#introInsta {
   padding-top: 125px;
   width: 100%;
-  height: 450px;
-}
-
-#introInsta #introInsta .titulo {
-  margin-bottom: 45px;
-  margin-left: 30px;
-  color: #f1eeee;
+  height: 500px;
 }
 
 #introInsta .tituloIns {
   font-size: 2.5rem;
   font-style: normal;
   font-weight: bold;
-  color: #000;
-  margin-left: 30px;
+  color: #f1eeee;
+  margin-top: 30px;
+  margin-bottom: 35px;
+  margin-left: 25px;
 }
 
 #introInsta .textIns {
@@ -953,38 +1043,47 @@ body {
   font-size: 1.2rem;
   font-style: normal;
   text-align: left;
-  color: #000;
+  color: #f1eeee;
   margin-bottom: 30px;
   margin-left: 30px;
 }
 
+#galeria {
+  background-color: #f1eeee;
+  width: 100%;
+}
+
 #galeria .tituloServicio {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-style: normal;
   font-weight: bold;
   text-align: left;
   color: #A93226;
-  margin-top: 55px;
-  margin-left: 50px;
+  padding-top: 50px;
+  padding-left: 25px;
 }
 
-#galeria .col-lg-4 {
+#galeria .row {
+  margin-left: 20px;
+}
+
+#galeria .row .col-lg-4 {
   margin: 0 !important;
-  padding: 25px;
+  padding: 40px;
 }
 
-#galeria img {
-  width: 100%;
+#galeria .row img {
+  width: 90%;
   height: 250px;
+  border: 3px solid #3f4042;
 }
 
-#galeria img:hover {
-  border: 5px solid #fff;
+#galeria .row img:hover {
+  border: 5px solid #3f4042;
 }
 
 /*SECCION CONTACTO*/
 #contacto {
-  height: 550px;
   display: -ms-grid;
   display: grid;
       grid-template-areas: ". rel suc map ." ". relt suct map ." ". tel mai map ." ". telt mait map .";
@@ -998,7 +1097,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #fff;
+  background-color: #f1eeee;
+  height: 600px;
 }
 
 #contacto .reloj {
@@ -1024,13 +1124,13 @@ body {
 }
 
 #contacto .relojText .titleDos {
-  font-size: .8rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: bold;
 }
 
 #contacto .relojText .textoDos {
-  font-size: .5rem;
+  font-size: .8rem;
   font-style: normal;
 }
 
@@ -1057,13 +1157,13 @@ body {
 }
 
 #contacto .sucursalText .titleDos {
-  font-size: .8rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: bold;
 }
 
 #contacto .sucursalText .textoDos {
-  font-size: .5rem;
+  font-size: .8rem;
   font-style: normal;
 }
 
@@ -1104,13 +1204,13 @@ body {
 }
 
 #contacto .telefonoText .titleDos {
-  font-size: .8rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: bold;
 }
 
 #contacto .telefonoText .textoDos {
-  font-size: .5rem;
+  font-size: .8rem;
   font-style: normal;
 }
 
@@ -1136,13 +1236,13 @@ body {
 }
 
 #contacto .mailText .titleDos {
-  font-size: .8rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: bold;
 }
 
 #contacto .mailText .textoDos {
-  font-size: .5rem;
+  font-size: .8rem;
   font-style: normal;
 }
 
@@ -1168,6 +1268,8 @@ body {
 #gFormularios {
   width: 100%;
   height: 460px;
+  background-color: #f1eeee;
+  height: 550px;
   display: -ms-grid;
   display: grid;
       grid-template-areas: ". tex tex ." ". nom men ." ". serv men ." ". ads footer .";
@@ -1181,7 +1283,6 @@ body {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(1%, #545454), color-stop(55%, rgba(84, 84, 84, 0.900998))), url("../multimedia/fgris.jpg");
   background-image: -o-linear-gradient(left, #545454 1%, rgba(84, 84, 84, 0.900998) 55%), url("../multimedia/fgris.jpg");
   background-image: linear-gradient(90deg, #545454 1%, rgba(84, 84, 84, 0.900998) 55%), url("../multimedia/fgris.jpg");
-  margin-top: 20px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1200,7 +1301,7 @@ body {
   font-size: 2.5rem;
   font-style: normal;
   font-weight: bold;
-  color: #A93226;
+  color: #f1eeee;
   margin-right: 185px;
 }
 
@@ -1213,13 +1314,13 @@ body {
   background-color: #fdd;
   width: 400px;
   height: 61px;
-  border: 2px solid #990000;
+  border: 2px solid #f1eeee;
 }
 
 #gFormularios .estilotextarea {
   background-color: #fdd;
   width: 395px;
-  height: 130px;
+  height: 153px;
   border: none;
 }
 
@@ -1232,7 +1333,7 @@ body {
   background-color: #fdd;
   width: 400px;
   height: 61px;
-  border: 2px solid #990000;
+  border: 2px solid #f1eeee;
 }
 
 #gFormularios .opciones {
@@ -1244,7 +1345,7 @@ body {
   background-color: #fdd;
   width: 400px;
   height: 61px;
-  border: 2px solid #990000;
+  border: 2px solid #f1eeee;
 }
 
 #gFormularios .mensaje {
@@ -1256,8 +1357,8 @@ body {
       justify-self: stretch;
   background-color: #fdd;
   width: 400px;
-  height: 134px;
-  border: 2px solid #990000;
+  height: 167px;
+  border: 2px solid #f1eeee;
 }
 
 #gFormularios .botonFo {
@@ -1273,11 +1374,12 @@ body {
   height: 39px;
   background-color: #fdd;
   margin-bottom: 9px;
-  border: 2px solid #990000;
+  border: 2px solid #f1eeee;
 }
 
 #gFormularios .botonFo .sus {
   text-align: left;
+  color: #f1eeee;
 }
 
 .recuadro {
@@ -1302,42 +1404,206 @@ body {
     width: 100%;
     height: 400px;
   }
-  .tituloHueso {
-    text-align: center;
+  /*HISTORIA*/
+  #historia .titleHistoria {
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: bold;
+    color: #f1eeee;
+    margin-top: 27px;
+    margin-left: 1px;
   }
-  .textHis {
-    text-align: center;
+  #historia .textoHistoria {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-style: normal;
+    text-align: left;
+    color: #f1eeee;
+    margin-left: 4px;
   }
-  #seccionDos {
+  /*ENVIOS*/
+  #envios, .d-flex {
+    display: none !important;
+  }
+  #envios .row, .d-flex .row {
+    display: none;
+  }
+  .contentEnvios-1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 226px;
+  }
+  .contentEnvios-1 .botonTar {
+    margin-left: 111px;
+    color: #A93226;
+  }
+  .contentEnvios-1 .textAl {
+    margin-left: 37px;
+  }
+  .contentEnvios-2 {
+    margin-top: 30px;
+    margin-left: 226px;
+  }
+  .contentEnvios-2 .botonTar {
+    margin-left: 111px;
+    color: #A93226;
+  }
+  .contentEnvios-2 .texTi {
+    margin-left: 90px;
+  }
+  .contentEnvios-2 .textAl {
+    margin-left: 90px;
+  }
+  .contentEnvios-3 {
+    margin-top: 30px;
+    margin-left: 226px;
+  }
+  .contentEnvios-3 .botonTar {
+    margin-left: 111px;
+    color: #A93226;
+  }
+  .contentEnvios-3 .texTi {
+    margin-left: 52px;
+  }
+  .contentEnvios-3 .textAl {
+    margin-left: 35px;
+  }
+  .contentEnvios-4 {
+    margin-top: 30px;
+    margin-left: 226px;
+  }
+  .contentEnvios-4 .botonTar {
+    margin-left: 111px;
+    color: #A93226;
+  }
+  .contentEnvios-4 .texTi {
+    margin-left: 15px;
+  }
+  .contentEnvios-4 .textAl {
+    margin-left: 75px;
+  }
+  /*PROMOCIONES*/
+  #promociones {
+    display: none;
+  }
+  .ml-5 {
+    margin-left: 4rem;
+  }
+  #promociones-res {
     width: 100%;
     margin: auto;
-    padding-top: 55px;
-    padding-bottom: 40px;
-    padding-left: 240px;
+    height: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: url("../multimedia/bgwood.jpg");
+    background-size: cover;
+    background-position: center;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  #promociones-res .tituloPromociones {
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: bold;
+    color: #f1eeee;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    padding-left: 30px;
+  }
+  #promociones-res .row {
+    margin-left: 26px;
+  }
+  #promociones-res .row .card {
+    border: 1px solid #A93226;
+    width: 13rem;
+    height: 300px;
     overflow: hidden;
   }
-  #seccionTres {
-    width: 100%;
-    margin: auto;
-    padding-top: 55px;
-    padding-bottom: 40px;
-    padding-left: 214px;
-    overflow: hidden;
+  #promociones-res .row .card .tituloCard {
+    text-align: center;
+    font-size: .9rem;
+    color: #000;
   }
-  #seccionTres {
-    height: 600px;
+  #promociones-res .row .card .card-text {
+    text-align: center;
+    font-size: .8rem;
+    color: #000;
   }
-  #seccionTres .tituloHueso {
-    padding-right: 0px;
+  #promociones-res .row .card:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(169, 50, 38, 0.8)), to(rgba(169, 50, 38, 0.8)));
+    background-image: -o-linear-gradient(rgba(169, 50, 38, 0.8), rgba(169, 50, 38, 0.8));
+    background-image: linear-gradient(rgba(169, 50, 38, 0.8), rgba(169, 50, 38, 0.8));
+    background-size: 208px 30px;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
   }
-  #seccionTres .row {
-    margin-left: 14px;
+  #promociones-res .row .card:hover button {
+    -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    border: transparent;
+    background-color: transparent;
+    font-size: 1.7rem;
+    font-weight: bold;
   }
-  #seccionTres .boton {
-    -ms-grid-column-align: stretch;
-        justify-self: stretch;
-    margin-left: 40px;
-    margin-top: 9px;
+  #promociones-res .row .card:hover .tituloCard, #promociones-res .row .card:hover .card-text {
+    display: none;
+  }
+  #promociones-res .row .card:hover:before, #promociones-res .row .card:hover:after {
+    width: 90%;
+  }
+  #promociones-res .row .card:before {
+    position: absolute;
+    top: 335px;
+    left: 20px;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #1c1c1d;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  #promociones-res .row .card:after {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #1c1c1d;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  #promociones-res .row .card .btn-primary {
+    color: #1c1c1d;
+    background-color: transparent;
+    border-color: transparent;
+  }
+  #promociones-res .row .card button {
+    margin: 133px 0px 0px 44px;
+    position: absolute;
+    left: 5px;
+    top: 95px;
+    -webkit-transform: translateX(-334%);
+        -ms-transform: translateX(-334%);
+            transform: translateX(-334%);
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
   }
   #seccionCuatro {
     width: 100%;
@@ -1369,7 +1635,7 @@ body {
   .texFi {
     text-align: center;
     font-size: .5rem;
-    color: #f1eeee;
+    color: #000;
   }
   #footer .font-weight-bold {
     font-size: .5rem;
@@ -1514,7 +1780,7 @@ body {
         justify-self: stretch;
     width: 300px;
     height: 65px;
-    border: 1px solid #990000;
+    border: 1px solid #f1eeee;
     margin-top: 9px;
     margin-left: 205px;
   }
@@ -1532,7 +1798,7 @@ body {
         justify-self: stretch;
     width: 300px;
     height: 65px;
-    border: 1px solid #990000;
+    border: 1px solid #f1eeee;
     margin-left: 205px;
     margin-top: 9px;
   }
@@ -1541,7 +1807,7 @@ body {
         justify-self: stretch;
     width: 300px;
     height: 65px;
-    border: 1px solid #990000;
+    border: 1px solid #f1eeee;
     margin-left: 205px;
     margin-top: 9px;
   }
@@ -1564,7 +1830,7 @@ body {
     width: 300px;
     height: 46px;
     margin-bottom: 9px;
-    border: 2px solid #990000;
+    border: 2px solid #f1eeee;
     margin-left: 204px;
   }
   .sus {
@@ -1609,13 +1875,64 @@ body {
     text-align: center;
     color: #f1eeee;
   }
-  #seccionDos {
+  /*ENVIOS*/
+  .carousel-item {
     width: 100%;
-    margin: auto;
-    padding-top: 55px;
-    padding-bottom: 40px;
-    padding-left: 32px;
-    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .contentEnvios-1 {
+    margin-top: 30px;
+    margin-left: 35px;
+  }
+  .contentEnvios-1 .botonTar {
+    margin-left: 111px;
+    color: #A93226;
+  }
+  .contentEnvios-1 .textAl {
+    margin-left: 37px;
+  }
+  .contentEnvios-2 {
+    margin-top: 30px;
+    margin-left: 35px;
+  }
+  .contentEnvios-2 .botonTar {
+    margin-left: 111px;
+    color: #A93226;
+  }
+  .contentEnvios-2 .texTi {
+    margin-left: 90px;
+  }
+  .contentEnvios-2 .textAl {
+    margin-left: 90px;
+  }
+  .contentEnvios-3 {
+    margin-top: 30px;
+    margin-left: 35px;
+  }
+  .contentEnvios-3 .botonTar {
+    margin-left: 111px;
+    color: #A93226;
+  }
+  .contentEnvios-3 .texTi {
+    margin-left: 52px;
+  }
+  .contentEnvios-3 .textAl {
+    margin-left: 35px;
+  }
+  .contentEnvios-4 {
+    margin-top: 30px;
+    margin-left: 35px;
+  }
+  .contentEnvios-4 .botonTar {
+    margin-left: 111px;
+    color: #A93226;
+  }
+  .contentEnvios-4 .texTi {
+    margin-left: 15px;
+  }
+  .contentEnvios-4 .textAl {
+    margin-left: 75px;
   }
   #seccionTres, #seccionCuatro {
     width: 100%;
@@ -1655,7 +1972,7 @@ body {
   .texFi {
     text-align: center;
     font-size: .5rem;
-    color: #f1eeee;
+    color: #000;
   }
   #footer .font-weight-bold {
     font-size: .5rem;
@@ -1846,7 +2163,7 @@ body {
         justify-self: stretch;
     width: 200px;
     height: 45px;
-    border: 1px solid #990000;
+    border: 1px solid #f1eeee;
     margin-left: 70px;
     margin-top: 9px;
   }
@@ -1855,7 +2172,7 @@ body {
         justify-self: stretch;
     width: 200px;
     height: 45px;
-    border: 1px solid #990000;
+    border: 1px solid #f1eeee;
     margin-left: 70px;
     margin-top: 9px;
   }
@@ -1877,7 +2194,7 @@ body {
     width: 201px;
     height: 30px;
     margin-bottom: 11px;
-    border: 2px solid #990000;
+    border: 2px solid #f1eeee;
     margin-left: 70px;
     margin-top: 9px;
   }

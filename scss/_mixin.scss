@@ -48,7 +48,7 @@
 }
 @mixin text-his ($t: 1.2rem, $colhis: #f1eeee){
     display: inline-block;
-    font-size: 1.2rem; 
+    font-size: $t; 
     font-style: normal;
     text-align: left;
     color: $colhis;
@@ -91,7 +91,7 @@
     height: 300px;
     overflow: hidden;     
 } 
-@mixin text-hover($bgd: url("../multimedia/destacados-1.jpg")){
+@mixin text-hover ($bgd: url("../multimedia/destacados-1.jpg")){
     display: block;
     margin-right: auto;
     margin-left: -280px;

@@ -562,35 +562,104 @@ body{
       margin-left: 4px;
     }   
   }
-  #seccionDos{
+  /*ENVIOS*/ 
+  #envios, .d-flex{
+    display: none !important; 
+    .row{
+      display: none; 
+    }
+  }
+  .contentEnvios-1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 226px;
+    .botonTar{
+      margin-left: 111px;
+      color: $color-bordo;
+    }
+    .textAl{
+      margin-left: 37px;
+    }
+  }
+  .contentEnvios-2{
+    margin-top: 30px;
+    margin-left: 226px;
+    .botonTar{
+      margin-left: 111px;
+      color: $color-bordo;
+    }
+    .texTi{
+      margin-left: 90px;
+    }
+    .textAl{
+      margin-left: 90px;
+    }
+  }
+  .contentEnvios-3{
+    margin-top: 30px;
+    margin-left: 226px;
+    .botonTar{
+      margin-left: 111px;
+      color: $color-bordo;
+    }
+    .texTi{
+      margin-left: 52px;
+    }
+    .textAl{
+      margin-left: 35px;
+    }
+  }
+  .contentEnvios-4{
+    margin-top: 30px;
+    margin-left: 226px;
+    .botonTar{
+      margin-left: 111px;
+      color: $color-bordo;
+    }
+    .texTi{
+      margin-left: 15px;
+    }
+    .textAl{
+      margin-left: 75px;
+    }
+  }    
+    
+  
+  /*PROMOCIONES*/
+  #promociones{
+    display: none;
+  }
+  .ml-5 {
+    margin-left: 4rem;
+  }  
+  #promociones-res{
     width: 100%;
     margin: auto;
-    padding-top: 55px;
-    padding-bottom: 40px;
-    padding-left: 240px;
-    overflow: hidden;
-  }
-  #seccionTres{
-    width: 100%;
-    margin: auto;
-    padding-top: 55px;
-    padding-bottom: 40px;
-    padding-left: 214px;
-    overflow: hidden;
-  }
-  #seccionTres{
-    height: 600px;
-  }
-  #seccionTres .tituloHueso{
-    padding-right: 0px;
-  }
-  #seccionTres .row{
-     margin-left: 14px;
-  }
-  #seccionTres .boton {
-    justify-self: stretch;
-    margin-left: 40px;
-    margin-top: 9px;
+    height: 500px;
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+    @include bg-madera;
+    @include parallax;
+    .tituloPromociones{
+      @include titulo-light-gray;
+      margin-top: 60px;
+      margin-bottom: 50px;
+      padding-left: 30px;
+    }
+    .row{
+      margin-left: 26px;
+      .card{
+        @include cards;
+        .tituloCard{
+          @include tex-ti;
+        }
+        .card-text{
+          @include tex-al;
+        }
+        @include cards-hover;
+      }
+    }
   }
   #seccionCuatro{
     width: 100%;
@@ -846,13 +915,64 @@ body{
     text-align: center;
     color: $color-light-gray;
   }
-  #seccionDos{
+  /*ENVIOS*/ 
+  .carousel-item{
     width: 100%;
-    margin: auto;
-    padding-top: 55px;
-    padding-bottom: 40px;
-    padding-left: 32px;
-    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .contentEnvios-1{
+    margin-top: 30px;
+    margin-left: 35px;
+    .botonTar{
+      margin-left: 111px;
+      color: $color-bordo;
+    }
+    .textAl{
+      margin-left: 37px;
+    }
+  }
+  .contentEnvios-2{
+    margin-top: 30px;
+    margin-left: 35px;
+    .botonTar{
+      margin-left: 111px;
+      color: $color-bordo;
+    }
+    .texTi{
+      margin-left: 90px;
+    }
+    .textAl{
+      margin-left: 90px;
+    }
+  }
+  .contentEnvios-3{
+    margin-top: 30px;
+    margin-left: 35px;
+    .botonTar{
+      margin-left: 111px;
+      color: $color-bordo;
+    }
+    .texTi{
+      margin-left: 52px;
+    }
+    .textAl{
+      margin-left: 35px;
+    }
+  }
+  .contentEnvios-4{
+    margin-top: 30px;
+    margin-left: 35px;
+    .botonTar{
+      margin-left: 111px;
+      color: $color-bordo;
+    }
+    .texTi{
+      margin-left: 15px;
+    }
+    .textAl{
+      margin-left: 75px;
+    }
   }
   #seccionTres, #seccionCuatro{
     width: 100%;
