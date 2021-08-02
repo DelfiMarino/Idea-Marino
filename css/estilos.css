@@ -145,13 +145,13 @@ body {
 
 #envios .contentEnvios .texTi {
   text-align: center;
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: #000;
 }
 
 #envios .contentEnvios .textAl {
   text-align: center;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: #000;
 }
 
@@ -204,13 +204,13 @@ body {
 
 #promociones .row .card .tituloCard {
   text-align: center;
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: #000;
 }
 
 #promociones .row .card .card-text {
   text-align: center;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: #000;
 }
 
@@ -429,7 +429,7 @@ body {
   margin: 133px 0px 0px 44px;
   position: absolute;
   left: 65px;
-  top: 60px;
+  top: 30px;
   -webkit-transform: translateX(-334%);
       -ms-transform: translateX(-334%);
           transform: translateX(-334%);
@@ -542,7 +542,7 @@ body {
   margin: 133px 0px 0px 44px;
   position: absolute;
   left: 65px;
-  top: 60px;
+  top: 30px;
   -webkit-transform: translateX(-334%);
       -ms-transform: translateX(-334%);
           transform: translateX(-334%);
@@ -655,7 +655,7 @@ body {
   margin: 133px 0px 0px 44px;
   position: absolute;
   left: 65px;
-  top: 60px;
+  top: 30px;
   -webkit-transform: translateX(-334%);
       -ms-transform: translateX(-334%);
           transform: translateX(-334%);
@@ -788,13 +788,13 @@ body {
 
 #productosParrillas .row .card .tituloCard {
   text-align: center;
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: #000;
 }
 
 #productosParrillas .row .card .card-text {
   text-align: center;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: #000;
 }
 
@@ -926,13 +926,13 @@ body {
 
 #productosSalamandras .row .card .tituloCard {
   text-align: center;
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: #000;
 }
 
 #productosSalamandras .row .card .card-text {
   text-align: center;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: #000;
 }
 
@@ -1529,12 +1529,12 @@ body {
   }
   #promociones-res .row .card .tituloCard {
     text-align: center;
-    font-size: .9rem;
+    font-size: 0.9rem;
     color: #000;
   }
   #promociones-res .row .card .card-text {
     text-align: center;
-    font-size: .8rem;
+    font-size: 0.8rem;
     color: #000;
   }
   #promociones-res .row .card:hover {
@@ -1645,35 +1645,133 @@ body {
     height: 100px;
   }
   /*PARRILLAS*/
-  .fondoParrilla {
+  .ml-5 {
+    margin-left: 4rem;
+  }
+  #productosParrillas.img-1 {
+    background-image: url("../multimedia/bgwood.jpg");
     background-size: cover;
     background-position: center;
   }
-  #introParrillas {
-    padding-top: 125px;
+  #productosParrillas {
+    width: 100%;
+    margin: auto;
+    padding-top: 130px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
-  #introParrillas .titulo {
-    margin-bottom: 45px;
-    margin-left: 30px;
+  #productosParrillas .tituloParrillas {
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: bold;
+    color: #f1eeee;
+    margin-top: 60px;
+    padding-left: 30px;
+    padding-bottom: 50px;
   }
-  #introParrillas .textHis {
-    margin-bottom: 30px;
-    margin-left: 30px;
+  #productosParrillas .row {
+    margin-left: 26px;
   }
-  #productosPard {
-    height: 550px;
+  #productosParrillas .row .card {
+    border: 1px solid #A93226;
+    width: 11rem;
+    height: 234px;
+    overflow: hidden;
+    margin-bottom: 50px;
   }
-  #productosParu .titulo {
-    padding-top: 20px;
-    padding-left: 210px;
+  #productosParrillas .row .card .card-body {
+    padding: 0.40rem;
   }
-  #productosPard .titulo {
-    padding-top: 85px;
-    padding-left: 230px;
+  #productosParrillas .row .card .tituloCard {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #000;
   }
-  .box img {
-    max-width: 51%;
-    margin-left: 210px;
+  #productosParrillas .row .card .card-text {
+    text-align: center;
+    font-size: 0.7rem;
+    color: #000;
+  }
+  #productosParrillas .row .card:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(169, 50, 38, 0.8)), to(rgba(169, 50, 38, 0.8)));
+    background-image: -o-linear-gradient(rgba(169, 50, 38, 0.8), rgba(169, 50, 38, 0.8));
+    background-image: linear-gradient(rgba(169, 50, 38, 0.8), rgba(169, 50, 38, 0.8));
+    background-size: 208px 30px;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  #productosParrillas .row .card:hover button {
+    -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    border: transparent;
+    background-color: transparent;
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  #productosParrillas .row .card:hover .tituloCard, #productosParrillas .row .card:hover .card-text {
+    display: none;
+  }
+  #productosParrillas .row .card:hover:before, #productosParrillas .row .card:hover:after {
+    width: 90%;
+  }
+  #productosParrillas .row .card:before {
+    position: absolute;
+    top: 335px;
+    left: 20px;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #1c1c1d;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  #productosParrillas .row .card:after {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #1c1c1d;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  #productosParrillas .row .card .btn-primary {
+    color: #1c1c1d;
+    background-color: transparent;
+    border-color: transparent;
+  }
+  #productosParrillas .row .card button {
+    margin: 133px 0px 0px 44px;
+    position: absolute;
+    left: 5px;
+    top: 95px;
+    -webkit-transform: translateX(-334%);
+        -ms-transform: translateX(-334%);
+            transform: translateX(-334%);
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+  }
+  #productosParrillas .row button {
+    left: -6px;
+    top: 45px;
   }
   /*SALAMANDRAS*/
   #productosSald {

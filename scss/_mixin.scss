@@ -53,14 +53,14 @@
     text-align: left;
     color: $colhis;
 }
-@mixin tex-ti{
+@mixin tex-ti($tc: .9rem){
     text-align: center;
-    font-size: .9rem;
+    font-size: $tc;
     color: $color-bgBlack;
 }
-@mixin tex-al{
+@mixin tex-al($pc: .8rem){
     text-align: center;
-    font-size: .8rem;
+    font-size: $pc;
     color: $color-bgBlack;
 } 
 @mixin title-contact{
@@ -165,7 +165,7 @@
         margin: 133px 0px 0px 44px;
         position: absolute;
         left: 65px;
-        top: 60px;
+        top: 30px;
         transform:translateX(-334%); 
         transition:all .4s ease;       
     } 
