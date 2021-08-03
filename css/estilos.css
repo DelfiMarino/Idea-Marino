@@ -1389,6 +1389,10 @@ body {
   height: 50px;
 }
 
+.no-desk {
+  display: none;
+}
+
 @media all and (max-width: 768px) {
   .navbar-toggler {
     border-color: red;

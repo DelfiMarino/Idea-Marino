@@ -534,7 +534,10 @@ body{
     border: none;
     width: 390px;
     height: 50px;
-}      
+}   
+.no-desk{
+  display: none;
+}   
 @media all and (max-width: 768px){
   .navbar-toggler {
     border-color: $color-red;
