@@ -1812,16 +1812,125 @@ body {
     top: 45px;
   }
   /*SALAMANDRAS*/
-  #productosSald {
-    height: 600px;
+  #productosSalamandras {
+    width: 100%;
+    margin: auto;
+    padding-top: 130px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
-  #productosSalu .titulo {
-    padding-top: 20px;
-    padding-left: 210px;
+  #productosSalamandras .tituloSalamandras {
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: bold;
+    color: #f1eeee;
+    margin-top: 60px;
+    padding-bottom: 50px;
+    padding-left: 30px;
   }
-  #productosSald .titulo {
-    padding-top: 85px;
-    padding-left: 230px;
+  #productosSalamandras .row {
+    margin-left: 26px;
+  }
+  #productosSalamandras .row .card {
+    border: 1px solid #A93226;
+    width: 11rem;
+    height: 234px;
+    overflow: hidden;
+    margin-bottom: 50px;
+  }
+  #productosSalamandras .row .card .card-body {
+    padding: 0.40rem;
+  }
+  #productosSalamandras .row .card .tituloCard {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #000;
+  }
+  #productosSalamandras .row .card .card-text {
+    text-align: center;
+    font-size: 0.7rem;
+    color: #000;
+  }
+  #productosSalamandras .row .card:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(169, 50, 38, 0.8)), to(rgba(169, 50, 38, 0.8)));
+    background-image: -o-linear-gradient(rgba(169, 50, 38, 0.8), rgba(169, 50, 38, 0.8));
+    background-image: linear-gradient(rgba(169, 50, 38, 0.8), rgba(169, 50, 38, 0.8));
+    background-size: 208px 30px;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  #productosSalamandras .row .card:hover button {
+    -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    border: transparent;
+    background-color: transparent;
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  #productosSalamandras .row .card:hover .tituloCard, #productosSalamandras .row .card:hover .card-text {
+    display: none;
+  }
+  #productosSalamandras .row .card:hover:before, #productosSalamandras .row .card:hover:after {
+    width: 90%;
+  }
+  #productosSalamandras .row .card:before {
+    position: absolute;
+    top: 335px;
+    left: 20px;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #1c1c1d;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  #productosSalamandras .row .card:after {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #1c1c1d;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  #productosSalamandras .row .card .btn-primary {
+    color: #1c1c1d;
+    background-color: transparent;
+    border-color: transparent;
+  }
+  #productosSalamandras .row .card button {
+    margin: 133px 0px 0px 44px;
+    position: absolute;
+    left: 5px;
+    top: 95px;
+    -webkit-transform: translateX(-334%);
+        -ms-transform: translateX(-334%);
+            transform: translateX(-334%);
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+  }
+  #productosSalamandras .row .card button {
+    left: -4px;
+    top: 45px;
   }
   /*INSTALACIONES*/
   #servicios .titulo {
@@ -2273,29 +2382,125 @@ body {
     top: 45px;
   }
   /*SALAMANDRAS*/
-  #introSalamandra .textHis {
-    margin-left: 0px;
+  #productosSalamandras {
+    width: 100%;
+    margin: auto;
+    padding-top: 95px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
-  #introSalamandra .titulo {
-    margin-bottom: 15px;
-    margin-left: 2px;
+  #productosSalamandras .tituloSalamandras {
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: bold;
+    color: #f1eeee;
+    margin-top: 15px;
+    padding-left: 1px;
+    padding-bottom: 50px;
   }
-  #productosSalu {
-    height: 350px;
+  #productosSalamandras .row {
+    margin-left: 1px;
   }
-  #productosSald {
-    height: 350px;
+  #productosSalamandras .row .card {
+    border: 1px solid #A93226;
+    width: 7rem;
+    height: 170px;
+    overflow: hidden;
+    margin-bottom: 50px;
   }
-  #productosSalu .titulo {
-    padding-top: 20px;
-    padding-left: 10px;
-    font-size: 1.5em;
-    margin-bottom: 15px;
+  #productosSalamandras .row .card .card-body {
+    padding: 0.40rem;
   }
-  #productosSald .titulo {
-    padding-top: 36px;
-    padding-left: 35px;
-    font-size: 1.5em;
+  #productosSalamandras .row .card .tituloCard {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #000;
+  }
+  #productosSalamandras .row .card .card-text {
+    text-align: center;
+    font-size: 0.7rem;
+    color: #000;
+  }
+  #productosSalamandras .row .card:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(169, 50, 38, 0.8)), to(rgba(169, 50, 38, 0.8)));
+    background-image: -o-linear-gradient(rgba(169, 50, 38, 0.8), rgba(169, 50, 38, 0.8));
+    background-image: linear-gradient(rgba(169, 50, 38, 0.8), rgba(169, 50, 38, 0.8));
+    background-size: 208px 30px;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  #productosSalamandras .row .card:hover button {
+    -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    border: transparent;
+    background-color: transparent;
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  #productosSalamandras .row .card:hover .tituloCard, #productosSalamandras .row .card:hover .card-text {
+    display: none;
+  }
+  #productosSalamandras .row .card:hover:before, #productosSalamandras .row .card:hover:after {
+    width: 90%;
+  }
+  #productosSalamandras .row .card:before {
+    position: absolute;
+    top: 335px;
+    left: 20px;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #1c1c1d;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  #productosSalamandras .row .card:after {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #1c1c1d;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  #productosSalamandras .row .card .btn-primary {
+    color: #1c1c1d;
+    background-color: transparent;
+    border-color: transparent;
+  }
+  #productosSalamandras .row .card button {
+    margin: 133px 0px 0px 44px;
+    position: absolute;
+    left: 5px;
+    top: 95px;
+    -webkit-transform: translateX(-334%);
+        -ms-transform: translateX(-334%);
+            transform: translateX(-334%);
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+  }
+  #productosSalamandras .row .card button {
+    left: -4px;
+    top: 45px;
   }
   /*INSTALACIONES*/
   #introInsta .titulo {
