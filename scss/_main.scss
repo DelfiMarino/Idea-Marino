@@ -543,6 +543,42 @@ body{
     padding-top: 0px;
     padding-left: 0px;
   }
+  
+  #header{	
+    background-color: $color-white;	
+    position: fixed;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin-top:0;
+    z-index: 2;
+    .container{
+      margin-left: 33px;
+      height: auto;
+      width: auto;
+      background-color: $color-white; 
+    }
+    .navbar-nav{
+      margin-left: -170px;
+      margin-top: 30px;
+    }
+    .logo{
+      margin-right: 300px;
+      height: 70px;
+      width: 154px;
+    }
+    li a{
+      color: $color-title-menu; 
+      font-size: 1rem;
+      font-weight: 400;
+      &:hover {
+        color: $color-hover
+      }
+    }
+    .nav-link{
+      padding-left: 427px;
+    }
+  }
   .non{
     display: none;
   }
@@ -622,9 +658,7 @@ body{
     .textAl{
       margin-left: 75px;
     }
-  }    
-    
-  
+  }     
   /*PROMOCIONES*/
   #promociones{
     display: none;
@@ -698,10 +732,7 @@ body{
     width: 100px; 
     height: 100px;
   }
-  /*PARRILLAS*/
-  .ml-5 {
-    margin-left: 4rem;
-  } 
+  /*PARRILLAS*/ 
   #productosParrillas.img-1{
     @include bg-madera;
   }  
@@ -737,12 +768,12 @@ body{
         }
         @include cards-hover;
         }
-        button{
-          left: -6px;
-          top: 45px;
-        }
       }
     }
+  #productosParrillas .row .card button {
+    left: -4px;
+    top: 45px;
+  }
   /*SALAMANDRAS*/
   #productosSald{
     height: 600px;
@@ -901,6 +932,41 @@ body{
     padding-top: 0px;
     padding-left: 0px;
   }
+  #header{	
+    background-color: $color-white;	
+    position: fixed;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin-top:0;
+    z-index: 2;
+    .container{
+      margin-left: 33px;
+      height: auto;
+      width: auto;
+      background-color: $color-white; 
+    }
+    .navbar-nav{
+      margin-left: -170px;
+      margin-top: 30px;
+    }
+    .logo{
+      margin-right: 300px;
+      height: 70px;
+      width: 154px;
+    }
+    li a{
+      color: $color-title-menu; 
+      font-size: 1rem;
+      font-weight: 400;
+      &:hover {
+        color: $color-hover
+      }
+    }
+    .nav-link{
+      padding-left: 235px;
+    }
+  }
   #header{
     margin-top:0;
   }
@@ -1036,38 +1102,40 @@ body{
     height: 100px;
   }
   /*PARRILLAS*/
-  .fondoParrilla{
-  background-image: $gradiente-imagenes;
-  background-size: cover;
-  background-position: center;
+  #productosParrillas{
+    width: 100%;
+    margin: auto;
+    padding-top: 95px; 
+    display: flex;
+    flex-direction: column;
+    @include parallax;
+    .tituloParrillas{
+      @include titulo-light-gray (1.8rem);
+      margin-top: 15px;
+      padding-left: 1px;
+      padding-bottom: 50px;
+    }
+    .row{
+      margin-left: 1px;
+      .card{
+        border: 1px solid $color-bordo;
+        width: 7rem;
+        height: 170px;
+        overflow: hidden;
+        margin-bottom: 50px;
+        .tituloCard{
+          @include tex-ti;
+        }
+        .card-text{
+          @include tex-al;
+        }
+        @include cards-hover;
+      }
+    }
   }
-  #introParrillas{
-    padding-top: 125px;     
-  }
-  #introParrillas .titulo{
-    margin-bottom: 10px;
-    margin-left: 0;     
-  }
-  #introParrillas .textHis{
-    margin-bottom: 30px;  
-    margin-left: 5px;  
-  }
-  #productosParu, #productosPard{
-    height: 350px;
-  }
-  #productosParu .titulo{
-    padding-top: 20px;
-    padding-left: 45px;
-    font-size: 1.5em;
-  }
-  #productosPard .titulo{
-    padding-top: 25px;
-    padding-left: 60px;
-    font-size: 1.5em;
-  }  
-  .box img {
-    max-width: 51%;
-    margin-left: 90px;
+  #productosParrillas .row .card button {
+    left: -4px;
+    top: 45px;
   }
   /*SALAMANDRAS*/
   #introSalamandra .textHis {
