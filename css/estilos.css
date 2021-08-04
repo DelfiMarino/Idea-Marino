@@ -1995,59 +1995,171 @@ body {
   }
   /*CONTACTO*/
   #contacto {
-    width: 100%;
-    height: 360px;
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "rel" "relt";
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-    -ms-grid-rows: 258px 410px;
-        grid-template-rows: 258px 410px;
+        grid-template-areas: ". rel suc map ." ". relt suct map ." ". tel mai map ." ". telt mait map .";
+    -ms-grid-rows: 237px 105px 71px 45px;
+        grid-template-rows: 237px 105px 71px 45px;
+    -ms-grid-columns: 0px 254px 192px 352px 250px;
+        grid-template-columns: 0px 254px 192px 352px 250px;
+    grid-column-gap: 1%;
+    grid-row-gap: 2%;
     justify-items: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #fff;
+    background-color: #f1eeee;
+    height: 565px;
   }
-  .reloj {
+  #contacto .reloj {
     -ms-grid-row: 1;
-    -ms-grid-column: 1;
+    -ms-grid-column: 2;
     grid-area: rel;
     -ms-grid-column-align: stretch;
         justify-self: stretch;
-    padding-top: 100px;
+    padding-top: 185px;
     text-align: center;
-    margin-left: 0px;
+    margin-left: 15px;
   }
-  .relojText {
+  #contacto .relojText {
     -ms-grid-row: 2;
-    -ms-grid-column: 1;
+    -ms-grid-column: 2;
     grid-area: relt;
     -ms-grid-column-align: center;
         justify-self: center;
-    padding-bottom: 370px;
+    padding-top: 20px;
     text-align: center;
-    margin-left: 40px;
+    margin-left: 70px;
   }
-  .botonShop {
-    padding-left: 10px;
-    font-size: 3rem;
-  }
-  .relojText .titleDos {
+  #contacto .relojText .titleDos {
     font-size: 1rem;
     font-style: normal;
     font-weight: bold;
-    margin-right: 30px;
   }
-  .relojText .textoDos {
-    font-size: .7rem;
+  #contacto .relojText .textoDos {
+    font-size: .8rem;
     font-style: normal;
-    margin-right: 30px;
+  }
+  #contacto .sucursal {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: suc;
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    padding-top: 185px;
+    text-align: center;
+    margin-right: 298px;
+  }
+  #contacto .sucursalText {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: suct;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    padding-top: 20px;
+    text-align: center;
+    margin-right: 20px;
+  }
+  #contacto .sucursalText .titleDos {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: bold;
+  }
+  #contacto .sucursalText .textoDos {
+    font-size: .8rem;
+    font-style: normal;
+  }
+  #contacto hr {
+    width: 360px;
+    border: 1px solid #3f4042;
+    margin-top: 500px;
+    margin-left: 60px;
+  }
+  #contacto .line-2 {
+    height: 310px;
+    width: 0;
+    border: 1px solid #3f4042;
+    margin-top: 464px;
+    margin-right: 1100px;
+  }
+  #contacto .telefono {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: tel;
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    text-align: center;
+    margin-left: 13px;
+  }
+  #contacto .telefonoText {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: telt;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    padding-top: 20px;
+    text-align: center;
+    margin-left: 70px;
+  }
+  #contacto .telefonoText .titleDos {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: bold;
+  }
+  #contacto .telefonoText .textoDos {
+    font-size: .8rem;
+    font-style: normal;
+  }
+  #contacto .mail {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    grid-area: mai;
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    text-align: center;
+    margin-right: 293px;
+  }
+  #contacto .mailText {
+    -ms-grid-row: 4;
+    -ms-grid-column: 3;
+    grid-area: mait;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    padding-top: 20px;
+    text-align: center;
+    margin-right: 11px;
+  }
+  #contacto .mailText .titleDos {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: bold;
+  }
+  #contacto .mailText .textoDos {
+    font-size: .8rem;
+    font-style: normal;
+  }
+  #contacto .map {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 4;
+    grid-area: map;
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    margin-left: 0;
+    margin-top: 13px;
+  }
+  #contacto .map iframe {
+    width: 250px;
+    height: 310px;
+  }
+  .botonShop {
+    color: #A93226;
+    padding-top: 60px;
+    padding-left: 73px;
   }
   #gFormularios {
     width: 100%;
-    height: 665px;
+    height: 750px;
     display: -ms-grid;
     display: grid;
         grid-template-areas: "tex" "nom" "serv" "men" "ads" "footer";
@@ -2063,15 +2175,14 @@ body {
             align-items: center;
     background-color: #f1eeee;
     overflow: hidden;
-    padding-left: 25px;
+    padding-left: 0;
   }
   .fText {
     padding-top: 58px;
     text-align: center;
     font-size: 1.5rem;
-    margin-right: 185px;
     margin-top: 7px;
-    margin-left: 275px;
+    margin-left: 235px;
     margin-bottom: 30px;
   }
   .nombre {
@@ -2081,7 +2192,7 @@ body {
     height: 65px;
     border: 1px solid #f1eeee;
     margin-top: 9px;
-    margin-left: 205px;
+    margin-left: 185px;
   }
   .recuadro {
     width: 297px;
@@ -2098,7 +2209,7 @@ body {
     width: 300px;
     height: 65px;
     border: 1px solid #f1eeee;
-    margin-left: 205px;
+    margin-left: 185px;
     margin-top: 9px;
   }
   .opciones {
@@ -2107,7 +2218,7 @@ body {
     width: 300px;
     height: 65px;
     border: 1px solid #f1eeee;
-    margin-left: 205px;
+    margin-left: 185px;
     margin-top: 9px;
   }
   .mensaje {
@@ -2116,25 +2227,25 @@ body {
     width: 300px;
     height: 133px;
     margin-top: 9px;
-    margin-left: 205px;
+    margin-left: 185px;
     margin-top: 9px;
   }
-  .boton {
+  .botonFo {
     -ms-grid-column-align: stretch;
         justify-self: stretch;
-    margin-left: 205px;
-    margin-top: 9px;
+    margin-left: 185px;
+    margin-top: 30px;
   }
-  .enviar {
+  .botonFo .enviar {
     width: 300px;
     height: 46px;
-    margin-bottom: 9px;
+    margin-bottom: 23px;
     border: 2px solid #f1eeee;
-    margin-left: 204px;
   }
-  .sus {
+  .botonFo .sus {
     text-align: stretch;
-    font-size: .8rem;
+    font-size: 1rem;
+    margin-left: 85px;
   }
 }
 

@@ -863,51 +863,130 @@ body{
     }
   }
   /*CONTACTO*/
-  #contacto {
-    width: 100%;
-    height: 360px;
+  #contacto{
     display: grid;
-    grid-template-areas:
-    "rel"
-    "relt";
-    grid-template-columns: auto;
-    grid-template-rows: 258px 410px;
+    grid-template-areas: 
+    ". rel suc map ."
+    ". relt suct map ."
+    ". tel mai map ."
+    ". telt mait map .";
+    grid-template-rows: 237px 105px 71px 45px;
+    grid-template-columns: 0px 254px 192px 352px 250px;;
+    grid-column-gap: 1%;
+    grid-row-gap: 2%;
     justify-items: center;
-    align-items: center;
-    background-color: $color-white;
-  }
-  .reloj{
-    grid-area: rel;
-    justify-self: stretch;
-    padding-top: 100px;
-    text-align: center;
-    margin-left: 0px;
-  }
-  .relojText{
-    grid-area: relt;
-    justify-self: center;
-    padding-bottom: 370px;
-    text-align: center;
-    margin-left: 40px;
+    align-items:center;
+    @include bg-light-gray (565px);
+    .reloj{
+      grid-area: rel;
+      justify-self: stretch;
+      padding-top: 185px;
+      text-align: center;
+      margin-left: 15px;
+    }
+    .relojText{
+      grid-area: relt;
+      justify-self: center;
+      padding-top: 20px;
+      text-align: center;
+      margin-left: 70px;
+      .titleDos{
+        @include title-contact;
+      }
+      .textoDos{
+         @include text-contact;
+      }
+    }    
+    .sucursal{
+      grid-area: suc;
+      justify-self: stretch;
+      padding-top: 185px;
+      text-align: center;
+      margin-right: 298px;  
+    }
+    .sucursalText{
+      grid-area: suct;
+      justify-self: center;
+      padding-top: 20px;
+      text-align: center;
+      margin-right: 20px;
+      .titleDos{
+        @include title-contact;
+      }
+      .textoDos{
+        @include text-contact;
+      }
+    } 
+    hr{
+      width: 360px;
+      border: 1px solid #3f4042;
+      margin-top: 500px;
+      margin-left: 60px;
+    }  
+    .line-2{
+      height: 310px;
+      width: 0;
+      border: 1px solid #3f4042;
+      margin-top: 464px;
+      margin-right: 1100px;
+    } 
+    .telefono{
+      grid-area: tel;
+      justify-self: stretch;
+      text-align: center;
+      margin-left: 13px; 
+    }
+    .telefonoText{
+      grid-area: telt;
+      justify-self: center;
+      padding-top: 20px;
+      text-align: center;
+      margin-left: 70px;
+      .titleDos{
+        @include title-contact;
+      }
+      .textoDos{
+        @include text-contact;
+      }
+    }    
+    .mail{
+      grid-area: mai;
+      justify-self: stretch;
+      text-align: center;
+      margin-right: 293px; 
+    }
+    .mailText{
+      grid-area: mait;
+      justify-self: center;
+      padding-top: 20px;
+      text-align: center;
+      margin-right: 11px;  
+      .titleDos{
+        @include title-contact;
+      }
+      .textoDos{
+        @include text-contact;
+      }
+    }    
+    .map{
+      grid-area: map;
+      justify-self: stretch;
+      margin-left: 0; 
+      margin-top: 13px;
+      iframe {
+        width: 250px;
+        height: 310px;
+    }   
+    }
   }
   .botonShop{
-    padding-left: 10px;
-    font-size: 3rem;
-}
-  .relojText .titleDos{
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: bold;
-    margin-right: 30px;
-  }
-  .relojText .textoDos{
-    font-size: .7rem;
-    font-style: normal;
-    margin-right: 30px;
-  } 
+      color: $color-bordo;
+      padding-top: 60px;
+      padding-left: 73px;
+  }  
 #gFormularios{
     width: 100%;
-    height: 665px;
+    height: 750px;
     display: grid;
     grid-template-areas: 
           "tex"
@@ -924,15 +1003,14 @@ body{
     align-items: center;
     background-color: $color-light-gray; 
     overflow: hidden; 
-    padding-left: 25px;
+    padding-left: 0;
   }
     .fText{
         padding-top: 58px;
         text-align: center;
         font-size: 1.5rem; 
-        margin-right: 185px;
         margin-top: 7px;
-        margin-left: 275px;
+        margin-left: 235px;
         margin-bottom: 30px;
     }
   .nombre{
@@ -941,7 +1019,7 @@ body{
     height: 65px;
     border: 1px solid $color-light-gray;
     margin-top: 9px;
-    margin-left: 205px;
+    margin-left: 185px;
   }
   .recuadro{
     width: 297px;
@@ -957,7 +1035,7 @@ body{
     width: 300px;
     height: 65px;
     border: 1px solid $color-light-gray;
-    margin-left: 205px;
+    margin-left: 185px;
     margin-top: 9px;
   }
   .opciones{
@@ -965,7 +1043,7 @@ body{
     width: 300px;
     height: 65px;
     border: 1px solid $color-light-gray;
-    margin-left: 205px;
+    margin-left: 185px;
     margin-top: 9px;
   }
   .mensaje{
@@ -973,24 +1051,24 @@ body{
     width:300px;
     height:133px;
     margin-top: 9px;
-    margin-left: 205px;
+    margin-left: 185px;
     margin-top: 9px;
   }
-  .boton{
+  .botonFo{
     justify-self: stretch; 
-    margin-left: 205px;
-    margin-top: 9px;  
-  }
-  .enviar{
-    width: 300px;
-    height: 46px;
-    margin-bottom: 9px;
-    border: 2px solid $color-light-gray;
-    margin-left: 204px;
-  }
-  .sus{
-    text-align: stretch;
-    font-size: .8rem;    
+    margin-left: 185px;
+    margin-top: 30px;
+    .enviar{
+      width: 300px;
+      height: 46px;
+      margin-bottom: 23px;
+      border: 2px solid $color-light-gray;
+    }
+    .sus{
+      text-align: stretch;
+      font-size: 1rem;  
+      margin-left: 85px;  
+    } 
   }
 }
 @media all and (max-width: 576px){
