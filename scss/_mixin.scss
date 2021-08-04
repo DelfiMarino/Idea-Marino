@@ -39,8 +39,8 @@
     text-align: left;
     color: $color-bordo;    
 }
-@mixin subtitulo-rojo{
-    font-size: 2.2rem; 
+@mixin subtitulo-rojo ($fs: 2.2rem){
+    font-size: $fs; 
     font-style: normal;
     font-weight: bold;
     text-align: left;
@@ -165,12 +165,12 @@
         margin: 133px 0px 0px 44px;
         position: absolute;
         left: 65px;
-        top: 30px;
+        top: 60px;
         transform:translateX(-334%); 
         transition:all .4s ease;       
     } 
     }
-@mixin cards-hover {
+@mixin cards-hover ($fs: 1.7rem){
     &:hover{
         background-image: $gradiente-rojo;
         background-size: 208px 30px;
@@ -180,7 +180,7 @@
           transition:all .3s ease;
           border: transparent;
           background-color: transparent;
-          font-size: 1.7rem;
+          font-size: $fs;
           font-weight: bold;
         }
         .tituloCard, .card-text{

@@ -429,7 +429,7 @@ body {
   margin: 133px 0px 0px 44px;
   position: absolute;
   left: 65px;
-  top: 30px;
+  top: 60px;
   -webkit-transform: translateX(-334%);
       -ms-transform: translateX(-334%);
           transform: translateX(-334%);
@@ -542,7 +542,7 @@ body {
   margin: 133px 0px 0px 44px;
   position: absolute;
   left: 65px;
-  top: 30px;
+  top: 60px;
   -webkit-transform: translateX(-334%);
       -ms-transform: translateX(-334%);
           transform: translateX(-334%);
@@ -655,7 +655,7 @@ body {
   margin: 133px 0px 0px 44px;
   position: absolute;
   left: 65px;
-  top: 30px;
+  top: 60px;
   -webkit-transform: translateX(-334%);
       -ms-transform: translateX(-334%);
           transform: translateX(-334%);
@@ -1933,11 +1933,65 @@ body {
     top: 45px;
   }
   /*INSTALACIONES*/
-  #servicios .titulo {
-    padding-left: 205px;
+  #introInsta {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(1%, #545454), color-stop(55%, rgba(84, 84, 84, 0.900998))), url("../multimedia/living.jpeg");
+    background-image: -o-linear-gradient(left, #545454 1%, rgba(84, 84, 84, 0.900998) 55%), url("../multimedia/living.jpeg");
+    background-image: linear-gradient(90deg, #545454 1%, rgba(84, 84, 84, 0.900998) 55%), url("../multimedia/living.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 125px;
+    width: 100%;
+    height: 500px;
   }
-  #servicios .row {
-    margin-left: 154px;
+  #introInsta .tituloIns {
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: bold;
+    color: #f1eeee;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    margin-left: 25px;
+  }
+  #introInsta .textIns {
+    display: inline-block;
+    font-size: 1rem;
+    font-style: normal;
+    text-align: left;
+    color: #f1eeee;
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+  #galeria {
+    background-color: #f1eeee;
+    width: 100%;
+  }
+  #galeria .tituloServicio {
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: bold;
+    text-align: left;
+    color: #A93226;
+    padding-top: 50px;
+    padding-left: 25px;
+  }
+  #galeria .row {
+    margin-left: 20px;
+  }
+  #galeria .row .col-lg-4 {
+    margin: 0 !important;
+    padding: 40px;
+  }
+  #galeria .row img {
+    width: 90%;
+    height: 250px;
+    border: 3px solid #3f4042;
+  }
+  #galeria .row img:hover {
+    border: 5px solid #3f4042;
   }
   /*CONTACTO*/
   #contacto {
@@ -2216,20 +2270,6 @@ body {
   .contentEnvios-4 .textAl {
     margin-left: 75px;
   }
-  #seccionTres, #seccionCuatro {
-    width: 100%;
-    margin: auto;
-    padding-top: 55px;
-    padding-bottom: 40px;
-    padding-left: 40px;
-    overflow: hidden;
-  }
-  #seccionTres .tituloHueso {
-    padding-left: 20px;
-  }
-  #seccionCuatro {
-    height: 300px;
-  }
   .tituloRojo {
     font-size: 1.5rem;
     font-style: normal;
@@ -2281,13 +2321,13 @@ body {
     background-attachment: fixed;
   }
   #productosParrillas .tituloParrillas {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: bold;
     color: #f1eeee;
     margin-top: 15px;
     padding-left: 1px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
   #productosParrillas .row {
     margin-left: 1px;
@@ -2299,14 +2339,14 @@ body {
     overflow: hidden;
     margin-bottom: 50px;
   }
-  #productosParrillas .row .card .tituloCard {
+  #productosParrillas .row .card .card-title {
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.6rem;
     color: #000;
   }
   #productosParrillas .row .card .card-text {
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.5rem;
     color: #000;
   }
   #productosParrillas .row .card:hover {
@@ -2327,7 +2367,7 @@ body {
     transition: all .3s ease;
     border: transparent;
     background-color: transparent;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     font-weight: bold;
   }
   #productosParrillas .row .card:hover .tituloCard, #productosParrillas .row .card:hover .card-text {
@@ -2378,8 +2418,8 @@ body {
     transition: all .4s ease;
   }
   #productosParrillas .row .card button {
-    left: -4px;
-    top: 45px;
+    left: -31px;
+    top: -13px;
   }
   /*SALAMANDRAS*/
   #productosSalamandras {
@@ -2393,19 +2433,15 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
   }
   #productosSalamandras .tituloSalamandras {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: bold;
     color: #f1eeee;
     margin-top: 15px;
     padding-left: 1px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
   #productosSalamandras .row {
     margin-left: 1px;
@@ -2417,17 +2453,14 @@ body {
     overflow: hidden;
     margin-bottom: 50px;
   }
-  #productosSalamandras .row .card .card-body {
-    padding: 0.40rem;
-  }
-  #productosSalamandras .row .card .tituloCard {
+  #productosSalamandras .row .card .card-title {
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     color: #000;
   }
   #productosSalamandras .row .card .card-text {
     text-align: center;
-    font-size: 0.7rem;
+    font-size: 0.5rem;
     color: #000;
   }
   #productosSalamandras .row .card:hover {
@@ -2448,7 +2481,7 @@ body {
     transition: all .3s ease;
     border: transparent;
     background-color: transparent;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     font-weight: bold;
   }
   #productosSalamandras .row .card:hover .tituloCard, #productosSalamandras .row .card:hover .card-text {
@@ -2499,25 +2532,69 @@ body {
     transition: all .4s ease;
   }
   #productosSalamandras .row .card button {
-    left: -4px;
-    top: 45px;
+    left: -31px;
+    top: -13px;
   }
   /*INSTALACIONES*/
-  #introInsta .titulo {
-    margin-left: 10px;
-    margin-bottom: 15px;
+  #introInsta {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(1%, #545454), color-stop(55%, rgba(84, 84, 84, 0.900998))), url("../multimedia/living.jpeg");
+    background-image: -o-linear-gradient(left, #545454 1%, rgba(84, 84, 84, 0.900998) 55%), url("../multimedia/living.jpeg");
+    background-image: linear-gradient(90deg, #545454 1%, rgba(84, 84, 84, 0.900998) 55%), url("../multimedia/living.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 70px;
+    width: 100%;
+    height: 550px;
   }
-  #introInsta .textHis {
-    margin-left: 7px;
+  #introInsta .tituloIns {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: bold;
+    color: #f1eeee;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 0px;
   }
-  #servicios .titulo {
-    padding-left: 50px;
+  #introInsta .textIns {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-style: normal;
+    text-align: left;
+    color: #f1eeee;
+    margin-bottom: 20px;
+    margin-left: 0px;
   }
-  #servicios .row {
-    margin-left: -34px;
+  #galeria {
+    background-color: #f1eeee;
+    width: 100%;
   }
-  #servicios .botton {
-    margin-top: 138px;
+  #galeria .tituloServicio {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: bold;
+    text-align: left;
+    color: #A93226;
+    padding-top: 50px;
+    padding-left: 17px;
+  }
+  #galeria .row {
+    margin-left: 20px;
+  }
+  #galeria .row .col-lg-4 {
+    margin: 0 !important;
+    padding: 20px;
+  }
+  #galeria .row img {
+    width: 90%;
+    height: 250px;
+    border: 3px solid #3f4042;
+  }
+  #galeria .row img:hover {
+    border: 5px solid #3f4042;
   }
   /*CONTACTO*/
   #contacto {

@@ -820,11 +820,47 @@ body{
     top: 45px;
   }
   /*INSTALACIONES*/
-  #servicios .titulo{
-    padding-left: 205px;
+  #introInsta{
+    @include bg-instalaciones;
+    @include parallax;
+    padding-top: 125px;  
+    width: 100%;
+    height:500px;  
+    .tituloIns{
+      @include titulo-light-gray;
+      margin-top: 30px;
+      margin-bottom:35px;
+      margin-left: 25px; 
+    }
+    .textIns{
+      @include text-his (1rem);
+      margin-bottom: 30px;  
+      margin-left: 30px; 
+    }
   } 
-  #servicios .row{
-     margin-left: 154px;
+  #galeria {
+    background-color: $color-light-gray;
+    width: 100%;
+    .tituloServicio{
+      @include subtitulo-rojo;
+      padding-top: 50px;
+       padding-left: 25px;
+    }
+    .row{
+      margin-left: 20px;
+      .col-lg-4{
+        margin: 0!important;
+        padding: 40px;
+      }
+      img{
+        width: 90%;
+        height: 250px;
+        border: 3px solid #3f4042;
+        &:hover{
+          border: 5px solid #3f4042;
+        }
+      }
+    }
   }
   /*CONTACTO*/
   #contacto {
@@ -1087,20 +1123,6 @@ body{
       margin-left: 75px;
     }
   }
-  #seccionTres, #seccionCuatro{
-    width: 100%;
-    margin: auto;
-    padding-top: 55px;
-    padding-bottom: 40px;
-    padding-left: 40px;
-    overflow: hidden;
-  }
-  #seccionTres .tituloHueso{
-    padding-left: 20px;
-  }
-  #seccionCuatro{
-    height: 300px;
-  }
   .tituloRojo{
     font-size: 1.5rem;
     font-style: normal;
@@ -1143,10 +1165,10 @@ body{
     flex-direction: column;
     @include parallax;
     .tituloParrillas{
-      @include titulo-light-gray (1.8rem);
+      @include titulo-light-gray (1.5rem);
       margin-top: 15px;
       padding-left: 1px;
-      padding-bottom: 50px;
+      padding-bottom: 30px;
     }
     .row{
       margin-left: 1px;
@@ -1156,19 +1178,19 @@ body{
         height: 170px;
         overflow: hidden;
         margin-bottom: 50px;
-        .tituloCard{
-          @include tex-ti;
+        .card-title{
+          @include tex-ti (.6rem);
         }
         .card-text{
-          @include tex-al;
+          @include tex-al (.5rem);
         }
-        @include cards-hover;
+        @include cards-hover (1.3rem);
       }
     }
   }
   #productosParrillas .row .card button {
-    left: -4px;
-    top: 45px;
+    left: -31px;
+    top: -13px;
   }
   /*SALAMANDRAS*/
   #productosSalamandras{
@@ -1177,15 +1199,11 @@ body{
     padding-top: 95px; 
     display: flex;
     flex-direction: column;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
     .tituloSalamandras{
-      @include titulo-light-gray (1.8rem);
+      @include titulo-light-gray (1.5rem);
       margin-top: 15px;
       padding-left: 1px;
-      padding-bottom: 50px;
+      padding-bottom: 30px;
     }
     .row{
       margin-left: 1px;
@@ -1195,39 +1213,62 @@ body{
         height: 170px;
         overflow: hidden;
         margin-bottom: 50px;
-        .card-body{
-          padding: 0.40rem;
-        }
-        .tituloCard{
-          @include tex-ti(.8rem);
+        .card-title{
+          @include tex-ti (.6rem);
         }
         .card-text{
-          @include tex-al(.7rem);
+          @include tex-al (.5rem);
         }
-        @include cards-hover;
+        @include cards-hover (1.3rem);
       }
     }
   }
   #productosSalamandras .row .card button {
-    left: -4px;
-    top: 45px;
+    left: -31px;
+    top: -13px;
   } 
   /*INSTALACIONES*/
-  #introInsta .titulo {
-    margin-left: 10px;
-    margin-bottom: 15px;
-  }
-  #introInsta .textHis {
-    margin-left: 7px;
-  }
-  #servicios .titulo{
-    padding-left: 50px;
+  #introInsta{
+    @include bg-instalaciones;
+    @include parallax;
+    padding-top: 70px;  
+    width: 100%;
+    height:550px;  
+    .tituloIns{
+      @include titulo-light-gray (1.5rem);
+      margin-top: 30px;
+      margin-bottom:30px;
+      margin-left: 0px; 
+    }
+    .textIns{
+      @include text-his (.9rem);
+      margin-bottom: 20px;  
+      margin-left: 0px; 
+    }
   } 
-  #servicios .row{
-     margin-left: -34px;
-  }
-  #servicios .botton {
-    margin-top: 138px;
+  #galeria {
+    background-color: $color-light-gray;
+    width: 100%;
+    .tituloServicio{
+      @include subtitulo-rojo (1.4rem);
+      padding-top: 50px;
+      padding-left: 17px;
+    }
+    .row{
+      margin-left: 20px;
+      .col-lg-4{
+        margin: 0!important;
+        padding: 20px;
+      }
+      img{
+        width: 90%;
+        height: 250px;
+        border: 3px solid #3f4042;
+        &:hover{
+          border: 5px solid #3f4042;
+        }
+      }
+    }
   }
   /*CONTACTO*/
   #contacto {
