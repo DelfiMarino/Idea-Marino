@@ -536,7 +536,7 @@ body{
     width: 390px;
     height: 50px;
 }   
-#carouselExampleControlsNoTouching, .carousel, .slide{
+.no-desk{
   display: none;
 }   
 @media all and (max-width: 768px){
@@ -603,7 +603,7 @@ body{
     }   
   }
   /*ENVIOS*/ 
-  #carouselExampleControlsNoTouching, .carousel, .slide{
+  .no-desk{
     display: block;
   } 
   #envios, .d-flex{
@@ -975,7 +975,7 @@ body{
     .map{
       grid-area: map;
       justify-self: stretch;
-      margin-left: 0px; 
+      margin-left: -12px; 
       margin-top: 13px;
       iframe {
         width: 250px;
@@ -1069,7 +1069,7 @@ body{
       border: 2px solid $color-light-gray;
     }
     .sus{
-      text-align: stretch;
+      text-align: left;
       font-size: 1rem;  
       margin-left: 85px;  
     } 

@@ -1390,7 +1390,7 @@ body {
   height: 50px;
 }
 
-#carouselExampleControlsNoTouching, .carousel, .slide {
+.no-desk {
   display: none;
 }
 
@@ -1464,7 +1464,7 @@ body {
     margin-left: 4px;
   }
   /*ENVIOS*/
-  #carouselExampleControlsNoTouching, .carousel, .slide {
+  .no-desk {
     display: block;
   }
   #envios, .d-flex {
@@ -2149,7 +2149,7 @@ body {
     grid-area: map;
     -ms-grid-column-align: stretch;
         justify-self: stretch;
-    margin-left: 0px;
+    margin-left: -12px;
     margin-top: 13px;
   }
   #contacto .map iframe {
@@ -2247,7 +2247,7 @@ body {
     border: 2px solid #f1eeee;
   }
   .botonFo .sus {
-    text-align: stretch;
+    text-align: left;
     font-size: 1rem;
     margin-left: 85px;
   }
