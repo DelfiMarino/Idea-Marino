@@ -1047,94 +1047,97 @@ body{
     margin-top: 50px;
     width: 360px;
   }
-  .tituloHueso{
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: bold;
-    color: $color-light-gray;
-    text-align:  center;
-  }
-  .textHis{
-    display: inline-block;
-    font-size: .8rem; 
-    font-style: normal;
-    text-align: center;
-    color: $color-light-gray;
+  /*HISTORIA*/  
+  #historia{
+      .titleHistoria{
+          @include titulo-light-gray(1.6rem);
+          margin-top: 27px;
+          margin-left: 0;
+      }
+      .textoHistoria{
+          @include  text-his(.9rem);
+          margin-left: 0;
+          
+      }   
   }
   /*ENVIOS*/ 
-  .carousel-item{
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  #carouselExampleControlsNoTouching{
+    height: 240px;
+    .carousel-item{
+      width: 100%;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .contentEnvios-1{
+      margin-top: 30px;
+      margin-left: 35px;
+      .botonTar{
+        margin-left: 111px;
+        color: $color-bordo;
+      }
+      .texTi{
+        font-size: 1rem;
+        font-weight: bold;
+        margin-left: 50px;
+      }
+      .textAl{
+        margin-left: 60px;
+        font-size: .7rem;
+      }
+    }
+    .contentEnvios-2{
+      margin-top: 30px;
+      margin-left: 35px;
+      .botonTar{
+        margin-left: 111px;
+        color: $color-bordo;
+      }
+      .texTi{
+        font-size: 1rem;
+        font-weight: bold;
+        margin-left: 98px;
+      }
+      .textAl{
+        margin-left: 93px;
+        font-size: .7rem;
+      }
+    }
+    .contentEnvios-3{
+      margin-top: 30px;
+      margin-left: 35px;
+      .botonTar{
+        margin-left: 111px;
+        color: $color-bordo;
+      }
+      .texTi{
+        font-size: 1rem;
+        font-weight: bold;
+        margin-left: 80px;
+      }
+      .textAl{
+        margin-left: 60px;
+        font-size: .7rem;
+      }
+    }
+    .contentEnvios-4{
+      margin-top: 30px;
+      margin-left: 35px;
+      .botonTar{
+        margin-left: 111px;
+        color: $color-bordo;
+      }
+      .texTi{
+        font-size: 1rem;
+        font-weight: bold;
+        margin-left: 60px;
+      }
+      .textAl{
+        margin-left: 85px;
+        font-size: .7rem;
+      }
+    }
   }
-  .contentEnvios-1{
-    margin-top: 30px;
-    margin-left: 35px;
-    .botonTar{
-      margin-left: 111px;
-      color: $color-bordo;
-    }
-    .texTi{
-      font-size: 1rem;
-      font-weight: bold;
-      margin-left: 50px;
-    }
-    .textAl{
-      margin-left: 60px;
-      font-size: .7rem;
-    }
-  }
-  .contentEnvios-2{
-    margin-top: 30px;
-    margin-left: 35px;
-    .botonTar{
-      margin-left: 111px;
-      color: $color-bordo;
-    }
-    .texTi{
-      font-size: 1rem;
-      font-weight: bold;
-      margin-left: 98px;
-    }
-    .textAl{
-      margin-left: 93px;
-      font-size: .7rem;
-    }
-  }
-  .contentEnvios-3{
-    margin-top: 30px;
-    margin-left: 35px;
-    .botonTar{
-      margin-left: 111px;
-      color: $color-bordo;
-    }
-    .texTi{
-      font-size: 1rem;
-      font-weight: bold;
-      margin-left: 80px;
-    }
-    .textAl{
-      margin-left: 60px;
-      font-size: .7rem;
-    }
-  }
-  .contentEnvios-4{
-    margin-top: 30px;
-    margin-left: 35px;
-    .botonTar{
-      margin-left: 111px;
-      color: $color-bordo;
-    }
-    .texTi{
-      font-size: 1rem;
-      font-weight: bold;
-      margin-left: 60px;
-    }
-    .textAl{
-      margin-left: 85px;
-      font-size: .7rem;
-    }
-  }
+
   .tituloRojo{
     font-size: 1.5rem;
     font-style: normal;
@@ -1150,9 +1153,12 @@ body{
     margin-left: 38px;
   }
   /*PROMOCIONES*/
-  .ml-5 {
-    margin-left: 4rem;
+  .tituloPromociones, .ml-5 {
+    margin-left: 1em;
   }  
+  .card .ml-5 {
+    margin-left: 4rem;
+  } 
   #promociones{
     width: 100%;
     margin: auto;
@@ -1160,12 +1166,12 @@ body{
     flex-direction: column;
     @include parallax;
     .tituloPromociones{
-      @include titulo-light-gray (1.7rem);
+      @include titulo-light-gray (1.6rem);
       margin-top: 30px;
       margin-bottom: 30px;
+      margin-left: 0;
     }
     .row{
-      /*margin-left: 0px;*/
       margin: 0px !important;
       .card{
         border: 1px solid $color-bordo;
@@ -1173,7 +1179,6 @@ body{
         height: 170px;
         overflow: hidden;
         margin-bottom: 10px;
-        padding: auto;
         .card-body{
           padding: 0.40rem;
         }
@@ -1203,10 +1208,9 @@ body{
     height: 500px;
     margin-top: -30px;
     .tituloDestaacados{
-      @include titulo-rojo;
-      /*padding-left: 53px;*/
-      padding-top: 25px;
-      /*padding-bottom: 25px;*/
+      @include titulo-rojo (1.6rem);
+      padding-left: 25px;
+      padding-top: 5px;
     }
     .destacados-1{
       @include text-hover(17rem);
@@ -1218,6 +1222,33 @@ body{
       @include text-hover(17rem, url("../multimedia/destacados-3.jpeg"));    
     }
   }
+  /*PROVEEDORES*/
+.fondoMarcas{
+  @include bg-marcas;
+}
+#proveedores{
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start; 
+  height: 200px; 
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;  
+  .tituloMarcas{
+    @include titulo-light-gray (1.6rem);
+    margin-top: 30px; 
+    margin-left: 0;
+  }
+  img{
+    max-width: 35%;
+    margin-bottom: 30px;
+    margin-left: 20px;
+  }
+}
   #footer{
     padding-left: 90px;
   }

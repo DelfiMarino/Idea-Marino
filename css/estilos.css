@@ -2182,91 +2182,97 @@ body {
     margin-top: 50px;
     width: 360px;
   }
-  .tituloHueso {
-    font-size: 1.5rem;
+  /*HISTORIA*/
+  #historia .titleHistoria {
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: bold;
     color: #f1eeee;
-    text-align: center;
+    margin-top: 27px;
+    margin-left: 0;
   }
-  .textHis {
+  #historia .textoHistoria {
     display: inline-block;
-    font-size: .8rem;
+    font-size: 0.9rem;
     font-style: normal;
-    text-align: center;
+    text-align: left;
     color: #f1eeee;
+    margin-left: 0;
   }
   /*ENVIOS*/
-  .carousel-item {
+  #carouselExampleControlsNoTouching {
+    height: 240px;
+  }
+  #carouselExampleControlsNoTouching .carousel-item {
     width: 100%;
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  .contentEnvios-1 {
+  #carouselExampleControlsNoTouching .contentEnvios-1 {
     margin-top: 30px;
     margin-left: 35px;
   }
-  .contentEnvios-1 .botonTar {
+  #carouselExampleControlsNoTouching .contentEnvios-1 .botonTar {
     margin-left: 111px;
     color: #A93226;
   }
-  .contentEnvios-1 .texTi {
+  #carouselExampleControlsNoTouching .contentEnvios-1 .texTi {
     font-size: 1rem;
     font-weight: bold;
     margin-left: 50px;
   }
-  .contentEnvios-1 .textAl {
+  #carouselExampleControlsNoTouching .contentEnvios-1 .textAl {
     margin-left: 60px;
     font-size: .7rem;
   }
-  .contentEnvios-2 {
+  #carouselExampleControlsNoTouching .contentEnvios-2 {
     margin-top: 30px;
     margin-left: 35px;
   }
-  .contentEnvios-2 .botonTar {
+  #carouselExampleControlsNoTouching .contentEnvios-2 .botonTar {
     margin-left: 111px;
     color: #A93226;
   }
-  .contentEnvios-2 .texTi {
+  #carouselExampleControlsNoTouching .contentEnvios-2 .texTi {
     font-size: 1rem;
     font-weight: bold;
     margin-left: 98px;
   }
-  .contentEnvios-2 .textAl {
+  #carouselExampleControlsNoTouching .contentEnvios-2 .textAl {
     margin-left: 93px;
     font-size: .7rem;
   }
-  .contentEnvios-3 {
+  #carouselExampleControlsNoTouching .contentEnvios-3 {
     margin-top: 30px;
     margin-left: 35px;
   }
-  .contentEnvios-3 .botonTar {
+  #carouselExampleControlsNoTouching .contentEnvios-3 .botonTar {
     margin-left: 111px;
     color: #A93226;
   }
-  .contentEnvios-3 .texTi {
+  #carouselExampleControlsNoTouching .contentEnvios-3 .texTi {
     font-size: 1rem;
     font-weight: bold;
     margin-left: 80px;
   }
-  .contentEnvios-3 .textAl {
+  #carouselExampleControlsNoTouching .contentEnvios-3 .textAl {
     margin-left: 60px;
     font-size: .7rem;
   }
-  .contentEnvios-4 {
+  #carouselExampleControlsNoTouching .contentEnvios-4 {
     margin-top: 30px;
     margin-left: 35px;
   }
-  .contentEnvios-4 .botonTar {
+  #carouselExampleControlsNoTouching .contentEnvios-4 .botonTar {
     margin-left: 111px;
     color: #A93226;
   }
-  .contentEnvios-4 .texTi {
+  #carouselExampleControlsNoTouching .contentEnvios-4 .texTi {
     font-size: 1rem;
     font-weight: bold;
     margin-left: 60px;
   }
-  .contentEnvios-4 .textAl {
+  #carouselExampleControlsNoTouching .contentEnvios-4 .textAl {
     margin-left: 85px;
     font-size: .7rem;
   }
@@ -2285,7 +2291,10 @@ body {
     margin-left: 38px;
   }
   /*PROMOCIONES*/
-  .ml-5 {
+  .tituloPromociones, .ml-5 {
+    margin-left: 1em;
+  }
+  .card .ml-5 {
     margin-left: 4rem;
   }
   #promociones {
@@ -2304,15 +2313,15 @@ body {
     background-attachment: fixed;
   }
   #promociones .tituloPromociones {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: bold;
     color: #f1eeee;
     margin-top: 30px;
     margin-bottom: 30px;
+    margin-left: 0;
   }
   #promociones .row {
-    /*margin-left: 0px;*/
     margin: 0px !important;
   }
   #promociones .row .card {
@@ -2321,7 +2330,6 @@ body {
     height: 170px;
     overflow: hidden;
     margin-bottom: 10px;
-    padding: auto;
   }
   #promociones .row .card .card-body {
     padding: 0.40rem;
@@ -2432,14 +2440,13 @@ body {
     margin-top: -30px;
   }
   #destacados .tituloDestaacados {
-    font-size: 2.5rem;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: bold;
     text-align: left;
     color: #A93226;
-    /*padding-left: 53px;*/
-    padding-top: 25px;
-    /*padding-bottom: 25px;*/
+    padding-left: 25px;
+    padding-top: 5px;
   }
   #destacados .destacados-1 {
     display: block;
@@ -2749,6 +2756,50 @@ body {
     -webkit-transition: all .4s ease;
     -o-transition: all .4s ease;
     transition: all .4s ease;
+  }
+  /*PROVEEDORES*/
+  .fondoMarcas {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(169, 50, 38, 0.8)), to(rgba(169, 50, 38, 0.8))), url("../multimedia/fmarcas.jpg");
+    background-image: -o-linear-gradient(rgba(169, 50, 38, 0.8), rgba(169, 50, 38, 0.8)), url("../multimedia/fmarcas.jpg");
+    background-image: linear-gradient(rgba(169, 50, 38, 0.8), rgba(169, 50, 38, 0.8)), url("../multimedia/fmarcas.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  #proveedores {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 200px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  #proveedores .tituloMarcas {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: bold;
+    color: #f1eeee;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  #proveedores img {
+    max-width: 35%;
+    margin-bottom: 30px;
+    margin-left: 20px;
   }
   #footer {
     padding-left: 90px;
