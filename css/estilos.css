@@ -14,21 +14,22 @@ body {
           align-items: center;
   margin-top: 0;
   z-index: 2;
-  /*.navbar-nav{
-    margin-left: -170px;
-    margin-top: 30px;
-  }*/
 }
 
 #header .container {
-  /*margin-left: 33px;*/
+  margin-left: 33px;
   height: auto;
   width: auto;
   background-color: #fff;
 }
 
+#header .navbar-nav {
+  margin-left: -170px;
+  margin-top: 30px;
+}
+
 #header .logo {
-  /*margin-right: 300px;*/
+  margin-right: 300px;
   height: 70px;
   width: 154px;
 }
@@ -41,6 +42,10 @@ body {
 
 #header li a:hover {
   color: #ed2d38;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 1.5rem;
 }
 
 #carouselExampleCaptions {
@@ -1394,13 +1399,6 @@ body {
 }
 
 @media all and (max-width: 768px) {
-  .navbar-toggler {
-    border-color: red;
-    margin-top: -52px;
-    /* margin-left: 192px;*/
-    padding-top: 0px;
-    /*padding-left: 0px;*/
-  }
   #header {
     background-color: #fff;
     position: fixed;
@@ -1411,28 +1409,28 @@ body {
             align-items: center;
     margin-top: 0;
     z-index: 2;
-    /*.nav-link{
-      padding-left: 427px;
-    }*/
   }
   #header .container {
-    /*margin-left: 33px;*/
+    margin-left: 0;
     height: auto;
     width: auto;
     background-color: #fff;
   }
+  #header .navbar-toggler {
+    border-color: red;
+  }
   #header .navbar-nav {
-    /*margin-left: -170px;*/
+    margin-left: 250px;
     margin-top: 30px;
   }
   #header .logo {
-    /*margin-right: 300px;*/
+    margin-right: 0;
     height: 70px;
     width: 154px;
   }
   #header li a {
     color: #3f4042;
-    font-size: 1rem;
+    font-size: 1.8rem;
     font-weight: 400;
   }
   #header li a:hover {
@@ -1447,20 +1445,20 @@ body {
   }
   /*HISTORIA*/
   #historia .titleHistoria {
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: bold;
     color: #f1eeee;
     margin-top: 27px;
-    /*margin-left: 1px;*/
+    margin-left: 1px;
   }
   #historia .textoHistoria {
     display: inline-block;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     font-style: normal;
     text-align: left;
     color: #f1eeee;
-    /*margin-left: 4px;*/
+    margin-left: 4px;
   }
   /*ENVIOS*/
   .no-desk {
@@ -1475,65 +1473,61 @@ body {
   .contentEnvios-1 {
     margin-top: 30px;
     margin-bottom: 30px;
-    /*margin-left: 226px;*/
+    margin-left: 226px;
   }
   .contentEnvios-1 .botonTar {
-    /*margin-left: 111px;*/
+    margin-left: 111px;
     color: #A93226;
   }
   .contentEnvios-1 .textAl {
-    /*margin-left: 37px;*/
+    margin-left: 37px;
   }
   .contentEnvios-2 {
     margin-top: 30px;
-    /*margin-left: 226px;*/
+    margin-left: 226px;
   }
   .contentEnvios-2 .botonTar {
-    /*margin-left: 111px;*/
+    margin-left: 111px;
     color: #A93226;
   }
   .contentEnvios-2 .texTi {
-    /*margin-left: 90px;*/
+    margin-left: 90px;
   }
   .contentEnvios-2 .textAl {
-    /*margin-left: 90px;*/
+    margin-left: 90px;
   }
   .contentEnvios-3 {
     margin-top: 30px;
-    /*margin-left: 226px;*/
   }
   .contentEnvios-3 .botonTar {
-    /*margin-left: 111px;*/
+    margin-left: 111px;
     color: #A93226;
   }
   .contentEnvios-3 .texTi {
-    /*margin-left: 52px;*/
+    margin-left: 52px;
   }
   .contentEnvios-3 .textAl {
-    /*margin-left: 35px;*/
+    margin-left: 35px;
   }
   .contentEnvios-4 {
     margin-top: 30px;
-    /*margin-left: 226px;*/
+    margin-left: 226px;
   }
   .contentEnvios-4 .botonTar {
-    /*margin-left: 111px;*/
+    margin-left: 111px;
     color: #A93226;
   }
   .contentEnvios-4 .texTi {
-    /*margin-left: 15px;*/
+    margin-left: 15px;
   }
   .contentEnvios-4 .textAl {
-    /*margin-left: 75px;*/
+    margin-left: 75px;
   }
   /*PROMOCIONES*/
-  .ml-5 {
-    /*margin-left: 4rem;*/
-  }
   #promociones {
     width: 100%;
     margin: auto;
-    height: 500px;
+    height: 850px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1557,10 +1551,9 @@ body {
     color: #f1eeee;
     margin-top: 60px;
     margin-bottom: 50px;
-    /*padding-left: 30px;*/
+    padding-left: 30px;
   }
   #promociones .row {
-    /*margin-left: 26px;*/
     margin: 0px !important;
   }
   #promociones .row .card {
@@ -1568,6 +1561,11 @@ body {
     width: 13rem;
     height: 300px;
     overflow: hidden;
+    margin-right: -19px;
+    margin-bottom: 30px;
+  }
+  #promociones .row .card .card-body {
+    padding: 0.40rem;
   }
   #promociones .row .card .tituloCard {
     text-align: center;
@@ -1647,6 +1645,19 @@ body {
     -o-transition: all .4s ease;
     transition: all .4s ease;
   }
+  /*PROVEEDORES*/
+  .fondoMarcas {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(169, 50, 38, 0.8)), to(rgba(169, 50, 38, 0.8))), url("../multimedia/fmarcas.jpg");
+    background-image: -o-linear-gradient(rgba(169, 50, 38, 0.8), rgba(169, 50, 38, 0.8)), url("../multimedia/fmarcas.jpg");
+    background-image: linear-gradient(rgba(169, 50, 38, 0.8), rgba(169, 50, 38, 0.8)), url("../multimedia/fmarcas.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  #proveedores img {
+    max-width: 20%;
+    margin-bottom: 8px;
+    margin-left: 25px;
+  }
   #footer {
     padding-left: 90px;
   }
@@ -1693,13 +1704,12 @@ body {
     font-style: normal;
     font-weight: bold;
     color: #f1eeee;
-    margin-top: 60px;
-    /*padding-left: 30px;*/
+    margin-top: 35px;
+    padding-left: 30px;
     padding-bottom: 50px;
   }
   #productosParrillas .row {
-    /*margin-left: 26px;*/
-    margin: 0px !important;
+    margin: 20px !important;
   }
   #productosParrillas .row .card {
     border: 1px solid #A93226;
@@ -1707,9 +1717,10 @@ body {
     height: 234px;
     overflow: hidden;
     margin-bottom: 50px;
+    margin-left: 20px;
   }
   #productosParrillas .row .card .card-body {
-    /*padding: 0.40rem;*/
+    padding: 0.40rem;
   }
   #productosParrillas .row .card .tituloCard {
     text-align: center;
@@ -1815,13 +1826,12 @@ body {
     font-style: normal;
     font-weight: bold;
     color: #f1eeee;
-    margin-top: 60px;
+    margin-top: 35px;
     padding-bottom: 50px;
-    /*padding-left: 30px;*/
+    padding-left: 30px;
   }
   #productosSalamandras .row {
-    /*margin-left: 26px;*/
-    margin: 0px !important;
+    margin: 20px !important;
   }
   #productosSalamandras .row .card {
     border: 1px solid #A93226;
@@ -1831,7 +1841,7 @@ body {
     margin-bottom: 50px;
   }
   #productosSalamandras .row .card .card-body {
-    /*padding: 0.40rem;*/
+    padding: 0.40rem;
   }
   #productosSalamandras .row .card .tituloCard {
     text-align: center;
@@ -1928,7 +1938,7 @@ body {
     background-attachment: fixed;
     padding-top: 125px;
     width: 100%;
-    height: 500px;
+    height: 600px;
   }
   #introInsta .tituloIns {
     font-size: 2.5rem;
@@ -1941,7 +1951,7 @@ body {
   }
   #introInsta .textIns {
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-style: normal;
     text-align: left;
     color: #f1eeee;
@@ -1959,88 +1969,204 @@ body {
     text-align: left;
     color: #A93226;
     padding-top: 50px;
-    /*padding-left: 25px;*/
+    padding-left: 20px;
   }
   #galeria .row {
-    /*margin-left: 20px;*/
-    margin: 0px !important;
+    margin: 30px !important;
   }
   #galeria .row .col-lg-4 {
-    /*padding: 40px;*/
+    padding: 15px;
   }
   #galeria .row img {
     width: 90%;
     height: 250px;
     border: 3px solid #3f4042;
+    margin-left: 20px;
   }
   #galeria .row img:hover {
     border: 5px solid #3f4042;
   }
   /*CONTACTO*/
-  .contentReloj {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    /*margin-left: 226px;*/
+  .no-desk {
+    display: none;
   }
-  .contentReloj .botonShop {
-    /*margin-left: 111px;*/
+  #contacto {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: ". rel suc map ." ". relt suct map ." ". tel mai map ." ". telt mait map .";
+    -ms-grid-rows: 237px 105px 71px 45px;
+        grid-template-rows: 237px 105px 71px 45px;
+    -ms-grid-columns: 0px 254px 165px 352px 250px;
+        grid-template-columns: 0px 254px 165px 352px 250px;
+    grid-column-gap: 1%;
+    grid-row-gap: 2%;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #f1eeee;
+    height: 600px;
+  }
+  #contacto .reloj {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: rel;
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    padding-top: 185px;
+    text-align: center;
+    margin-left: 15px;
+  }
+  #contacto .relojText {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: relt;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    padding-top: 20px;
+    text-align: center;
+    margin-left: 70px;
+  }
+  #contacto .relojText .titleDos {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: bold;
+  }
+  #contacto .relojText .textoDos {
+    font-size: .8rem;
+    font-style: normal;
+  }
+  #contacto .sucursal {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: suc;
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    padding-top: 185px;
+    text-align: center;
+    margin-right: 298px;
+  }
+  #contacto .sucursalText {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: suct;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    padding-top: 20px;
+    text-align: center;
+    margin-right: 20px;
+  }
+  #contacto .sucursalText .titleDos {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: bold;
+  }
+  #contacto .sucursalText .textoDos {
+    font-size: .8rem;
+    font-style: normal;
+  }
+  #contacto hr {
+    width: 330px;
+    border: 1px solid #3f4042;
+    margin-top: 500px;
+    margin-left: 70px;
+  }
+  #contacto .line-2 {
+    height: 340px;
+    width: 0;
+    border: 1px solid #3f4042;
+    margin-top: 464px;
+    margin-right: 1075px;
+  }
+  #contacto .telefono {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: tel;
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    text-align: center;
+    margin-left: 13px;
+  }
+  #contacto .telefonoText {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: telt;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    padding-top: 20px;
+    text-align: center;
+    margin-left: 70px;
+  }
+  #contacto .telefonoText .titleDos {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: bold;
+  }
+  #contacto .telefonoText .textoDos {
+    font-size: .8rem;
+    font-style: normal;
+  }
+  #contacto .mail {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    grid-area: mai;
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    text-align: center;
+    margin-right: 293px;
+  }
+  #contacto .mailText {
+    -ms-grid-row: 4;
+    -ms-grid-column: 3;
+    grid-area: mait;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    padding-top: 20px;
+    text-align: center;
+    margin-right: 11px;
+  }
+  #contacto .mailText .titleDos {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: bold;
+  }
+  #contacto .mailText .textoDos {
+    font-size: .8rem;
+    font-style: normal;
+  }
+  #contacto .mapa {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 4;
+    grid-area: map;
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    margin-left: 13px;
+    margin-top: 0;
+    margin-bottom: 125px;
+    width: 0;
+    height: 0;
+  }
+  #contacto .mapa iframe {
+    width: 250px;
+    height: 300px;
+  }
+  .botonShop {
     color: #A93226;
-  }
-  .contentReloj .textAl {
-    /*margin-left: 37px;*/
-  }
-  .contentSucursal {
-    margin-top: 30px;
-    /*margin-left: 226px;*/
-  }
-  .contentSucursal .botonShop {
-    /*margin-left: 111px;*/
-    color: #A93226;
-  }
-  .contentSucursal .texTi {
-    /*margin-left: 90px;*/
-  }
-  .contentSucursal .textAl {
-    /*margin-left: 90px;*/
-  }
-  .contenTelefono {
-    margin-top: 30px;
-    /*margin-left: 226px;*/
-  }
-  .contenTelefono .botonShop {
-    /*margin-left: 111px;*/
-    color: #A93226;
-  }
-  .contenTelefono .texTi {
-    /*margin-left: 52px;*/
-  }
-  .contenTelefono .textAl {
-    /*margin-left: 35px;*/
-  }
-  .contentMail {
-    margin-top: 30px;
-    /*margin-left: 226px;*/
-  }
-  .contentMail .botonShop {
-    /*margin-left: 111px;*/
-    color: #A93226;
-  }
-  .contentMail .texTi {
-    /*margin-left: 15px;*/
-  }
-  .contentMail .textAl {
-    /*margin-left: 75px;*/
+    padding-top: 60px;
+    padding-left: 60px;
   }
   #gFormularios {
     width: 100%;
     height: 750px;
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "tex" "nom" "serv" "men" "ads" "footer";
+        grid-template-areas: "tex" "nom" "mail" "serv" "men" "env";
     -ms-grid-columns: 1fr 2fr 1fr;
         grid-template-columns: 1fr 2fr 1fr;
-    -ms-grid-rows: 31fr 26fr 24fr 48fr 21fr 75fr;
-        grid-template-rows: 31fr 26fr 24fr 48fr 21fr 75fr;
+    -ms-grid-rows: 27fr 14fr 16fr 22fr 114fr 179fr 65fr;
+        grid-template-rows: 27fr 14fr 16fr 22fr 114fr 179fr 65fr;
     grid-column-gap: 2%;
     grid-row-gap: 2%;
     justify-items: center;
@@ -2051,86 +2177,91 @@ body {
     overflow: hidden;
     padding-left: 0;
   }
-  .fText {
+  #gFormularios .fText {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: tex;
     padding-top: 58px;
     text-align: center;
-    font-size: 1.5rem;
-    margin-top: 7px;
-    margin-left: 235px;
-    margin-bottom: 30px;
+    font-size: 2.5rem;
+    margin-top: 0px;
+    margin-left: 155px;
+    margin-bottom: 0px;
   }
-  .nombre {
+  #gFormularios .nombre {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: nom;
     -ms-grid-column-align: stretch;
         justify-self: stretch;
-    width: 300px;
-    height: 65px;
+    width: 420px;
+    height: 75px;
     border: 1px solid #f1eeee;
-    margin-top: 9px;
-    margin-left: 185px;
+    margin-left: 170px;
   }
-  .recuadro {
-    width: 297px;
-    height: 61px;
+  #gFormularios .recuadro {
+    width: 400px;
+    height: 70px;
+    border: 0px solid #f1eeee !important;
   }
-  .estilotextarea {
-    width: 295px;
+  #gFormularios .correo {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: mail;
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    width: 420px;
+    height: 75px;
+    border: 1px solid #f1eeee;
+    margin-left: 170px;
+  }
+  #gFormularios .opciones {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: serv;
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    width: 420px;
+    height: 75px;
+    border: 1px solid #f1eeee;
+    margin-left: 170px;
+  }
+  #gFormularios .estilotextarea {
+    width: 400px;
     height: 125px;
     border: none;
   }
-  .correo {
+  #gFormularios .mensaje {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: men;
     -ms-grid-column-align: stretch;
         justify-self: stretch;
-    width: 300px;
-    height: 65px;
-    border: 1px solid #f1eeee;
-    margin-left: 185px;
-    margin-top: 9px;
+    width: 420px;
+    height: 130px;
+    margin-left: 170px;
   }
-  .opciones {
+  #gFormularios .botonFo {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: env;
     -ms-grid-column-align: stretch;
         justify-self: stretch;
-    width: 300px;
-    height: 65px;
-    border: 1px solid #f1eeee;
-    margin-left: 185px;
-    margin-top: 9px;
+    margin-left: 170px;
   }
-  .mensaje {
-    -ms-grid-column-align: stretch;
-        justify-self: stretch;
-    width: 300px;
-    height: 133px;
-    margin-top: 9px;
-    margin-left: 185px;
-    margin-top: 9px;
+  #gFormularios .botonFo .enviar {
+    width: 420px;
+    height: 75px;
   }
-  .botonFo {
-    -ms-grid-column-align: stretch;
-        justify-self: stretch;
-    margin-left: 185px;
-    margin-top: 30px;
-  }
-  .botonFo .enviar {
-    width: 300px;
-    height: 46px;
+  #gFormularios .botonFo .sus {
+    text-align: stretch;
+    font-size: 1.3rem;
     margin-bottom: 23px;
-    border: 2px solid #f1eeee;
-  }
-  .botonFo .sus {
-    text-align: left;
-    font-size: 1rem;
-    margin-left: 85px;
+    margin-left: 0;
   }
 }
 
-@media all and (max-width: 360px) {
-  .navbar-toggler {
-    border-color: red;
-    margin-top: -52px;
-    /* margin-left: 192px;*/
-    padding-top: 0px;
-    /*padding-left: 0px;*/
-  }
+@media all and (max-width: 568px) {
   #header {
     background-color: #fff;
     position: fixed;
@@ -2143,19 +2274,20 @@ body {
     z-index: 2;
   }
   #header .container {
-    /*margin-left: 33px;*/
     height: auto;
     width: auto;
     background-color: #fff;
   }
+  #header .navbar-toggler {
+    border-color: red;
+  }
   #header .navbar-nav {
-    /* margin-left: -170px;*/
+    margin-left: 100px;
     margin-top: 30px;
   }
   #header .logo {
-    /* margin-right: 300px;*/
-    height: 70px;
-    width: 154px;
+    height: 50px;
+    width: 115px;
   }
   #header li a {
     color: #3f4042;
@@ -2164,16 +2296,6 @@ body {
   }
   #header li a:hover {
     color: #ed2d38;
-  }
-  #header .nav-link {
-    padding-left: 235px;
-  }
-  #header {
-    margin-top: 0;
-  }
-  #header .logo {
-    height: 40px;
-    width: 90px;
   }
   .non {
     display: none;
@@ -2291,14 +2413,9 @@ body {
     margin-left: 38px;
   }
   /*PROMOCIONES*/
-  .tituloPromociones, .ml-5 {
-    margin-left: 1em;
-  }
-  .card .ml-5 {
-    margin-left: 4rem;
-  }
   #promociones {
     width: 100%;
+    height: 520px;
     margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2329,7 +2446,7 @@ body {
     width: 7rem;
     height: 170px;
     overflow: hidden;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
   #promociones .row .card .card-body {
     padding: 0.40rem;
@@ -2797,8 +2914,8 @@ body {
     margin-left: 0;
   }
   #proveedores img {
-    max-width: 35%;
-    margin-bottom: 30px;
+    max-width: 30%;
+    margin-bottom: 8px;
     margin-left: 20px;
   }
   #footer {
@@ -2838,24 +2955,27 @@ body {
     background-attachment: fixed;
   }
   #productosParrillas .tituloParrillas {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: bold;
     color: #f1eeee;
     margin-top: 15px;
-    /*padding-left: 1px;*/
+    padding-left: 1px;
     padding-bottom: 30px;
   }
   #productosParrillas .row {
     margin: 0px !important;
-    /*margin-left: 1px;*/
   }
   #productosParrillas .row .card {
     border: 1px solid #A93226;
     width: 7rem;
     height: 170px;
     overflow: hidden;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
+    margin-right: -12px;
+  }
+  #productosParrillas .row .card .card-body {
+    padding: 0.40rem;
   }
   #productosParrillas .row .card .card-title {
     text-align: center;
@@ -2953,24 +3073,27 @@ body {
             flex-direction: column;
   }
   #productosSalamandras .tituloSalamandras {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: bold;
     color: #f1eeee;
     margin-top: 15px;
-    /*padding-left: 1px;*/
+    padding-left: 1px;
     padding-bottom: 30px;
   }
   #productosSalamandras .row {
     margin: 0px !important;
-    /*margin-left: 1px;*/
   }
   #productosSalamandras .row .card {
     border: 1px solid #A93226;
     width: 7rem;
     height: 170px;
     overflow: hidden;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
+    margin-right: -12px;
+  }
+  #productosSalamandras .row .card .card-body {
+    padding: 0.40rem;
   }
   #productosSalamandras .row .card .card-title {
     text-align: center;
@@ -3097,20 +3220,19 @@ body {
     font-weight: bold;
     text-align: left;
     color: #A93226;
-    padding-top: 50px;
-    /*padding-left: 17px;*/
+    padding-top: 30px;
   }
   #galeria .row {
     margin: 0px !important;
-    /*margin-left: 20px;*/
   }
   #galeria .row .col-lg-4 {
-    /*padding: 20px;*/
+    padding: 20px;
   }
   #galeria .row img {
     width: 90%;
     height: 250px;
     border: 3px solid #3f4042;
+    margin-left: 15px;
   }
   #galeria .row img:hover {
     border: 5px solid #3f4042;
@@ -3119,82 +3241,86 @@ body {
   #contacto {
     display: none;
   }
-  .contentReloj {
+  #carouselExampleControlsNoTouching {
+    display: block;
+    height: 350px;
+  }
+  #carouselExampleControlsNoTouching .contentReloj {
     margin-top: 70px;
     margin-bottom: 10px;
   }
-  .contentReloj .botonShop {
+  #carouselExampleControlsNoTouching .contentReloj .botonShop {
     margin-left: 90px;
     color: #A93226;
   }
-  .contentReloj .titleDos {
+  #carouselExampleControlsNoTouching .contentReloj .titleDos {
     font-weight: bold;
     margin-top: 30px;
     margin-left: 88px;
   }
-  .contentReloj .textoDos {
+  #carouselExampleControlsNoTouching .contentReloj .textoDos {
     font-size: .8rem;
     text-align: center;
   }
-  .contentSucursal {
+  #carouselExampleControlsNoTouching .contentSucursal {
     margin-top: 70px;
   }
-  .contentSucursal .botonShop {
+  #carouselExampleControlsNoTouching .contentSucursal .botonShop {
     margin-left: 95px;
     color: #A93226;
   }
-  .contentSucursal .titleDos {
+  #carouselExampleControlsNoTouching .contentSucursal .titleDos {
     font-weight: bold;
     margin-top: 30px;
     margin-left: 145px;
   }
-  .contentSucursal .textoDos {
+  #carouselExampleControlsNoTouching .contentSucursal .textoDos {
     text-align: center;
     margin-left: 10px;
     font-size: .8rem;
   }
-  .contenTelefono {
+  #carouselExampleControlsNoTouching .contenTelefono {
     margin-top: 70px;
   }
-  .contenTelefono .botonShop {
+  #carouselExampleControlsNoTouching .contenTelefono .botonShop {
     margin-left: 90px;
     color: #A93226;
   }
-  .contenTelefono .titleDos {
+  #carouselExampleControlsNoTouching .contenTelefono .titleDos {
     font-weight: bold;
     margin-top: 30px;
     margin-left: 140px;
   }
-  .contenTelefono .textoDos {
+  #carouselExampleControlsNoTouching .contenTelefono .textoDos {
     text-align: center;
     font-size: .8rem;
   }
-  .contentMail {
+  #carouselExampleControlsNoTouching .contentMail {
     margin-top: 70px;
   }
-  .contentMail .botonShop {
+  #carouselExampleControlsNoTouching .contentMail .botonShop {
     margin-left: 90px;
     color: #A93226;
   }
-  .contentMail .titleDos {
+  #carouselExampleControlsNoTouching .contentMail .titleDos {
     font-weight: bold;
     margin-top: 30px;
     margin-left: 163px;
   }
-  .contentMail .textoDos {
+  #carouselExampleControlsNoTouching .contentMail .textoDos {
     font-size: .8rem;
     margin-left: 130px;
   }
   #gFormularios {
     width: 100%;
-    height: 750px;
+    height: 580px;
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "tex" "nom" "serv" "men" "ads" "footer";
+        grid-template-areas: "tex" "nom" "mail" "serv" "men" "env";
     -ms-grid-columns: 1fr 2fr 1fr;
         grid-template-columns: 1fr 2fr 1fr;
-    -ms-grid-rows: 31fr 26fr 24fr 48fr 21fr 75fr;
-        grid-template-rows: 31fr 26fr 24fr 48fr 21fr 75fr;
+    -ms-grid-rows: 27fr 14fr 16fr 22fr 114fr 179fr 65fr;
+        grid-template-rows: 27fr 14fr 16fr 22fr 114fr 179fr 65fr;
     grid-column-gap: 2%;
     grid-row-gap: 2%;
     justify-items: center;
@@ -3206,75 +3332,86 @@ body {
     padding-left: 0;
   }
   #gFormularios .fText {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: tex;
     padding-top: 58px;
     text-align: center;
     font-size: 1.5rem;
-    margin-top: 7px;
-    margin-left: 235px;
-    margin-bottom: 30px;
+    margin-top: 0px;
+    margin-left: 40px;
+    margin-bottom: 0px;
   }
   #gFormularios .nombre {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: nom;
     -ms-grid-column-align: stretch;
         justify-self: stretch;
     width: 260px;
     height: 55px;
     border: 1px solid #f1eeee;
-    margin-top: 9px;
     margin-left: 52px;
   }
   #gFormularios .recuadro {
     width: 245px;
     height: 45px;
-    border: none;
+    border: 0px solid #f1eeee !important;
   }
   #gFormularios .correo {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: mail;
     -ms-grid-column-align: stretch;
         justify-self: stretch;
     width: 260px;
     height: 55px;
     border: 1px solid #f1eeee;
     margin-left: 52px;
-    margin-top: 9px;
   }
   #gFormularios .opciones {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: serv;
     -ms-grid-column-align: stretch;
         justify-self: stretch;
     width: 260px;
     height: 55px;
     border: 1px solid #f1eeee;
     margin-left: 52px;
-    margin-top: 9px;
   }
   #gFormularios .estilotextarea {
-    width: 295px;
+    width: 255px;
     height: 125px;
     border: none;
   }
   #gFormularios .mensaje {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: men;
     -ms-grid-column-align: stretch;
         justify-self: stretch;
     width: 260px;
-    height: 55px;
-    margin-top: 9px;
+    height: 130px;
     margin-left: 52px;
-    margin-top: 9px;
   }
   #gFormularios .botonFo {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: env;
     -ms-grid-column-align: stretch;
         justify-self: stretch;
     margin-left: 52px;
-    margin-top: 30px;
   }
   #gFormularios .botonFo .enviar {
     width: 260px;
     height: 55px;
-    margin-bottom: 23px;
-    border: 2px solid #f1eeee;
   }
   #gFormularios .botonFo .sus {
     text-align: stretch;
-    font-size: 1rem;
-    margin-left: 52px;
+    font-size: .8rem;
+    margin-bottom: 23px;
+    margin-left: 0;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
