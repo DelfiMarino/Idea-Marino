@@ -10,17 +10,17 @@ body{
   margin-top:0;
   z-index: 2;
   .container{
-    margin-left: 33px;
+    /*margin-left: 33px;*/
     height: auto;
     width: auto;
     background-color: $color-white; 
   }
-  .navbar-nav{
+  /*.navbar-nav{
     margin-left: -170px;
     margin-top: 30px;
-  }
+  }*/
   .logo{
-    margin-right: 300px;
+    /*margin-right: 300px;*/
     height: 70px;
     width: 154px;
   }
@@ -116,7 +116,7 @@ body{
     padding-left: 30px;
   }
   .row{
-    margin-left: 26px;
+    margin: 0px !important;
     .card{
       @include cards;
       .tituloCard{
@@ -142,18 +142,18 @@ body{
   margin-top: -30px;
   .tituloDestaacados{
     @include titulo-rojo;
-    padding-left: 53px;
+    /*padding-left: 53px;*/
     padding-top: 25px;
     padding-bottom: 25px;
   }
   .destacados-1{
-    @include text-hover;
+    @include text-hover(17rem);
   }
   .destacados-2{
-    @include text-hover(url("../multimedia/destacados-2.jpeg"));
+    @include text-hover(17rem, url("../multimedia/destacados-2.jpeg"));
   }
   .destacados-3{
-    @include text-hover(url("../multimedia/destacados-3.jpeg"));    
+    @include text-hover(17rem, url("../multimedia/destacados-3.jpeg"));    
   }
 }
 /*PROVEEDORES*/
@@ -223,7 +223,7 @@ body{
     padding-bottom: 50px;
   }
   .row{
-    margin-left: 26px;
+    margin: 0px !important;
     .card{
       border: 1px solid $color-bordo;
       width: 13rem;
@@ -264,7 +264,7 @@ body{
     padding-left: 30px;
   }
   .row{
-    margin-left: 26px;
+    margin: 0px !important;
     .card{
       border: 1px solid $color-bordo;
       width: 13rem;
@@ -306,13 +306,13 @@ body{
   .tituloServicio{
     @include subtitulo-rojo;
     padding-top: 50px;
-     padding-left: 25px;
+    /*padding-left: 25px;*/
   }
   .row{
-    margin-left: 20px;
+    /*margin-left: 20px;*/
     .col-lg-4{
       margin: 0!important;
-      padding: 40px;
+      /*padding: 40px;*/
     }
     img{
       width: 90%;
@@ -431,7 +431,7 @@ body{
       @include text-contact;
     }
   }    
-  .map{
+  .mapa{
     grid-area: map;
     justify-self: stretch;
     margin-left: 13px; 
@@ -474,7 +474,7 @@ body{
     font-style: normal;
     font-weight: bold;
     color: $color-light-gray;
-    margin-right: 185px;
+    /*margin-right: 185px;*/
   }
   .nombre{
     grid-area: nom;
@@ -543,9 +543,9 @@ body{
   .navbar-toggler {
     border-color: $color-red;
     margin-top: -52px;
-    margin-left: 192px;
+   /* margin-left: 192px;*/
     padding-top: 0px;
-    padding-left: 0px;
+    /*padding-left: 0px;*/
   }
   
   #header{	
@@ -557,17 +557,17 @@ body{
     margin-top:0;
     z-index: 2;
     .container{
-      margin-left: 33px;
+      /*margin-left: 33px;*/
       height: auto;
       width: auto;
       background-color: $color-white; 
     }
     .navbar-nav{
-      margin-left: -170px;
+      /*margin-left: -170px;*/
       margin-top: 30px;
     }
     .logo{
-      margin-right: 300px;
+      /*margin-right: 300px;*/
       height: 70px;
       width: 154px;
     }
@@ -579,9 +579,9 @@ body{
         color: $color-hover
       }
     }
-    .nav-link{
+    /*.nav-link{
       padding-left: 427px;
-    }
+    }*/
   }
   .non{
     display: none;
@@ -595,11 +595,11 @@ body{
     .titleHistoria{
       @include titulo-light-gray(1.7rem);
       margin-top: 27px;
-      margin-left: 1px;
+      /*margin-left: 1px;*/
     }
     .textoHistoria{
       @include  text-his(.9rem);
-      margin-left: 4px;
+      /*margin-left: 4px;*/
     }   
   }
   /*ENVIOS*/ 
@@ -615,65 +615,62 @@ body{
   .contentEnvios-1{
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: 226px;
+    /*margin-left: 226px;*/
     .botonTar{
-      margin-left: 111px;
+      /*margin-left: 111px;*/
       color: $color-bordo;
     }
     .textAl{
-      margin-left: 37px;
+      /*margin-left: 37px;*/
     }
   }
   .contentEnvios-2{
     margin-top: 30px;
-    margin-left: 226px;
+    /*margin-left: 226px;*/
     .botonTar{
-      margin-left: 111px;
+      /*margin-left: 111px;*/
       color: $color-bordo;
     }
     .texTi{
-      margin-left: 90px;
+      /*margin-left: 90px;*/
     }
     .textAl{
-      margin-left: 90px;
+      /*margin-left: 90px;*/
     }
   }
   .contentEnvios-3{
     margin-top: 30px;
-    margin-left: 226px;
+    /*margin-left: 226px;*/
     .botonTar{
-      margin-left: 111px;
+      /*margin-left: 111px;*/
       color: $color-bordo;
     }
     .texTi{
-      margin-left: 52px;
+      /*margin-left: 52px;*/
     }
     .textAl{
-      margin-left: 35px;
+      /*margin-left: 35px;*/
     }
   }
   .contentEnvios-4{
     margin-top: 30px;
-    margin-left: 226px;
+    /*margin-left: 226px;*/
     .botonTar{
-      margin-left: 111px;
+      /*margin-left: 111px;*/
       color: $color-bordo;
     }
     .texTi{
-      margin-left: 15px;
+      /*margin-left: 15px;*/
     }
     .textAl{
-      margin-left: 75px;
+      /*margin-left: 75px;*/
     }
   }     
   /*PROMOCIONES*/
-  #promociones{
-    display: none;
-  }
   .ml-5 {
-    margin-left: 4rem;
+    /*margin-left: 4rem;*/
   }  
-  #promociones-res{
+  #promociones{
     width: 100%;
     margin: auto;
     height: 500px;
@@ -686,10 +683,11 @@ body{
       @include titulo-light-gray;
       margin-top: 60px;
       margin-bottom: 50px;
-      padding-left: 30px;
+      /*padding-left: 30px;*/
     }
     .row{
-      margin-left: 26px;
+      /*margin-left: 26px;*/
+      margin: 0px !important;
       .card{
         @include cards;
         .tituloCard{
@@ -701,24 +699,6 @@ body{
         @include cards-hover;
       }
     }
-  }
-  #seccionCuatro{
-    width: 100%;
-    height: 400px;
-  }
-  #seccionCuatro{
-    width: 100%;
-    margin: auto;
-    padding-top: 55px;
-    padding-bottom: 40px;
-    padding-left: 0px;
-  }
-  #seccionCuatro .titulo{
-    margin-left: 40px;
-    align-self: center;
-  }
-  #seccionCuatro .row{
-     margin-left: 230px;
   }
   #footer{
     padding-left: 90px;
@@ -745,7 +725,7 @@ body{
   }  
   #productosParrillas{
     width: 100%;
-    margin: auto;
+    /*margin: auto;*/
     padding-top: 130px; 
     display: flex;
     flex-direction: column;
@@ -753,11 +733,12 @@ body{
     .tituloParrillas{
       @include titulo-light-gray;
       margin-top: 60px;
-      padding-left: 30px;
+      /*padding-left: 30px;*/
       padding-bottom: 50px;
     }
     .row{
-      margin-left: 26px;
+      /*margin-left: 26px;*/
+      margin: 0px !important;
       .card{
         border: 1px solid $color-bordo;
         width: 11rem;
@@ -765,7 +746,7 @@ body{
         overflow: hidden;
         margin-bottom: 50px;
         .card-body{
-          padding: 0.40rem;
+          /*padding: 0.40rem;*/
         }
         .tituloCard{
           @include tex-ti(.8rem);
@@ -796,10 +777,11 @@ body{
       @include titulo-light-gray;
       margin-top: 60px;
       padding-bottom: 50px;
-      padding-left: 30px;
+      /*padding-left: 30px;*/
     }
     .row{
-      margin-left: 26px;
+      /*margin-left: 26px;*/
+      margin: 0px !important;
       .card{
         border: 1px solid $color-bordo;
         width: 11rem;
@@ -807,7 +789,7 @@ body{
         overflow: hidden;
         margin-bottom: 50px;
         .card-body{
-          padding: 0.40rem;
+          /*padding: 0.40rem;*/
         }
         .tituloCard{
           @include tex-ti(.8rem);
@@ -848,13 +830,13 @@ body{
     .tituloServicio{
       @include subtitulo-rojo;
       padding-top: 50px;
-       padding-left: 25px;
+      /*padding-left: 25px;*/
     }
     .row{
-      margin-left: 20px;
+      /*margin-left: 20px;*/
+      margin: 0px !important;
       .col-lg-4{
-        margin: 0!important;
-        padding: 40px;
+        /*padding: 40px;*/
       }
       img{
         width: 90%;
@@ -867,127 +849,60 @@ body{
     }
   }
   /*CONTACTO*/
-  #contacto{
-    display: grid;
-    grid-template-areas: 
-    ". rel suc map ."
-    ". relt suct map ."
-    ". tel mai map ."
-    ". telt mait map .";
-    grid-template-rows: 237px 105px 71px 45px;
-    grid-template-columns: 0px 254px 192px 352px 250px;;
-    grid-column-gap: 1%;
-    grid-row-gap: 2%;
-    justify-items: center;
-    align-items:center;
-    @include bg-light-gray (565px);
-    .reloj{
-      grid-area: rel;
-      justify-self: stretch;
-      padding-top: 185px;
-      text-align: center;
-      margin-left: 15px;
-    }
-    .relojText{
-      grid-area: relt;
-      justify-self: center;
-      padding-top: 20px;
-      text-align: center;
-      margin-left: 70px;
-      .titleDos{
-        @include title-contact;
-      }
-      .textoDos{
-         @include text-contact;
-      }
-    }    
-    .sucursal{
-      grid-area: suc;
-      justify-self: stretch;
-      padding-top: 185px;
-      text-align: center;
-      margin-right: 298px;  
-    }
-    .sucursalText{
-      grid-area: suct;
-      justify-self: center;
-      padding-top: 20px;
-      text-align: center;
-      margin-right: 20px;
-      .titleDos{
-        @include title-contact;
-      }
-      .textoDos{
-        @include text-contact;
-      }
-    } 
-    hr{
-      width: 360px;
-      border: 1px solid #3f4042;
-      margin-top: 500px;
-      margin-left: 60px;
-    }  
-    .line-2{
-      height: 310px;
-      width: 0;
-      border: 1px solid #3f4042;
-      margin-top: 464px;
-      margin-right: 1100px;
-    } 
-    .telefono{
-      grid-area: tel;
-      justify-self: stretch;
-      text-align: center;
-      margin-left: 13px; 
-    }
-    .telefonoText{
-      grid-area: telt;
-      justify-self: center;
-      padding-top: 20px;
-      text-align: center;
-      margin-left: 70px;
-      .titleDos{
-        @include title-contact;
-      }
-      .textoDos{
-        @include text-contact;
-      }
-    }    
-    .mail{
-      grid-area: mai;
-      justify-self: stretch;
-      text-align: center;
-      margin-right: 293px; 
-    }
-    .mailText{
-      grid-area: mait;
-      justify-self: center;
-      padding-top: 20px;
-      text-align: center;
-      margin-right: 11px;  
-      .titleDos{
-        @include title-contact;
-      }
-      .textoDos{
-        @include text-contact;
-      }
-    }    
-    .map{
-      grid-area: map;
-      justify-self: stretch;
-      margin-left: -12px; 
-      margin-top: 13px;
-      iframe {
-        width: 250px;
-        height: 310px;
-      }   
-    }
+  .contentReloj{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /*margin-left: 226px;*/
     .botonShop{
-        color: $color-bordo;
-        padding-top: 60px;
-        padding-left: 73px;
-    } 
-  } 
+      /*margin-left: 111px;*/
+      color: $color-bordo;
+    }
+    .textAl{
+      /*margin-left: 37px;*/
+    }
+  }
+  .contentSucursal{
+    margin-top: 30px;
+    /*margin-left: 226px;*/
+    .botonShop{
+      /*margin-left: 111px;*/
+      color: $color-bordo;
+    }
+    .texTi{
+      /*margin-left: 90px;*/
+    }
+    .textAl{
+      /*margin-left: 90px;*/
+    }
+  }
+  .contenTelefono{
+    margin-top: 30px;
+    /*margin-left: 226px;*/
+    .botonShop{
+      /*margin-left: 111px;*/
+      color: $color-bordo;
+    }
+    .texTi{
+      /*margin-left: 52px;*/
+    }
+    .textAl{
+      /*margin-left: 35px;*/
+    }
+  }
+  .contentMail{
+    margin-top: 30px;
+    /*margin-left: 226px;*/
+    .botonShop{
+      /*margin-left: 111px;*/
+      color: $color-bordo;
+    }
+    .texTi{
+      /*margin-left: 15px;*/
+    }
+    .textAl{
+      /*margin-left: 75px;*/
+    }
+  }     
 #gFormularios{
     width: 100%;
     height: 750px;
@@ -1075,13 +990,13 @@ body{
     } 
   }
 }
-@media all and (max-width: 576px){
+@media all and (max-width: 360px){
   .navbar-toggler {
     border-color: $color-red;
     margin-top: -52px;
-    margin-left: 192px;
+   /* margin-left: 192px;*/
     padding-top: 0px;
-    padding-left: 0px;
+    /*padding-left: 0px;*/
   }
   #header{	
     background-color: $color-white;	
@@ -1092,17 +1007,17 @@ body{
     margin-top:0;
     z-index: 2;
     .container{
-      margin-left: 33px;
+      /*margin-left: 33px;*/
       height: auto;
       width: auto;
       background-color: $color-white; 
     }
     .navbar-nav{
-      margin-left: -170px;
+     /* margin-left: -170px;*/
       margin-top: 30px;
     }
     .logo{
-      margin-right: 300px;
+     /* margin-right: 300px;*/
       height: 70px;
       width: 154px;
     }
@@ -1159,8 +1074,14 @@ body{
       margin-left: 111px;
       color: $color-bordo;
     }
+    .texTi{
+      font-size: 1rem;
+      font-weight: bold;
+      margin-left: 50px;
+    }
     .textAl{
-      margin-left: 37px;
+      margin-left: 60px;
+      font-size: .7rem;
     }
   }
   .contentEnvios-2{
@@ -1171,10 +1092,13 @@ body{
       color: $color-bordo;
     }
     .texTi{
-      margin-left: 90px;
+      font-size: 1rem;
+      font-weight: bold;
+      margin-left: 98px;
     }
     .textAl{
-      margin-left: 90px;
+      margin-left: 93px;
+      font-size: .7rem;
     }
   }
   .contentEnvios-3{
@@ -1185,10 +1109,13 @@ body{
       color: $color-bordo;
     }
     .texTi{
-      margin-left: 52px;
+      font-size: 1rem;
+      font-weight: bold;
+      margin-left: 80px;
     }
     .textAl{
-      margin-left: 35px;
+      margin-left: 60px;
+      font-size: .7rem;
     }
   }
   .contentEnvios-4{
@@ -1199,10 +1126,13 @@ body{
       color: $color-bordo;
     }
     .texTi{
-      margin-left: 15px;
+      font-size: 1rem;
+      font-weight: bold;
+      margin-left: 60px;
     }
     .textAl{
-      margin-left: 75px;
+      margin-left: 85px;
+      font-size: .7rem;
     }
   }
   .tituloRojo{
@@ -1218,6 +1148,75 @@ body{
   .botton{
     margin-top: 92px;
     margin-left: 38px;
+  }
+  /*PROMOCIONES*/
+  .ml-5 {
+    margin-left: 4rem;
+  }  
+  #promociones{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    @include parallax;
+    .tituloPromociones{
+      @include titulo-light-gray (1.7rem);
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .row{
+      /*margin-left: 0px;*/
+      margin: 0px !important;
+      .card{
+        border: 1px solid $color-bordo;
+        width: 7rem;
+        height: 170px;
+        overflow: hidden;
+        margin-bottom: 10px;
+        padding: auto;
+        .card-body{
+          padding: 0.40rem;
+        }
+        .card-title{
+          @include tex-ti (.6rem);
+        }
+        .card-text{
+          @include tex-al (.5rem);
+        }
+        @include cards-hover (1.3rem);
+      }
+    }
+  }
+  #promociones .row .card button {
+    left: -31px;
+    top: -13px;
+  }
+  /*DESTACADOS*/
+  #destacados{
+    max-width: 100%;
+    @include bg-light-gray;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; 
+    height: 500px;
+    margin-top: -30px;
+    .tituloDestaacados{
+      @include titulo-rojo;
+      /*padding-left: 53px;*/
+      padding-top: 25px;
+      /*padding-bottom: 25px;*/
+    }
+    .destacados-1{
+      @include text-hover(17rem);
+    }
+    .destacados-2{
+      @include text-hover(17rem, url("../multimedia/destacados-2.jpeg"));
+    }
+    .destacados-3{
+      @include text-hover(17rem, url("../multimedia/destacados-3.jpeg"));    
+    }
   }
   #footer{
     padding-left: 90px;
@@ -1247,13 +1246,14 @@ body{
     flex-direction: column;
     @include parallax;
     .tituloParrillas{
-      @include titulo-light-gray (1.5rem);
+      @include titulo-light-gray (1.7rem);
       margin-top: 15px;
-      padding-left: 1px;
+      /*padding-left: 1px;*/
       padding-bottom: 30px;
     }
     .row{
-      margin-left: 1px;
+      margin: 0px !important;
+      /*margin-left: 1px;*/
       .card{
         border: 1px solid $color-bordo;
         width: 7rem;
@@ -1282,13 +1282,14 @@ body{
     display: flex;
     flex-direction: column;
     .tituloSalamandras{
-      @include titulo-light-gray (1.5rem);
+      @include titulo-light-gray (1.7rem);
       margin-top: 15px;
-      padding-left: 1px;
+      /*padding-left: 1px;*/
       padding-bottom: 30px;
     }
     .row{
-      margin-left: 1px;
+      margin: 0px !important;
+      /*margin-left: 1px;*/
       .card{
         border: 1px solid $color-bordo;
         width: 7rem;
@@ -1334,13 +1335,13 @@ body{
     .tituloServicio{
       @include subtitulo-rojo (1.4rem);
       padding-top: 50px;
-      padding-left: 17px;
+      /*padding-left: 17px;*/
     }
     .row{
-      margin-left: 20px;
+      margin: 0px !important;
+      /*margin-left: 20px;*/
       .col-lg-4{
-        margin: 0!important;
-        padding: 20px;
+        /*padding: 20px;*/
       }
       img{
         width: 90%;
@@ -1354,127 +1355,75 @@ body{
   }
  /*CONTACTO*/
   #contacto{
-    width: 100%;
-    display: grid;
-    grid-template-areas: 
-    ". rel suc map ."
-    ". relt suct map ."
-    ". tel mai map ."
-    ". telt mait map .";
-    grid-template-rows: 237px 105px 71px 45px;
-    grid-template-columns: 0px 254px 192px 352px 250px;;
-    grid-column-gap: 1%;
-    grid-row-gap: 2%;
-    justify-items: center;
-    align-items:center;
-    @include bg-light-gray (565px);
-    .reloj{
-      grid-area: rel;
-      justify-self: stretch;
-      padding-top: 185px;
-      text-align: center;
-      margin-left: 15px;
-    }
-    .relojText{
-      grid-area: relt;
-      justify-self: center;
-      padding-top: 20px;
-      text-align: center;
-      margin-left: 70px;
-      .titleDos{
-        @include title-contact;
-      }
-      .textoDos{
-        @include text-contact;
-      }
-    }    
-    .sucursal{
-      grid-area: suc;
-      justify-self: stretch;
-      padding-top: 185px;
-      text-align: center;
-      margin-right: 298px;  
-    }
-    .sucursalText{
-      grid-area: suct;
-      justify-self: center;
-      padding-top: 20px;
-      text-align: center;
-      margin-right: 20px;
-      .titleDos{
-        @include title-contact;
-      }
-      .textoDos{
-        @include text-contact;
-      }
-    } 
-    hr{
-      width: 360px;
-      border: 1px solid #3f4042;
-      margin-top: 500px;
-      margin-left: 60px;
-    }  
-    .line-2{
-      height: 310px;
-      width: 0;
-      border: 1px solid #3f4042;
-      margin-top: 464px;
-      margin-right: 1100px;
-    } 
-    .telefono{
-      grid-area: tel;
-      justify-self: stretch;
-      text-align: center;
-      margin-left: 13px; 
-    }
-    .telefonoText{
-      grid-area: telt;
-      justify-self: center;
-      padding-top: 20px;
-      text-align: center;
-      margin-left: 70px;
-      .titleDos{
-        @include title-contact;
-      }
-      .textoDos{
-        @include text-contact;
-      }
-    }    
-    .mail{
-      grid-area: mai;
-      justify-self: stretch;
-      text-align: center;
-      margin-right: 293px; 
-    }
-    .mailText{
-      grid-area: mait;
-      justify-self: center;
-      padding-top: 20px;
-      text-align: center;
-      margin-right: 11px;  
-      .titleDos{
-        @include title-contact;
-      }
-      .textoDos{
-        @include text-contact;
-      }
-    }    
-    .map{
-      grid-area: map;
-      justify-self: stretch;
-      margin-left: 0; 
-      margin-top: 13px;
-      iframe {
-        width: 250px;
-        height: 310px;
-      } 
-    } 
+    display: none;
+  }
+  .contentReloj{
+    margin-top: 70px;
+    margin-bottom: 10px;
     .botonShop{
-        color: $color-bordo;
-        padding-top: 60px;
-        padding-left: 73px;
+      margin-left: 90px;
+      color: $color-bordo;
     }
-  }  
+    .titleDos{
+      font-weight: bold;
+      margin-top: 30px;
+      margin-left: 88px;
+    }
+    .textoDos{
+      font-size: .8rem;
+      text-align: center;
+    }
+  }
+  .contentSucursal{
+    margin-top: 70px;
+    .botonShop{
+      margin-left: 95px;
+      color: $color-bordo;
+    }
+    .titleDos{
+      font-weight: bold;
+      margin-top: 30px;
+      margin-left: 145px;
+    }
+    .textoDos{
+      text-align: center;
+      margin-left: 10px;
+      font-size: .8rem;
+    }
+  }
+  .contenTelefono{
+    margin-top: 70px;
+    .botonShop{
+      margin-left: 90px;
+      color: $color-bordo;
+    }
+    .titleDos{
+      font-weight: bold;
+      margin-top: 30px;
+      margin-left: 140px;
+    }
+    .textoDos{
+      text-align: center;
+      font-size: .8rem;
+    }
+  }
+  .contentMail{
+    margin-top: 70px;
+    .botonShop{
+      margin-left: 90px;
+      color: $color-bordo;
+    }
+    .titleDos{
+      font-weight: bold;
+      margin-top: 30px;
+      margin-left: 163px;
+    }
+    .textoDos{
+      font-size: .8rem;
+      margin-left: 130px;
+    }
+  } 
+     
   #gFormularios{
     width: 100%;
     height: 750px;
@@ -1505,59 +1454,60 @@ body{
     }
     .nombre{
       justify-self: stretch;  
-      width: 300px;
-      height: 65px;
+      width: 260px;
+      height: 55px;
       border: 1px solid $color-light-gray;
       margin-top: 9px;
-      margin-left: 185px;
+      margin-left: 52px;
     }
     .recuadro{
-      width: 297px;
-      height: 61px; 
+      width: 245px;
+      height: 45px;
+      border: none; 
+    }
+    .correo{
+      justify-self: stretch;
+      width: 260px;
+      height: 55px;
+      border: 1px solid $color-light-gray;
+      margin-left: 52px;
+      margin-top: 9px;
+    }
+    .opciones{
+      justify-self: stretch;
+      width: 260px;
+      height: 55px;
+      border: 1px solid $color-light-gray;
+      margin-left: 52px;
+      margin-top: 9px;
     }
     .estilotextarea{
       width: 295px;
       height: 125px;
       border: none;
     }
-    .correo{
-      justify-self: stretch;
-      width: 300px;
-      height: 65px;
-      border: 1px solid $color-light-gray;
-      margin-left: 185px;
-      margin-top: 9px;
-    }
-    .opciones{
-      justify-self: stretch;
-      width: 300px;
-      height: 65px;
-      border: 1px solid $color-light-gray;
-      margin-left: 185px;
-      margin-top: 9px;
-    }
     .mensaje{
       justify-self: stretch;
-      width:300px;
-      height:133px;
+      width: 260px;
+      height: 55px;
       margin-top: 9px;
-      margin-left: 185px;
+      margin-left: 52px;
       margin-top: 9px;
     }
     .botonFo{
       justify-self: stretch; 
-      margin-left: 185px;
+      margin-left: 52px;
       margin-top: 30px;
       .enviar{
-        width: 300px;
-        height: 46px;
+        width: 260px;
+        height: 55px;
         margin-bottom: 23px;
         border: 2px solid $color-light-gray;
       }
       .sus{
         text-align: stretch;
         font-size: 1rem;  
-        margin-left: 85px;  
+        margin-left: 52px;  
       } 
     }
   }

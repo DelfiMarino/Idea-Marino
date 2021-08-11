@@ -91,7 +91,7 @@
     height: 300px;
     overflow: hidden;     
 } 
-@mixin text-hover ($bgd: url("../multimedia/destacados-1.jpg")){
+@mixin text-hover ($wh: 330px, $bgd: url("../multimedia/destacados-1.jpg")){
     display: block;
     margin-right: auto;
     margin-left: -280px;
@@ -99,8 +99,8 @@
     overflow: hidden;
     position:relative; 
     top:125px; 
-    width: 330px; 
-    height:330px; 
+    width: $wh; 
+    height: $wh; 
     background:$bgd; 
     background-size:100% 100%;
     overflow:hidden;
