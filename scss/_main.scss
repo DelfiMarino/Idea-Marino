@@ -188,19 +188,34 @@ body{
 /*FOOTER*/
 #footer{
   padding-left: 170px;
-  .textFa{
-  text-align: center;
-  font-size: .8rem;
-  }
-  .texFi{
-    text-align: center;
-    font-size: .8rem;
-    color: $color-bgBlack;
-    &:hover {
-    color: $color-title-menu;
-    text-decoration: none;
+  .row{
+    margin-right: 0!important;
+    margin-left: 240px !important;
+    .iconRedes{
+      margin-right: 15px;
+      margin-bottom: 35px;
     }
   }
+  .fooTex{
+    text-align: center;
+    margin-right: 115px;
+   .texFi{
+      text-align: center;
+      font-size: 1rem;
+      font-weight: bold;
+      color: $color-bgBlack;
+      margin-bottom: 20px;
+      &:hover {
+      color: $color-hover;
+      text-decoration: none;
+      }
+    }
+    .textFa{
+      text-align: center;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  } 
   .iconRedes{
     color: $color-bordo;
   }
@@ -309,17 +324,16 @@ body{
   .tituloServicio{
     @include subtitulo-rojo;
     padding-top: 50px;
-    /*padding-left: 25px;*/
+    padding-left: 25px;
   }
   .row{
-    /*margin-left: 20px;*/
+    margin: 70px !important;
     .col-lg-4{
-      margin: 0!important;
-      /*padding: 40px;*/
+      padding: 2px;
     }
     img{
-      width: 90%;
-      height: 250px;
+      width: 70%;
+      height: 85%;
       border: 3px solid #3f4042;
       &:hover{
         border: 5px solid #3f4042;
@@ -477,7 +491,7 @@ body{
     font-style: normal;
     font-weight: bold;
     color: $color-light-gray;
-    /*margin-right: 185px;*/
+    margin-right: 185px;
   }
   .nombre{
     grid-area: nom;
@@ -559,6 +573,7 @@ body{
     }
     .navbar-toggler {
       border-color: $color-red;
+      font-size: 2.25rem;
     }
     .navbar-nav{
       margin-left: 250px;
@@ -699,35 +714,54 @@ body{
     }
   }
   /*PROVEEDORES*/
-.fondoMarcas{
-  @include bg-marcas;
-}
-#proveedores{
-  img{
-    max-width: 20%;
-    margin-bottom: 8px;
-    margin-left: 25px;
+  .fondoMarcas{
+    @include bg-marcas;
   }
-}
+  #proveedores{
+    img{
+      max-width: 20%;
+      margin-bottom: 8px;
+      margin-left: 25px;
+    }
+  }
+  /*FOOTER*/
   #footer{
-    padding-left: 90px;
+    padding-left: 170px;
+    .rows{
+
+      margin: 0!important;
+      .iconRedes{
+        margin-right: 15px;
+        margin-bottom: 35px;
+      }
+    }
+    .fooTex{
+      text-align: center;
+      margin-right: 115px;
+     .texFi{
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+        color: $color-bgBlack;
+        margin-bottom: 20px;
+        
+        &:hover {
+        color: $color-hover;
+        text-decoration: none;
+        }
+      }
+      .textFa{
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-left: 40px;
+      }
+    } 
+    .iconRedes{
+      color: $color-bordo;
+    }
   }
-  .textFa{
-    text-align: center;
-    font-size: .5rem;
-  }
-  .texFi{
-    text-align: center;
-    font-size: .5rem;
-    color: $color-bgBlack;
-  }
-  #footer .font-weight-bold{
-    font-size: .5rem;
-  }
-  iframe{
-    width: 100px; 
-    height: 100px;
-  }
+  
   /*PARRILLAS*/ 
   #productosParrillas.img-1{
     @include bg-madera;
