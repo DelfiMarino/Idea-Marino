@@ -91,6 +91,14 @@
     height: 300px;
     overflow: hidden;     
 } 
+@mixin contentEnvios ($mf: 35px) {
+    margin-top: 30px;
+    margin-left: $mf;
+    .botonTar{
+        margin-left: 111px;
+        color: $color-bordo;
+    }  
+}
 @mixin text-hover ($wh: 330px, $bgd: url("../multimedia/destacados-1.jpg")){
     display: block;
     margin-right: auto;
@@ -169,7 +177,7 @@
         transform:translateX(-334%); 
         transition:all .4s ease;       
     } 
-    }
+}
 @mixin cards-hover ($fs: 1.7rem){
     &:hover{
         background-image: $gradiente-rojo;

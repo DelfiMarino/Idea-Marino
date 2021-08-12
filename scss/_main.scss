@@ -8,7 +8,7 @@ body{
 	height: auto;
 	align-items: center;
   margin-top:0;
-  z-index: 2;
+  z-index: 2 !important;
   .container{
     margin-left: 33px;
     height: auto;
@@ -36,14 +36,14 @@ body{
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-left: 1.5rem;
 }
-#carouselExampleCaptions{
-  z-index: 1;
-  .fotoUno{
+/*#carouselExampleCaptions{
+  z-index: 1!important;
+    .fotoUno{
     font-size: 7.25rem;
     color:$color-texto-slider;
     margin-bottom: 195px;  
-  }
-}  
+   }
+  }  */
 /*HISTORIA*/  
 #historia{
   width: 100%;
@@ -186,39 +186,36 @@ body{
   }
 }
 /*FOOTER*/
-#footer{
-  padding-left: 170px;
-  .row{
-    margin-right: 0!important;
-    margin-left: 240px !important;
-    .iconRedes{
-      margin-right: 15px;
-      margin-bottom: 35px;
-    }
+.footer-style {
+  padding-top: 50px;
+  background-color: $color-white;
+  color: $color-title-menu;
+  .foTitle{
+    margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 1.3rem;
+    font-weight: bold;
   }
-  .fooTex{
-    text-align: center;
-    margin-right: 115px;
-   .texFi{
-      text-align: center;
-      font-size: 1rem;
-      font-weight: bold;
-      color: $color-bgBlack;
-      margin-bottom: 20px;
-      &:hover {
-      color: $color-hover;
-      text-decoration: none;
-      }
-    }
-    .textFa{
-      text-align: center;
-      font-size: 1rem;
-      font-weight: bold;
-    }
-  } 
+  a{
+    color: $color-title-menu;
+  }
   .iconRedes{
     color: $color-bordo;
+    }
+  .foTex{
+    font-size: 1rem;
   }
+}
+footer .footer-above {
+padding-top: 50px;
+background-color: $color-white;
+}
+footer .footer-col {
+margin-bottom: 50px;
+}
+footer .footer-below {
+padding: 25px 0;
+background-color: $color-white;
 }
 /*PARRILLAS*/
 .ml-5 {
@@ -341,7 +338,7 @@ body{
     }
   }
 }   
-/*SECCION CONTACTO*/
+/*CONTACTO*/
 #contacto{
   width: 100%;
   display: grid;
@@ -555,7 +552,561 @@ body{
 }   
 .no-desk{
   display: none;
-}   
+} 
+@media all and (max-width: 1024px){ 
+  #header{	
+    background-color: $color-white;	
+    position: fixed;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin-top:0;
+    z-index: 2 !important;
+    .container{
+      margin-left: 33px;
+      height: auto;
+      width: auto;
+      background-color: $color-white; 
+    }
+    .navbar-nav{
+      margin-left: -285px;
+      margin-top: 30px;
+    }
+    .logo{
+      margin-right: 300px;
+      height: 70px;
+      width: 154px;
+    }
+    li a{
+      color: $color-title-menu; 
+      font-size: 1.5rem;
+      font-weight: 400;
+      &:hover {
+        color: $color-hover
+      }
+    }
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 1.5rem;
+  }
+  /*#carouselExampleCaptions{
+    z-index: 1!important;
+      .fotoUno{
+      font-size: 7.25rem;
+      color:$color-texto-slider;
+      margin-bottom: 195px;  
+    }
+    }  */
+  /*HISTORIA*/  
+  #historia{
+    width: 100%;
+    margin: auto;
+    min-height: 113px;
+    @include bg-historia;
+    @include parallax; 
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    .titleHistoria{
+      @include titulo-light-gray;
+      margin-top: 60px;
+      margin-left: 30px;
+    }
+    .textoHistoria{
+      @include  text-his;
+      margin-left: 30px;
+    }   
+  }
+  /*ENVIOS*/
+  #envios{
+    width: 100%;
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    @include bg-light-gray (300px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .rec{
+      border: 0;
+      margin-left: auto;
+      margin-top: 100px;
+      margin-bottom: 40px; 
+    }
+    .contentEnvios{
+      width: 15rem;
+      .botonTar{	
+        padding-left: 70px;
+        color: $color-bordo;
+        &:hover{  
+          color: $color-bordo;
+        }
+      }
+      .texTi{
+        @include tex-ti;
+      }
+      .textAl{
+        @include tex-al;
+      }
+    }  
+  }
+  /*PROMOCIONES*/
+  .ml-5 {
+    margin-left: 4rem;
+  }  
+  #promociones{
+    width: 100%;
+    margin: auto;
+    height: 500px;
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+    @include bg-madera;
+    @include parallax;
+    .tituloPromociones{
+      @include titulo-light-gray;
+      margin-top: 60px;
+      margin-bottom: 50px;
+      padding-left: 30px;
+    }
+    .row{
+      margin: 0px !important;
+      .card{
+        border: 1px solid $color-bordo;
+        width: 12rem;
+        height: 300px;
+        overflow: hidden; 
+        .tituloCard{
+          @include tex-ti;
+        }
+        .card-text{
+          @include tex-al;
+        }
+        @include cards-hover;
+      }
+    }
+  }
+  /*DESTACADOS*/
+  #destacados{
+    max-width: 100%;
+    @include bg-light-gray;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; 
+    height: 500px;
+    margin-top: -30px;
+    .tituloDestaacados{
+      @include titulo-rojo;
+      /*padding-left: 53px;*/
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+    .destacados-1{
+      @include text-hover(17rem);
+    }
+    .destacados-2{
+      @include text-hover(17rem, url("../multimedia/destacados-2.jpeg"));
+    }
+    .destacados-3{
+      @include text-hover(17rem, url("../multimedia/destacados-3.jpeg"));    
+    }
+  }
+  /*PROVEEDORES*/
+  .fondoMarcas{
+    @include bg-marcas;
+  }
+  #proveedores{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; 
+    height: 350px; 
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
+    .tituloMarcas{
+      @include titulo-light-gray;
+      margin-top: 60px;
+      margin-left: 30px; 
+    }
+    img{
+      max-width: 16%;
+      margin-left: 55px;
+    }
+  }
+  /*FOOTER*/
+  .footer-style {
+    padding-top: 50px;
+    background-color: $color-white;
+    color: $color-title-menu;
+    .foTitle{
+      margin-bottom: 30px;
+      font-weight: 800;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+    a{
+      color: $color-title-menu;
+    }
+    .iconRedes{
+      color: $color-bordo;
+      }
+    .foTex{
+      font-size: 1rem;
+    }
+  }
+  footer .footer-above {
+  padding-top: 50px;
+  background-color: $color-white;
+  }
+  footer .footer-col {
+  margin-bottom: 50px;
+  }
+  footer .footer-below {
+  padding: 25px 0;
+  background-color: $color-white;
+  }
+  /*PARRILLAS*/
+  #productosParrillas.img-1{
+    @include bg-madera;
+  }  
+  #productosParrillas{
+    width: 100%;
+    margin: auto;
+    padding-top: 130px; 
+    display: flex;
+    flex-direction: column;
+    @include parallax;
+    .tituloParrillas{
+      @include titulo-light-gray;
+      margin-top: 60px;
+      padding-left: 30px;
+      padding-bottom: 50px;
+    }
+    .row{
+      margin: 0px !important;
+      .card{
+        border: 1px solid $color-bordo;
+        width: 12rem;
+        height: 300px;
+        overflow: hidden;
+        margin-bottom: 50px;
+        .tituloCard{
+          @include tex-ti;
+        }
+        .card-text{
+          @include tex-al;
+        }
+        @include cards-hover;
+      }
+    }
+  }
+  /*SECCION SALAMANDRAS*/
+  .ml-5 {
+    margin-left: 4rem;
+  } 
+  #productosSalamandras.img-1{
+    @include bg-madera;
+  }  
+  #productosSalamandras{
+    width: 100%;
+    margin: auto;
+    padding-top: 130px; 
+    display: flex;
+    flex-direction: column;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    .tituloSalamandras{
+      @include titulo-light-gray;
+      margin-top: 60px;
+      padding-bottom: 50px;
+      padding-left: 30px;
+    }
+    .row{
+      margin: 0px !important;
+      .card{
+        border: 1px solid $color-bordo;
+        width: 12rem;
+        height: 300px;
+        overflow: hidden;
+        margin-bottom: 50px;
+        .tituloCard{
+          @include tex-ti;
+        }
+        .card-text{
+          @include tex-al;
+        }
+        @include cards-hover;
+      }
+    }
+  }
+  /*SECCIÓN INSTALACIONES*/
+  #introInsta{
+    @include bg-instalaciones;
+    @include parallax;
+    padding-top: 125px;  
+    width: 100%;
+    height:550px;  
+    .tituloIns{
+      @include titulo-light-gray;
+      margin-top: 30px;
+      margin-bottom:35px;
+      margin-left: 25px; 
+    }
+    .textIns{
+      @include text-his;
+      margin-bottom: 30px;  
+      margin-left: 30px; 
+    }
+  } 
+  #galeria {
+    background-color: $color-light-gray;
+    width: 100%;
+    .tituloServicio{
+      @include subtitulo-rojo;
+      padding-top: 50px;
+      padding-left: 25px;
+    }
+    .row{
+      margin: 70px !important;
+      .col-lg-4{
+        padding: 2px;
+      }
+      img{
+        width: 70%;
+        height: 85%;
+        border: 3px solid #3f4042;
+        &:hover{
+          border: 5px solid #3f4042;
+        }
+      }
+    }
+  }   
+  /*CONTACTO*/
+  #contacto{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    ". rel suc map ."
+    ". relt suct map ."
+    ". tel mai map ."
+    ". telt mait map .";
+    grid-template-rows: 237px 105px 71px 45px;
+    grid-template-columns: 15px 298px 165px 352px 250px;
+    grid-column-gap: 1%;
+    grid-row-gap: 2%;
+    justify-items: center;
+    align-items:center;
+    @include bg-light-gray (600px);
+    .reloj{
+      grid-area: rel;
+      justify-self: stretch;
+      padding-top: 185px;
+      text-align: center;
+      margin-left: 15px;
+    }
+    .relojText{
+      grid-area: relt;
+      justify-self: center;
+      padding-top: 20px;
+      text-align: center;
+      margin-left: 70px;
+      .titleDos{
+        @include title-contact;
+      }
+      .textoDos{
+        @include text-contact;
+      }
+    }    
+    .sucursal{
+      grid-area: suc;
+      justify-self: stretch;
+      padding-top: 185px;
+      text-align: center;
+      margin-right: 298px;  
+    }
+    .sucursalText{
+      grid-area: suct;
+      justify-self: center;
+      padding-top: 20px;
+      text-align: center;
+      margin-right: 20px;
+      .titleDos{
+        @include title-contact;
+      }
+      .textoDos{
+        @include text-contact;
+      }
+    } 
+    hr{
+      width: 360px;
+      border: 1px solid #3f4042;
+      margin-top: 500px;
+      margin-left: 115px;
+    }  
+    .line-2{
+      height: 310px;
+      width: 0;
+      border: 1px solid #3f4042;
+      margin-top: 464px;
+      margin-right: 1117px;
+    } 
+    .telefono{
+      grid-area: tel;
+      justify-self: stretch;
+      text-align: center;
+      margin-left: 13px; 
+    }
+    .telefonoText{
+      grid-area: telt;
+      justify-self: center;
+      padding-top: 20px;
+      text-align: center;
+      margin-left: 70px;
+      .titleDos{
+        @include title-contact;
+      }
+      .textoDos{
+        @include text-contact;
+      }
+    }    
+    .mail{
+      grid-area: mai;
+      justify-self: stretch;
+      text-align: center;
+      margin-right: 293px; 
+    }
+    .mailText{
+      grid-area: mait;
+      justify-self: center;
+      padding-top: 20px;
+      text-align: center;
+      margin-right: 11px;  
+      .titleDos{
+        @include title-contact;
+      }
+      .textoDos{
+        @include text-contact;
+      }
+    }    
+    .mapa{
+      grid-area: map;
+      justify-self: stretch;
+      margin-left: 13px; 
+      margin-top: 13px; 
+      width:400px;
+      height:134px;  
+    }
+  }
+  .botonShop{
+      color: $color-bordo;
+      padding-top: 60px;
+      padding-left: 60px;
+  }
+  #gFormularios{
+    width: 100%;
+    height: 460px;
+    @include bg-light-gray;
+    display: grid;
+    grid-template-areas: 
+    ". tex tex ."
+    ". nom men ."
+    ". serv men ."
+    ". ads footer .";
+    grid-template-columns: 16.9fr 0fr 4fr 15.3fr;
+    grid-template-rows: 43fr 20fr 19fr 30fr;
+    grid-column-gap: 2%;
+    grid-row-gap: 2%;
+    justify-items: center;
+    background-image: linear-gradient(90deg, rgba(84,84,84,1) 1%, rgba(84,84,84,0.9009978991596639) 55%), url("../multimedia/fgris.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    .fText{
+      grid-area: tex;
+      justify-self: stretch;
+      padding-top: 58px;
+      text-align:center;
+      font-size: 2.5rem; 
+      font-style: normal;
+      font-weight: bold;
+      color: $color-light-gray;
+      margin-right: 25px;
+    }
+    .nombre{
+      grid-area: nom;
+      justify-self: stretch;
+      background-color: $bg-form;
+      width: 400px;
+      height: 61px;
+      border: 2px solid $color-light-gray;
+    }
+    .estilotextarea{
+      background-color: $bg-form;
+      width:395px;
+      height: 153px;
+      border: none;
+    }
+    .correo{
+      grid-area: serv;
+      justify-self: stretch;
+      background-color: $bg-form;
+      width: 400px;
+      height: 61px;
+      border: 2px solid $color-light-gray;
+    }
+    .opciones{
+      grid-area: ads;
+      justify-self: stretch;
+      background-color: $bg-form;
+      width: 400px;
+      height: 61px;
+      border: 2px solid $color-light-gray;
+    }
+    .mensaje{
+      grid-area: men;
+      justify-self: stretch;
+      background-color: $bg-form;
+      width:400px;
+      height:167px;
+      border: 2px solid $color-light-gray;
+    }
+    .botonFo{
+      grid-area: footer;
+      justify-self: stretch;  
+    .enviar{
+      width:406px;
+      height:39px;
+      background-color: $bg-form;
+      margin-bottom: 9px;
+      border: 2px solid $color-light-gray;
+      }
+      .sus{
+        text-align: left;
+        color: $color-light-gray;
+      }
+    }  
+  }
+  .recuadro{
+      background-color: $bg-form;
+      border: none;
+      width: 390px;
+      height: 50px;
+  }   
+  .no-desk{
+    display: none;
+  }  
+}  
 @media all and (max-width: 768px){
   #header{	
     background-color: $color-white;	
@@ -614,7 +1165,7 @@ body{
   }
   /*ENVIOS*/ 
   .no-desk{
-    display: block;
+    display: block !important;
   } 
   #envios, .d-flex{
     display: none !important; 
@@ -727,11 +1278,10 @@ body{
   /*FOOTER*/
   #footer{
     padding-left: 170px;
-    .rows{
-
+    .row{
       margin: 0!important;
       .iconRedes{
-        margin-right: 15px;
+        margin-right: 0px;
         margin-bottom: 35px;
       }
     }
@@ -743,11 +1293,10 @@ body{
         font-size: 1rem;
         font-weight: bold;
         color: $color-bgBlack;
-        margin-bottom: 20px;
-        
+        margin-bottom: 20px; 
         &:hover {
-        color: $color-hover;
-        text-decoration: none;
+          color: $color-hover;
+          text-decoration: none;
         }
       }
       .textFa{
@@ -1108,36 +1657,19 @@ body{
 }
 @media all and (max-width: 568px){
   #header{	
-    background-color: $color-white;	
-    position: fixed;
-    width: 100%;
-    height: auto;
-    align-items: center;
-    margin-top:0;
-    z-index: 2;
-    .container{
-      height: auto;
-      width: auto;
-      background-color: $color-white; 
-    }
     .navbar-toggler {
-      border-color: $color-red;
+      font-size: 1.5rem;
     }
     .navbar-nav{
       margin-left: 100px;
-      margin-top: 30px;
     }
     .logo{
       height: 50px;
       width: 115px;
     }
-    li a{
-      color: $color-title-menu; 
+    li a{ 
       font-size: 1rem;
-      font-weight: 400;
-      &:hover {
-        color: $color-hover
-      }
+  
     }
   }
   .non{
@@ -1162,19 +1694,13 @@ body{
   }
   /*ENVIOS*/ 
   #carouselExampleControlsNoTouching{
-    height: 240px;
+    height: 225px !important; 
     .carousel-item{
-      width: 100%;
       margin-top: 30px;
       margin-bottom: 30px;
     }
     .contentEnvios-1{
-      margin-top: 30px;
-      margin-left: 35px;
-      .botonTar{
-        margin-left: 111px;
-        color: $color-bordo;
-      }
+      @include contentEnvios;
       .texTi{
         font-size: 1rem;
         font-weight: bold;
@@ -1186,12 +1712,7 @@ body{
       }
     }
     .contentEnvios-2{
-      margin-top: 30px;
-      margin-left: 35px;
-      .botonTar{
-        margin-left: 111px;
-        color: $color-bordo;
-      }
+      @include contentEnvios;
       .texTi{
         font-size: 1rem;
         font-weight: bold;
@@ -1203,15 +1724,9 @@ body{
       }
     }
     .contentEnvios-3{
-      margin-top: 30px;
-      margin-left: 35px;
-      .botonTar{
-        margin-left: 111px;
-        color: $color-bordo;
-      }
+      @include contentEnvios;
       .texTi{
         font-size: 1rem;
-        font-weight: bold;
         margin-left: 80px;
       }
       .textAl{
@@ -1220,15 +1735,9 @@ body{
       }
     }
     .contentEnvios-4{
-      margin-top: 30px;
-      margin-left: 35px;
-      .botonTar{
-        margin-left: 111px;
-        color: $color-bordo;
-      }
+      @include contentEnvios;
       .texTi{
         font-size: 1rem;
-        font-weight: bold;
         margin-left: 60px;
       }
       .textAl{
@@ -1236,21 +1745,6 @@ body{
         font-size: .7rem;
       }
     }
-  }
-
-  .tituloRojo{
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: bold;
-    text-align:  center;
-    color: $color-bordo;
-  }
-  .card-img{
-    width: 209px;
-  }
-  .botton{
-    margin-top: 92px;
-    margin-left: 38px;
   }
   /*PROMOCIONES*/ 
   #promociones{
@@ -1344,25 +1838,6 @@ body{
     margin-left: 20px;
   }
 }
-  #footer{
-    padding-left: 90px;
-  }
-  .textFa{
-    text-align: center;
-    font-size: .5rem;
-  }
-  .texFi{
-    text-align: center;
-    font-size: .5rem;
-    color: $color-bgBlack;
-  }
-  #footer .font-weight-bold{
-    font-size: .5rem;
-  }
-  iframe{
-    width: 100px; 
-    height: 100px;
-  }
   /*PARRILLAS*/
   #productosParrillas{
     width: 100%;
