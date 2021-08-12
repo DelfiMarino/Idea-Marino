@@ -322,7 +322,7 @@ body {
   font-weight: bold;
   text-align: left;
   color: #A93226;
-  /*padding-left: 53px;*/
+  padding-left: 53px;
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -331,9 +331,8 @@ body {
   display: block;
   margin-right: auto;
   margin-left: -280px;
-  margin-top: 20px;
+  margin-top: 17px;
   overflow: hidden;
-  position: relative;
   top: 125px;
   width: 17rem;
   height: 17rem;
@@ -444,9 +443,8 @@ body {
   display: block;
   margin-right: auto;
   margin-left: -280px;
-  margin-top: 20px;
+  margin-top: 17px;
   overflow: hidden;
-  position: relative;
   top: 125px;
   width: 17rem;
   height: 17rem;
@@ -557,9 +555,8 @@ body {
   display: block;
   margin-right: auto;
   margin-left: -280px;
-  margin-top: 20px;
+  margin-top: 17px;
   overflow: hidden;
-  position: relative;
   top: 125px;
   width: 17rem;
   height: 17rem;
@@ -1704,9 +1701,8 @@ footer .footer-below {
     display: block;
     margin-right: auto;
     margin-left: -280px;
-    margin-top: 20px;
+    margin-top: 17px;
     overflow: hidden;
-    position: relative;
     top: 125px;
     width: 17rem;
     height: 17rem;
@@ -1807,9 +1803,8 @@ footer .footer-below {
     display: block;
     margin-right: auto;
     margin-left: -280px;
-    margin-top: 20px;
+    margin-top: 17px;
     overflow: hidden;
-    position: relative;
     top: 125px;
     width: 17rem;
     height: 17rem;
@@ -1910,9 +1905,8 @@ footer .footer-below {
     display: block;
     margin-right: auto;
     margin-left: -280px;
-    margin-top: 20px;
+    margin-top: 17px;
     overflow: hidden;
-    position: relative;
     top: 125px;
     width: 17rem;
     height: 17rem;
@@ -2741,6 +2735,7 @@ footer .footer-below {
   }
   .contentEnvios-1 {
     margin-top: 30px;
+    margin-left: 226px;
     margin-bottom: 30px;
     margin-left: 226px;
   }
@@ -2767,6 +2762,7 @@ footer .footer-below {
   }
   .contentEnvios-3 {
     margin-top: 30px;
+    margin-left: 0px;
   }
   .contentEnvios-3 .botonTar {
     margin-left: 111px;
@@ -3815,9 +3811,8 @@ footer .footer-below {
     display: block;
     margin-right: auto;
     margin-left: -280px;
-    margin-top: 20px;
+    margin-top: 17px;
     overflow: hidden;
-    position: relative;
     top: 125px;
     width: 17rem;
     height: 17rem;
@@ -3918,9 +3913,8 @@ footer .footer-below {
     display: block;
     margin-right: auto;
     margin-left: -280px;
-    margin-top: 20px;
+    margin-top: 17px;
     overflow: hidden;
-    position: relative;
     top: 125px;
     width: 17rem;
     height: 17rem;
@@ -4018,107 +4012,7 @@ footer .footer-below {
     transition: all .4s ease;
   }
   #destacados .destacados-3 {
-    display: block;
-    margin-right: auto;
-    margin-left: -280px;
-    margin-top: 20px;
-    overflow: hidden;
-    position: relative;
-    top: 125px;
-    width: 17rem;
-    height: 17rem;
-    background: url("../multimedia/destacados-3.jpeg");
-    background-size: 100% 100%;
-    overflow: hidden;
-    color: #1c1c1d;
-    border: 2px solid #1c1c1d;
-  }
-  #destacados .destacados-3:hover {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(169, 50, 38, 0.8)), to(rgba(169, 50, 38, 0.8))), url("../multimedia/destacados-3.jpeg");
-    background-image: -o-linear-gradient(rgba(169, 50, 38, 0.8), rgba(169, 50, 38, 0.8)), url("../multimedia/destacados-3.jpeg");
-    background-image: linear-gradient(rgba(169, 50, 38, 0.8), rgba(169, 50, 38, 0.8)), url("../multimedia/destacados-3.jpeg");
-    background-size: 110% 110%;
-    -webkit-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
-  }
-  #destacados .destacados-3:hover h1, #destacados .destacados-3:hover button {
-    -webkit-transform: translateX(0%);
-        -ms-transform: translateX(0%);
-            transform: translateX(0%);
-    -webkit-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
-  }
-  #destacados .destacados-3:hover button {
-    -webkit-transform: translateX(0%);
-        -ms-transform: translateX(0%);
-            transform: translateX(0%);
-    -webkit-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
-    border: transparent;
-    background-color: transparent;
-    font-size: 1.7rem;
-    font-weight: bold;
-  }
-  #destacados .destacados-3:hover:before, #destacados .destacados-3:hover:after {
-    width: 90%;
-  }
-  #destacados .destacados-3:before {
-    position: absolute;
-    top: 335px;
-    left: 20px;
-    content: "";
-    width: 0%;
-    height: 3px;
-    background: #1c1c1d;
-    -webkit-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
-  }
-  #destacados .destacados-3:after {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    content: "";
-    width: 0%;
-    height: 3px;
-    background: #1c1c1d;
-    -webkit-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
-  }
-  #destacados .destacados-3 h1 {
-    margin: 100px 0px 0px 40px;
-    position: absolute;
-    left: -18px;
-    top: 30px;
-    font-size: 2rem;
-    font-weight: bold;
-    -webkit-transform: translateX(-120%);
-        -ms-transform: translateX(-120%);
-            transform: translateX(-120%);
-    -webkit-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
-  }
-  #destacados .destacados-3 .btn-primary {
-    color: #f1eeee;
-    background-color: transparent;
-    border-color: transparent;
-  }
-  #destacados .destacados-3 button {
-    margin: 133px 0px 0px 44px;
-    position: absolute;
-    left: 65px;
-    top: 60px;
-    -webkit-transform: translateX(-334%);
-        -ms-transform: translateX(-334%);
-            transform: translateX(-334%);
-    -webkit-transition: all .4s ease;
-    -o-transition: all .4s ease;
-    transition: all .4s ease;
+    display: none;
   }
   /*PROVEEDORES*/
   .fondoMarcas {

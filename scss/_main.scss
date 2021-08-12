@@ -1174,24 +1174,15 @@ background-color: $color-white;
     }
   }
   .contentEnvios-1{
-    margin-top: 30px;
+    @include contentEnvios(226px);
     margin-bottom: 30px;
     margin-left: 226px;
-    .botonTar{
-      margin-left: 111px;
-      color: $color-bordo;
-    }
     .textAl{
       margin-left: 37px;
     }
   }
   .contentEnvios-2{
-    margin-top: 30px;
-    margin-left: 226px;
-    .botonTar{
-      margin-left: 111px;
-      color: $color-bordo;
-    }
+    @include contentEnvios(226px);
     .texTi{
       margin-left: 90px;
     }
@@ -1200,11 +1191,7 @@ background-color: $color-white;
     }
   }
   .contentEnvios-3{
-    margin-top: 30px;
-    .botonTar{
-      margin-left: 111px;
-      color: $color-bordo;
-    }
+    @include contentEnvios(0px);
     .texTi{
       margin-left: 52px;
     }
@@ -1213,12 +1200,7 @@ background-color: $color-white;
     }
   }
   .contentEnvios-4{
-    margin-top: 30px;
-    margin-left: 226px;
-    .botonTar{
-      margin-left: 111px;
-      color: $color-bordo;
-    }
+    @include contentEnvios(226px);
     .texTi{
       margin-left: 15px;
     }
@@ -1808,7 +1790,7 @@ background-color: $color-white;
       @include text-hover(17rem, url("../multimedia/destacados-2.jpeg"));
     }
     .destacados-3{
-      @include text-hover(17rem, url("../multimedia/destacados-3.jpeg"));    
+      display: none;
     }
   }
   /*PROVEEDORES*/
