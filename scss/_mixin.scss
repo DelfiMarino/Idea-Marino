@@ -99,7 +99,7 @@
         color: $color-bordo;
     }  
 }
-@mixin form ($w: 260, $h: 55px, $ml: 52px) {
+@mixin form ($w: 260px, $h: 55px, $ml: 52px) {
     width: $w;
     height: $h;
     margin-left: $ml;   
