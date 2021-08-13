@@ -99,16 +99,12 @@ body{
     }
   }  
 }
-/*PROMOCIONES*/
-.ml-5 {
-  margin-left: 4rem;
-}  
+/*PROMOCIONES*/ 
 #promociones{
   width: 100%;
   margin: auto;
   height: 500px;
   display: flex;
-  margin-bottom: 30px;
   flex-direction: column;
   @include bg-madera;
   @include parallax;
@@ -134,29 +130,34 @@ body{
 }
 /*DESTACADOS*/
 #destacados{
-  max-width: 100%;
-  @include bg-light-gray;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start; 
+  width: 100%;
+  margin: auto;
   height: 500px;
-  margin-top: -30px;
-  .tituloDestaacados{
+  display: flex;
+  flex-direction: column;
+  @include bg-light-gray;
+  .tituloDestacados{
     @include titulo-rojo;
-    /*padding-left: 53px;*/
-    padding-top: 25px;
-    padding-bottom: 25px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    padding-left: 30px;
   }
-  .destacados-1{
-    @include text-hover(17rem);
-  }
-  .destacados-2{
-    @include text-hover(17rem, url("../multimedia/destacados-2.jpeg"));
-  }
-  .destacados-3{
-    @include text-hover(17rem, url("../multimedia/destacados-3.jpeg"));    
+  .row{
+    margin: 0px !important;
+    .card{
+      @include cards(15.5rem);
+      .card-img-top{
+        width: 16rem;
+        height: 300px;
+      }
+      .tituloCard{
+        @include tex-ti;
+      }
+      .card-text{
+        @include tex-al;
+      }
+      @include cards-hover;
+    }
   }
 }
 /*PROVEEDORES*/
@@ -356,7 +357,6 @@ background-color: $color-white;
   @include bg-light-gray (600px);
   .reloj{
     grid-area: rel;
-    justify-self: stretch;
     padding-top: 185px;
     text-align: center;
     margin-left: 15px;
@@ -376,7 +376,6 @@ background-color: $color-white;
   }    
   .sucursal{
     grid-area: suc;
-    justify-self: stretch;
     padding-top: 185px;
     text-align: center;
     margin-right: 298px;  
@@ -409,7 +408,6 @@ background-color: $color-white;
   } 
   .telefono{
     grid-area: tel;
-    justify-self: stretch;
     text-align: center;
     margin-left: 13px; 
   }
@@ -551,43 +549,16 @@ background-color: $color-white;
     height: 50px;
 }   
 .no-desk{
-  display: none;
+  display: none !important;
 } 
 @media all and (max-width: 1024px){ 
   #header{	
-    background-color: $color-white;	
-    position: fixed;
-    width: 100%;
-    height: auto;
-    align-items: center;
-    margin-top:0;
-    z-index: 2 !important;
-    .container{
-      margin-left: 33px;
-      height: auto;
-      width: auto;
-      background-color: $color-white; 
-    }
     .navbar-nav{
       margin-left: -285px;
-      margin-top: 30px;
-    }
-    .logo{
-      margin-right: 300px;
-      height: 70px;
-      width: 154px;
     }
     li a{
-      color: $color-title-menu; 
-      font-size: 1.5rem;
-      font-weight: 400;
-      &:hover {
-        color: $color-hover
-      }
+      font-size: 1rem;
     }
-  }
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding-left: 1.5rem;
   }
   /*#carouselExampleCaptions{
     z-index: 1!important;
@@ -597,59 +568,13 @@ background-color: $color-white;
       margin-bottom: 195px;  
     }
     }  */
-  /*HISTORIA*/  
-  #historia{
-    width: 100%;
-    margin: auto;
-    min-height: 113px;
-    @include bg-historia;
-    @include parallax; 
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    .titleHistoria{
-      @include titulo-light-gray;
-      margin-top: 60px;
-      margin-left: 30px;
-    }
-    .textoHistoria{
-      @include  text-his;
-      margin-left: 30px;
-    }   
-  }
   /*ENVIOS*/
   #envios{
-    width: 100%;
-    margin: auto;
-    padding-top: 70px;
-    padding-bottom: 70px;
-    @include bg-light-gray (300px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .rec{
-      border: 0;
-      margin-left: auto;
-      margin-top: 100px;
-      margin-bottom: 40px; 
-    }
     .contentEnvios{
       width: 15rem;
       .botonTar{	
         padding-left: 70px;
-        color: $color-bordo;
-        &:hover{  
-          color: $color-bordo;
-        }
-      }
-      .texTi{
-        @include tex-ti;
-      }
-      .textAl{
-        @include tex-al;
-      }
+      } 
     }  
   }
   /*PROMOCIONES*/
@@ -657,85 +582,18 @@ background-color: $color-white;
     margin-left: 4rem;
   }  
   #promociones{
-    width: 100%;
-    margin: auto;
-    height: 500px;
-    display: flex;
-    margin-bottom: 30px;
-    flex-direction: column;
-    @include bg-madera;
-    @include parallax;
-    .tituloPromociones{
-      @include titulo-light-gray;
-      margin-top: 60px;
-      margin-bottom: 50px;
-      padding-left: 30px;
-    }
     .row{
       margin: 0px !important;
-      .card{
-        border: 1px solid $color-bordo;
-        width: 12rem;
-        height: 300px;
-        overflow: hidden; 
-        .tituloCard{
-          @include tex-ti;
-        }
-        .card-text{
-          @include tex-al;
-        }
-        @include cards-hover;
-      }
     }
   }
   /*DESTACADOS*/
   #destacados{
-    max-width: 100%;
-    @include bg-light-gray;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start; 
-    height: 500px;
-    margin-top: -30px;
-    .tituloDestaacados{
-      @include titulo-rojo;
-      /*padding-left: 53px;*/
-      padding-top: 25px;
-      padding-bottom: 25px;
-    }
-    .destacados-1{
-      @include text-hover(17rem);
-    }
-    .destacados-2{
-      @include text-hover(17rem, url("../multimedia/destacados-2.jpeg"));
-    }
-    .destacados-3{
-      @include text-hover(17rem, url("../multimedia/destacados-3.jpeg"));    
+    .tituloDestacados{
+      padding-right: 716px;
     }
   }
   /*PROVEEDORES*/
-  .fondoMarcas{
-    @include bg-marcas;
-  }
-  #proveedores{
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start; 
-    height: 350px; 
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;  
-    .tituloMarcas{
-      @include titulo-light-gray;
-      margin-top: 60px;
-      margin-left: 30px; 
-    }
+  #proveedores{ 
     img{
       max-width: 16%;
       margin-left: 55px;
@@ -762,365 +620,49 @@ background-color: $color-white;
       font-size: 1rem;
     }
   }
-  footer .footer-above {
-  padding-top: 50px;
-  background-color: $color-white;
-  }
-  footer .footer-col {
-  margin-bottom: 50px;
-  }
-  footer .footer-below {
-  padding: 25px 0;
-  background-color: $color-white;
-  }
+
   /*PARRILLAS*/
-  #productosParrillas.img-1{
-    @include bg-madera;
-  }  
   #productosParrillas{
-    width: 100%;
-    margin: auto;
-    padding-top: 130px; 
-    display: flex;
-    flex-direction: column;
-    @include parallax;
-    .tituloParrillas{
-      @include titulo-light-gray;
-      margin-top: 60px;
-      padding-left: 30px;
-      padding-bottom: 50px;
-    }
     .row{
       margin: 0px !important;
       .card{
-        border: 1px solid $color-bordo;
         width: 12rem;
-        height: 300px;
-        overflow: hidden;
-        margin-bottom: 50px;
-        .tituloCard{
-          @include tex-ti;
-        }
-        .card-text{
-          @include tex-al;
-        }
-        @include cards-hover;
       }
     }
   }
-  /*SECCION SALAMANDRAS*/
-  .ml-5 {
-    margin-left: 4rem;
-  } 
-  #productosSalamandras.img-1{
-    @include bg-madera;
-  }  
+  /*SECCION SALAMANDRAS*/ 
   #productosSalamandras{
-    width: 100%;
-    margin: auto;
-    padding-top: 130px; 
-    display: flex;
-    flex-direction: column;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    .tituloSalamandras{
-      @include titulo-light-gray;
-      margin-top: 60px;
-      padding-bottom: 50px;
-      padding-left: 30px;
-    }
     .row{
       margin: 0px !important;
       .card{
-        border: 1px solid $color-bordo;
         width: 12rem;
-        height: 300px;
-        overflow: hidden;
-        margin-bottom: 50px;
-        .tituloCard{
-          @include tex-ti;
-        }
-        .card-text{
-          @include tex-al;
-        }
-        @include cards-hover;
       }
     }
-  }
-  /*SECCIÓN INSTALACIONES*/
-  #introInsta{
-    @include bg-instalaciones;
-    @include parallax;
-    padding-top: 125px;  
-    width: 100%;
-    height:550px;  
-    .tituloIns{
-      @include titulo-light-gray;
-      margin-top: 30px;
-      margin-bottom:35px;
-      margin-left: 25px; 
-    }
-    .textIns{
-      @include text-his;
-      margin-bottom: 30px;  
-      margin-left: 30px; 
-    }
-  } 
-  #galeria {
-    background-color: $color-light-gray;
-    width: 100%;
-    .tituloServicio{
-      @include subtitulo-rojo;
-      padding-top: 50px;
-      padding-left: 25px;
-    }
-    .row{
-      margin: 70px !important;
-      .col-lg-4{
-        padding: 2px;
-      }
-      img{
-        width: 70%;
-        height: 85%;
-        border: 3px solid #3f4042;
-        &:hover{
-          border: 5px solid #3f4042;
-        }
-      }
-    }
-  }   
+  }  
   /*CONTACTO*/
+  .no-desk{
+    display: none; 
+  }
   #contacto{
-    width: 100%;
-    display: grid;
-    grid-template-areas: 
-    ". rel suc map ."
-    ". relt suct map ."
-    ". tel mai map ."
-    ". telt mait map .";
-    grid-template-rows: 237px 105px 71px 45px;
     grid-template-columns: 15px 298px 165px 352px 250px;
-    grid-column-gap: 1%;
-    grid-row-gap: 2%;
-    justify-items: center;
-    align-items:center;
-    @include bg-light-gray (600px);
-    .reloj{
-      grid-area: rel;
-      justify-self: stretch;
-      padding-top: 185px;
-      text-align: center;
-      margin-left: 15px;
-    }
-    .relojText{
-      grid-area: relt;
-      justify-self: center;
-      padding-top: 20px;
-      text-align: center;
-      margin-left: 70px;
-      .titleDos{
-        @include title-contact;
-      }
-      .textoDos{
-        @include text-contact;
-      }
-    }    
-    .sucursal{
-      grid-area: suc;
-      justify-self: stretch;
-      padding-top: 185px;
-      text-align: center;
-      margin-right: 298px;  
-    }
-    .sucursalText{
-      grid-area: suct;
-      justify-self: center;
-      padding-top: 20px;
-      text-align: center;
-      margin-right: 20px;
-      .titleDos{
-        @include title-contact;
-      }
-      .textoDos{
-        @include text-contact;
-      }
-    } 
     hr{
-      width: 360px;
-      border: 1px solid #3f4042;
-      margin-top: 500px;
       margin-left: 115px;
     }  
     .line-2{
-      height: 310px;
-      width: 0;
-      border: 1px solid #3f4042;
-      margin-top: 464px;
       margin-right: 1117px;
     } 
-    .telefono{
-      grid-area: tel;
-      justify-self: stretch;
-      text-align: center;
-      margin-left: 13px; 
-    }
-    .telefonoText{
-      grid-area: telt;
-      justify-self: center;
-      padding-top: 20px;
-      text-align: center;
-      margin-left: 70px;
-      .titleDos{
-        @include title-contact;
-      }
-      .textoDos{
-        @include text-contact;
-      }
-    }    
-    .mail{
-      grid-area: mai;
-      justify-self: stretch;
-      text-align: center;
-      margin-right: 293px; 
-    }
-    .mailText{
-      grid-area: mait;
-      justify-self: center;
-      padding-top: 20px;
-      text-align: center;
-      margin-right: 11px;  
-      .titleDos{
-        @include title-contact;
-      }
-      .textoDos{
-        @include text-contact;
-      }
-    }    
-    .mapa{
-      grid-area: map;
-      justify-self: stretch;
-      margin-left: 13px; 
-      margin-top: 13px; 
-      width:400px;
-      height:134px;  
-    }
-  }
-  .botonShop{
-      color: $color-bordo;
-      padding-top: 60px;
-      padding-left: 60px;
   }
   #gFormularios{
-    width: 100%;
-    height: 460px;
-    @include bg-light-gray;
-    display: grid;
-    grid-template-areas: 
-    ". tex tex ."
-    ". nom men ."
-    ". serv men ."
-    ". ads footer .";
     grid-template-columns: 16.9fr 0fr 4fr 15.3fr;
-    grid-template-rows: 43fr 20fr 19fr 30fr;
-    grid-column-gap: 2%;
-    grid-row-gap: 2%;
-    justify-items: center;
-    background-image: linear-gradient(90deg, rgba(84,84,84,1) 1%, rgba(84,84,84,0.9009978991596639) 55%), url("../multimedia/fgris.jpg");
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
     .fText{
-      grid-area: tex;
-      justify-self: stretch;
-      padding-top: 58px;
-      text-align:center;
-      font-size: 2.5rem; 
-      font-style: normal;
-      font-weight: bold;
-      color: $color-light-gray;
       margin-right: 25px;
-    }
-    .nombre{
-      grid-area: nom;
-      justify-self: stretch;
-      background-color: $bg-form;
-      width: 400px;
-      height: 61px;
-      border: 2px solid $color-light-gray;
-    }
-    .estilotextarea{
-      background-color: $bg-form;
-      width:395px;
-      height: 153px;
-      border: none;
-    }
-    .correo{
-      grid-area: serv;
-      justify-self: stretch;
-      background-color: $bg-form;
-      width: 400px;
-      height: 61px;
-      border: 2px solid $color-light-gray;
-    }
-    .opciones{
-      grid-area: ads;
-      justify-self: stretch;
-      background-color: $bg-form;
-      width: 400px;
-      height: 61px;
-      border: 2px solid $color-light-gray;
-    }
-    .mensaje{
-      grid-area: men;
-      justify-self: stretch;
-      background-color: $bg-form;
-      width:400px;
-      height:167px;
-      border: 2px solid $color-light-gray;
-    }
-    .botonFo{
-      grid-area: footer;
-      justify-self: stretch;  
-    .enviar{
-      width:406px;
-      height:39px;
-      background-color: $bg-form;
-      margin-bottom: 9px;
-      border: 2px solid $color-light-gray;
-      }
-      .sus{
-        text-align: left;
-        color: $color-light-gray;
-      }
     }  
-  }
-  .recuadro{
-      background-color: $bg-form;
-      border: none;
-      width: 390px;
-      height: 50px;
   }   
-  .no-desk{
-    display: none;
-  }  
 }  
 @media all and (max-width: 768px){
   #header{	
-    background-color: $color-white;	
-    position: fixed;
-    width: 100%;
-    height: auto;
-    align-items: center;
-    margin-top:0;
-    z-index: 2;
     .container{
       margin-left: 0;
-      height: auto;
-      width: auto;
-      background-color: $color-white; 
     }
     .navbar-toggler {
       border-color: $color-red;
@@ -1135,13 +677,9 @@ background-color: $color-white;
       height: 70px;
       width: 154px;
     }
-    li a{
-      color: $color-title-menu; 
+    li a{ 
       font-size: 1.8rem;
       font-weight: 400;
-      &:hover {
-        color: $color-hover
-      }
     }
   }
   .non{
@@ -1210,46 +748,34 @@ background-color: $color-white;
   }     
   /*PROMOCIONES*/ 
   #promociones{
-    width: 100%;
-    margin: auto;
     height: 850px;
     display: flex;
-    margin-bottom: 30px;
-    flex-direction: column;
-    @include bg-madera;
-    @include parallax;
-    .tituloPromociones{
-      @include titulo-light-gray;
-      margin-top: 60px;
-      margin-bottom: 50px;
-      padding-left: 30px;
-    }
+    margin-bottom: 0px;
     .row{
       margin: 0px !important;
       .card{
-        border: 1px solid $color-bordo;
-        width: 13rem;
-        height: 300px;
-        overflow: hidden; 
+        @include cards;
         margin-right: -19px;
         margin-bottom: 30px;
         .card-body{
           padding: 0.40rem;
         }
-        .tituloCard{
-          @include tex-ti;
-        }
-        .card-text{
-          @include tex-al;
-        }
-        @include cards-hover;
+      }
+    }
+  }
+  /*DESTACADOS*/ 
+  #destacados{
+    height: 830px;
+    .row{
+      margin: 0px !important;
+      .card{
+        overflow: hidden; 
+        margin-right: -19px;
+        margin-bottom: 30px;
       }
     }
   }
   /*PROVEEDORES*/
-  .fondoMarcas{
-    @include bg-marcas;
-  }
   #proveedores{
     img{
       max-width: 20%;
@@ -1292,32 +818,17 @@ background-color: $color-white;
       color: $color-bordo;
     }
   }
-  
   /*PARRILLAS*/ 
-  #productosParrillas.img-1{
-    @include bg-madera;
-  }  
   #productosParrillas{
-    width: 100%;
-    /*margin: auto;*/
-    padding-top: 130px; 
-    display: flex;
-    flex-direction: column;
-    @include parallax;
     .tituloParrillas{
       @include titulo-light-gray;
       margin-top: 35px;
-      padding-left: 30px;
-      padding-bottom: 50px;
     }
     .row{
       margin: 20px !important;
       .card{
-        border: 1px solid $color-bordo;
         width: 11rem;
         height: 234px;
-        overflow: hidden;
-        margin-bottom: 50px;
         margin-left: 20px;
         .card-body{
           padding: 0.40rem;
@@ -1328,39 +839,24 @@ background-color: $color-white;
         .card-text{
           @include tex-al(.7rem);
         }
-        @include cards-hover;
-        }
       }
     }
+  }
   #productosParrillas .row .card button {
     left: -4px;
     top: 45px;
   }
   /*SALAMANDRAS*/
   #productosSalamandras{
-    width: 100%;
-    margin: auto;
-    padding-top: 130px; 
-    display: flex;
-    flex-direction: column;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
     .tituloSalamandras{
-      @include titulo-light-gray;
       margin-top: 35px;
       padding-bottom: 50px;
-      padding-left: 30px;
     }
     .row{
       margin: 20px !important;
       .card{
-        border: 1px solid $color-bordo;
         width: 11rem;
         height: 234px;
-        overflow: hidden;
-        margin-bottom: 50px;
         .card-body{
           padding: 0.40rem;
         }
@@ -1370,7 +866,6 @@ background-color: $color-white;
         .card-text{
           @include tex-al(.7rem);
         }
-        @include cards-hover;
       }
     }
   }
@@ -1379,30 +874,8 @@ background-color: $color-white;
     top: 45px;
   }
   /*INSTALACIONES*/
-  #introInsta{
-    @include bg-instalaciones;
-    @include parallax;
-    padding-top: 125px;  
-    width: 100%;
-    height:600px;  
-    .tituloIns{
-      @include titulo-light-gray;
-      margin-top: 30px;
-      margin-bottom:35px;
-      margin-left: 25px; 
-    }
-    .textIns{
-      @include text-his (1.5rem);
-      margin-bottom: 30px;  
-      margin-left: 30px; 
-    }
-  } 
   #galeria {
-    background-color: $color-light-gray;
-    width: 100%;
     .tituloServicio{
-      @include subtitulo-rojo;
-      padding-top: 50px;
       padding-left: 20px;
     }
     .row{
@@ -1413,123 +886,23 @@ background-color: $color-white;
       img{
         width: 90%;
         height: 250px;
-        border: 3px solid #3f4042;
         margin-left: 20px;
-        &:hover{
-          border: 5px solid #3f4042;
-        }
       }
     }
   }
-  /*CONTACTO*/
+  /*CONTACTO*/ 
   .no-desk{
-    display: none;
+    display: none !important;
   }
   #contacto{
-    width: 100%;
-    display: grid;
-    grid-template-areas: 
-    ". rel suc map ."
-    ". relt suct map ."
-    ". tel mai map ."
-    ". telt mait map .";
-    grid-template-rows: 237px 105px 71px 45px;
-    grid-template-columns: 0px 254px 165px 352px 250px;
-    grid-column-gap: 1%;
-    grid-row-gap: 2%;
-    justify-items: center;
-    align-items:center;
-    @include bg-light-gray (600px);
-    .reloj{
-      grid-area: rel;
-      justify-self: stretch;
-      padding-top: 185px;
-      text-align: center;
-      margin-left: 15px;
-    }
-    .relojText{
-      grid-area: relt;
-      justify-self: center;
-      padding-top: 20px;
-      text-align: center;
-      margin-left: 70px;
-      .titleDos{
-        @include title-contact;
-      }
-      .textoDos{
-         @include text-contact;
-      }
-    }    
-    .sucursal{
-      grid-area: suc;
-      justify-self: stretch;
-      padding-top: 185px;
-      text-align: center;
-      margin-right: 298px;  
-    }
-    .sucursalText{
-      grid-area: suct;
-      justify-self: center;
-      padding-top: 20px;
-      text-align: center;
-      margin-right: 20px;
-      .titleDos{
-        @include title-contact;
-      }
-      .textoDos{
-        @include text-contact;
-      }
-    } 
+    grid-template-columns: 0px 254px 165px 352px 250px; 
     hr{
       width: 330px;
-      border: 1px solid #3f4042;
-      margin-top: 500px;
       margin-left: 70px;
     }  
     .line-2{
       height: 340px;
-      width: 0;
-      border: 1px solid #3f4042;
-      margin-top: 464px;
       margin-right: 1075px;
-    } 
-    .telefono{
-      grid-area: tel;
-      justify-self: stretch;
-      text-align: center;
-      margin-left: 13px; 
-    }
-    .telefonoText{
-      grid-area: telt;
-      justify-self: center;
-      padding-top: 20px;
-      text-align: center;
-      margin-left: 70px;
-      .titleDos{
-        @include title-contact;
-      }
-      .textoDos{
-        @include text-contact;
-      }
-    }    
-    .mail{
-      grid-area: mai;
-      justify-self: stretch;
-      text-align: center;
-      margin-right: 293px; 
-    }
-    .mailText{
-      grid-area: mait;
-      justify-self: center;
-      padding-top: 20px;
-      text-align: center;
-      margin-right: 11px;  
-      .titleDos{
-        @include title-contact;
-      }
-      .textoDos{
-        @include text-contact;
-      }
     }    
     .mapa{
       grid-area: map;
@@ -1542,14 +915,9 @@ background-color: $color-white;
       iframe {
         width: 250px;
         height: 300px;
+      }
     }
-    }
-  }
-  .botonShop{
-      color: $color-bordo;
-      padding-top: 60px;
-      padding-left: 60px;
-  }     
+  }   
   #gFormularios{
     width: 100%;
     height: 750px;
@@ -1663,16 +1031,15 @@ background-color: $color-white;
   }
   /*HISTORIA*/  
   #historia{
-      .titleHistoria{
-          @include titulo-light-gray(1.6rem);
-          margin-top: 27px;
-          margin-left: 0;
-      }
-      .textoHistoria{
-          @include  text-his(.9rem);
-          margin-left: 0;
-          
-      }   
+    .titleHistoria{
+      @include titulo-light-gray(1.6rem);
+      margin-top: 27px;
+      margin-left: 0;
+    }
+    .textoHistoria{
+      @include  text-his(.9rem);
+      margin-left: 0;   
+    }   
   }
   /*ENVIOS*/ 
   #carouselExampleControlsNoTouching{
@@ -1697,7 +1064,6 @@ background-color: $color-white;
       @include contentEnvios;
       .texTi{
         font-size: 1rem;
-        font-weight: bold;
         margin-left: 98px;
       }
       .textAl{
@@ -1730,12 +1096,7 @@ background-color: $color-white;
   }
   /*PROMOCIONES*/ 
   #promociones{
-    width: 100%;
     height: 520px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    @include parallax;
     .tituloPromociones{
       @include titulo-light-gray (1.6rem);
       margin-top: 30px;
@@ -1745,14 +1106,9 @@ background-color: $color-white;
     .row{
       margin: 0px !important;
       .card{
-        border: 1px solid $color-bordo;
         width: 7rem;
         height: 170px;
-        overflow: hidden;
         margin-bottom: 30px;
-        .card-body{
-          padding: 0.40rem;
-        }
         .card-title{
           @include tex-ti (.6rem);
         }
@@ -1763,52 +1119,30 @@ background-color: $color-white;
       }
     }
   }
-  #promociones .row .card button {
-    left: -31px;
-    top: -13px;
-  }
   /*DESTACADOS*/
   #destacados{
-    max-width: 100%;
-    @include bg-light-gray;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start; 
-    height: 500px;
-    margin-top: -30px;
-    .tituloDestaacados{
-      @include titulo-rojo (1.6rem);
-      padding-left: 25px;
-      padding-top: 5px;
+    height: 810px !important;
+    .tituloDestacados{
+      @include titulo-rojo(1.5rem);
+      margin-top: 27px;
+      margin-bottom: 20px;
+      padding-right: 0px;
     }
-    .destacados-1{
-      @include text-hover(17rem);
-    }
-    .destacados-2{
-      @include text-hover(17rem, url("../multimedia/destacados-2.jpeg"));
-    }
-    .destacados-3{
-      display: none;
+    .row{
+      margin: 0px !important;
+      .card{
+        @include cards(13rem, 214px);
+        .card-img-top{
+          width: 13rem;
+          height: 225px;
+        }
+        @include cards-hover(1.2rem, 315px, 30px);
+      }
     }
   }
   /*PROVEEDORES*/
-.fondoMarcas{
-  @include bg-marcas;
-}
 #proveedores{
-  max-width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start; 
-  height: 200px; 
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;  
+  height: 200px;   
   .tituloMarcas{
     @include titulo-light-gray (1.6rem);
     margin-top: 30px; 
@@ -1825,9 +1159,6 @@ background-color: $color-white;
     width: 100%;
     margin: auto;
     padding-top: 95px; 
-    display: flex;
-    flex-direction: column;
-    @include parallax;
     .tituloParrillas{
       @include titulo-light-gray (1.6rem);
       margin-top: 15px;
@@ -1837,15 +1168,11 @@ background-color: $color-white;
     .row{
       margin: 0px !important;
       .card{
-        border: 1px solid $color-bordo;
         width: 7rem;
         height: 170px;
         overflow: hidden;
         margin-bottom: 35px;
         margin-right: -12px;
-        .card-body{
-          padding: 0.40rem;
-        }
         .card-title{
           @include tex-ti (.6rem);
         }
@@ -1856,17 +1183,11 @@ background-color: $color-white;
       }
     }
   }
-  #productosParrillas .row .card button {
-    left: -31px;
-    top: -13px;
-  }
   /*SALAMANDRAS*/
   #productosSalamandras{
     width: 100%;
     margin: auto;
     padding-top: 95px; 
-    display: flex;
-    flex-direction: column;
     .tituloSalamandras{
       @include titulo-light-gray (1.6rem);
       margin-top: 15px;
@@ -1876,15 +1197,11 @@ background-color: $color-white;
     .row{
       margin: 0px !important;
       .card{
-        border: 1px solid $color-bordo;
         width: 7rem;
         height: 170px;
         overflow: hidden;
         margin-bottom: 35px;
         margin-right: -12px;
-        .card-body{
-          padding: 0.40rem;
-        }
         .card-title{
           @include tex-ti (.6rem);
         }
@@ -1895,16 +1212,9 @@ background-color: $color-white;
       }
     }
   }
-  #productosSalamandras .row .card button {
-    left: -31px;
-    top: -13px;
-  } 
   /*INSTALACIONES*/
   #introInsta{
-    @include bg-instalaciones;
-    @include parallax;
     padding-top: 70px;  
-    width: 100%;
     height:550px;  
     .tituloIns{
       @include titulo-light-gray (1.5rem);
@@ -1919,7 +1229,6 @@ background-color: $color-white;
     }
   } 
   #galeria {
-    background-color: $color-light-gray;
     width: 100%;
     .tituloServicio{
       @include subtitulo-rojo (1.4rem);
@@ -1933,11 +1242,8 @@ background-color: $color-white;
       img{
         width: 90%;
         height: 250px;
-        border: 3px solid #3f4042;
         margin-left: 15px;
-        &:hover{
-          border: 5px solid #3f4042;
-        }
+        
       }
     }
   }
@@ -1945,9 +1251,11 @@ background-color: $color-white;
   #contacto{
     display: none;
   }
-  #carouselExampleControlsNoTouching {
-    display: block;
-    height: 350px;
+  .no-desk{
+    display: block !important;
+  }
+  #carouselExampleControlsNoTouching{
+    height: 320px;
     .contentReloj{
       margin-top: 70px;
       margin-bottom: 10px;
@@ -2016,62 +1324,30 @@ background-color: $color-white;
     } 
   }   
   #gFormularios{
-    width: 100%;
     height: 580px;
-    display: grid;
-    grid-template-areas: 
-          "tex"
-          "nom"
-          "mail"
-          "serv"
-          "men"
-          "env";
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 27fr 14fr 16fr 22fr 114fr 179fr 65fr;
-    grid-column-gap: 2%;
-    grid-row-gap: 2%;
-    justify-items: center;
-    align-items: center;
-    background-color: $color-light-gray; 
-    overflow: hidden; 
     padding-left: 0;
+    margin-top: 100px;
     .fText{
-      grid-area: tex;
       padding-top: 58px;
-      text-align: center;
       font-size: 1.5rem; 
       margin-top: 0px;
       margin-left: 40px;
       margin-bottom: 0px;
     }
     .nombre{
-      grid-area: nom;
-      justify-self: stretch;  
-      width: 260px;
-      height: 55px;
-      border: 1px solid $color-light-gray;
-      margin-left: 52px;
+      @include form;
     }
     .recuadro{
       width: 245px;
       height: 45px;
-      border: 0px solid $color-light-gray !important;
     }
     .correo{
-      grid-area: mail;
-      justify-self: stretch;
-      width: 260px;
-      height: 55px;
-      border: 1px solid $color-light-gray;
-      margin-left: 52px;
+      @include form;
     }
     .opciones{
-      grid-area: serv;
-      justify-self: stretch;
-      width: 260px;
-      height: 55px;
-      border: 1px solid $color-light-gray;
-      margin-left: 52px;
+      @include form;
     }
     .estilotextarea{
       width: 255px;
@@ -2079,22 +1355,15 @@ background-color: $color-white;
       border: none;
     }
     .mensaje{
-      grid-area: men;
-      justify-self: stretch;
-      width: 260px;
-      height: 130px;
-      margin-left: 52px;
+      @include form(130px);
     }
     .botonFo{
-      grid-area: env;
-      justify-self: stretch; 
       margin-left: 52px;
       .enviar{
         width: 260px;
         height: 55px;
       }
       .sus{
-        text-align: stretch;
         font-size: .8rem; 
         margin-bottom: 23px; 
         margin-left: 0; 

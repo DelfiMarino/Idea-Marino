@@ -85,10 +85,10 @@
     background-size: cover;
     background-attachment: fixed;    
 }  
-@mixin cards{
+@mixin cards($w: 13rem, $h: 300px){
     border: 1px solid $color-bordo;
-    width: 13rem;
-    height: 300px;
+    width: $w;
+    height: $h;
     overflow: hidden;     
 } 
 @mixin contentEnvios ($mf: 35px) {
@@ -99,85 +99,12 @@
         color: $color-bordo;
     }  
 }
-@mixin text-hover ($wh: 330px, $bgd: url("../multimedia/destacados-1.jpg")){
-    display: block;
-    margin-right: auto;
-    margin-left: -280px;
-    margin-top: 17px;
-    overflow: hidden;
-    top:140px; 
-    width: $wh; 
-    height: $wh; 
-    background:$bgd; 
-    background-size:100% 100%;
-    overflow:hidden;
-    color:$color-text-bottom;
-    border: 2px solid $color-text-bottom;
-    &:hover{
-        background-image: $gradiente-rojo, $bgd;
-        background-size: 110% 110%;
-        transition:all .5s ease;
-        h1, button{
-          transform:translateX(0%); 
-          transition:all .3s ease;
-        }
-        button{
-            transform:translateX(0%); 
-            transition:all .3s ease;
-            border: transparent;
-            background-color: transparent;
-            font-size: 1.7rem;
-            font-weight: bold;
-          }
-        &:before, &:after{
-          width: 90%;
-        } 
-      }
-      &:before{
-        position: absolute;
-        top:335px; 
-        left:20px;
-        content:""; 
-        width:0%; 
-        height:3px; 
-        background:$color-text-bottom;
-        transition:all .3s ease;
-      }
-      &:after{
-        position: absolute; 
-        top:10px; 
-        right:20px; 
-        content:""; 
-        width:0%; 
-        height:3px; 
-        background:$color-text-bottom;
-        transition:all .3s ease;
-      }
-      h1{
-        margin: 100px 0px 0px 40px;
-        position:absolute; 
-        left:-18px;
-        top:30px; 
-        font-size: 2rem;
-        font-weight: bold;
-        transform:translateX(-120%);
-        transition:all .5s ease;
-      }
-      .btn-primary {
-        color: $color-light-gray;
-        background-color: transparent;
-        border-color: transparent;
-    }
-    button{
-        margin: 133px 0px 0px 44px;
-        position: absolute;
-        left: 65px;
-        top: 60px;
-        transform:translateX(-334%); 
-        transition:all .4s ease;       
-    } 
+@mixin form ($w: 260, $h: 55px, $ml: 52px) {
+    width: $w;
+    height: $h;
+    margin-left: $ml;   
 }
-@mixin cards-hover ($fs: 1.7rem){
+@mixin cards-hover ($fs: 1.7rem, $l: 5px, $t: 95px){
     &:hover{
         background-image: $gradiente-rojo;
         background-size: 208px 30px;
@@ -218,15 +145,15 @@
         transition:all .3s ease;    
     }
     .btn-primary {
-        color: $color-text-bottom;
+        color: $color-light-gray;
         background-color: transparent;
         border-color: transparent;
     }
     button{
         margin: 133px 0px 0px 44px;
         position: absolute;
-        left: 5px;
-        top: 95px;
+        left: $l;
+        top: $t;
         transform:translateX(-334%); 
         transition:all .4s ease;       
     }     
