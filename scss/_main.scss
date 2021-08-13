@@ -36,14 +36,25 @@ body{
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-left: 1.5rem;
 }
-/*#carouselExampleCaptions{
+#heroImage{
+  height: 100vh;
+  .banner{
+    background-image: url("../multimedia/living.jpeg");
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+    height: 100vh;
+    margin-bottom: 0px;
+  }
+}
+#carouselExampleCaptions{
   z-index: 1!important;
-    .fotoUno{
+  .fotoUno{
     font-size: 7.25rem;
     color:$color-texto-slider;
     margin-bottom: 195px;  
-   }
-  }  */
+  }
+}  
 /*HISTORIA*/  
 #historia{
   width: 100%;
@@ -560,14 +571,6 @@ background-color: $color-white;
       font-size: 1rem;
     }
   }
-  /*#carouselExampleCaptions{
-    z-index: 1!important;
-      .fotoUno{
-      font-size: 7.25rem;
-      color:$color-texto-slider;
-      margin-bottom: 195px;  
-    }
-    }  */
   /*ENVIOS*/
   #envios{
     .contentEnvios{
@@ -687,7 +690,7 @@ background-color: $color-white;
   }
   .w-100 {
     width: 100%;
-    height: 400px;
+    height: 1020px;
   }
   /*HISTORIA*/  
   #historia{
@@ -874,6 +877,9 @@ background-color: $color-white;
     top: 45px;
   }
   /*INSTALACIONES*/
+  #introInsta{
+    height:550px;  
+  }
   #galeria {
     .tituloServicio{
       padding-left: 20px;
@@ -1025,9 +1031,8 @@ background-color: $color-white;
   .non{
     display: none;
   }
-  .es-non {
-    margin-top: 50px;
-    width: 360px;
+  .w-100 {
+    height: 638px !important;
   }
   /*HISTORIA*/  
   #historia{
