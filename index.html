@@ -6,7 +6,6 @@
 	<meta name="description" content="Dekan es una empresa constructora lider en Zona norte. Distribuidores oficiales de Tromen, Ñuke y Qutral. Las mejores ofertas en compra de equipos e instalaciones">
     <meta name="keywords" content=" venta salamandras parrillas ñuke tromen calefaccion instalaciones">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <script src="https://kit.fontawesome.com/dfd60ddb56.js" crossorigin="anonymous"></script>
     <title>Home</title>
@@ -17,7 +16,7 @@
   		<div class="container">
   			<nav class="navbar navbar-expand-lg">
 			  <a class="navbar-brand" href="index.html">
-			     <img class="logo" src="multimedia/dekan.png">	
+			     <img class="logo" src="multimedia/dekan.png" alt="dekan">	
 			  </a>
 			  <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
     			aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
@@ -53,22 +52,59 @@
 	  </ol>
 	  <div class="carousel-inner">
 	    <div class="carousel-item active">
-	      <img src="multimedia/estufaesc.jpg" class="es-non d-block w-100" alt="oferta invierno">
+		  <picture>
+			<source
+			  media="(min-width: 1440px)"
+			  srcset="multimedia/estufaesc.jpg">
+			<source
+			  media="(min-width: 650px)"
+			  srcset="multimedia/estufatab.jpeg">
+			<source
+			  media="(min-width: 360px)"
+			  srcset="multimedia/estufacell.jpg">
+			<img
+			  src="multimedia/estufaesc.jpg" class="d-block w-100" alt="ofertas invierno">
+		  </picture>	
 	      <div class="carousel-caption d-none d-md-block">
 	        <h5 class="fotoUno">WINTER SALE</h5>
 	        <p>Aprovecha las rebajas al %50 </p>
 	      </div>
 	    </div>
 	    <div class="carousel-item">
-	      <img src="multimedia/salesc.jpg" class="d-block w-100" alt="salamandra">
+		  <picture>
+			<source
+				media="(min-width: 1440px)"
+				srcset="multimedia/salesc.jpg">
+			<source
+				media="(min-width: 650px)"
+				srcset="multimedia/saltab.jpg">
+			<source
+				media="(min-width: 360px)"
+				srcset="multimedia/salcel.jpg">
+			<img
+				src="multimedia/salesc.jpg" class="d-block w-100" alt="ofertas invierno">
+		  </picture>	
 	      <div class="carousel-caption d-none d-md-block">
-	        <h5>SALAMANDRAS</h5>
+	        <h5 class="fotoDos">50% OFF </h5>
 	      </div>
 	    </div>
 	    <div class="carousel-item">
-	      <img src="multimedia/parrillaesc.jpg" class="d-block w-100" alt="parrillas">
+		  <picture>
+			<source
+				media="(min-width: 1440px)"
+				srcset="multimedia/parrillaesc.jpg">
+			<source
+				media="(min-width: 650px)"
+				srcset="multimedia/parrillatab.jpg">
+			<source
+				media="(min-width: 360px)"
+				srcset="multimedia/parrillacel.jpg">
+			<img
+				src="multimedia/parrillaesc.jpg" class="d-block w-100" alt="ofertas invierno">
+		  </picture>	
 	      <div class="carousel-caption d-none d-md-block">
-	        <h5>PARRILLAS</h5>
+	        <h5 class="fotoTres">ASADORES<br>
+				                35% </h5>
 	      </div>
 	    </div>
  	</div>
@@ -190,24 +226,22 @@
     </div>
     <!--PROMOCIONES-->	
 	<div id="promociones">
-		<div class="contenedor"></div>
+		<div class="contenedor">
 			<h1 class="tituloPromociones ml-3">PROMOCIONES</h1>
 			<div class="row">
 				<div class="card ml-5">
 				    <img src="multimedia/pcuatro.jpeg" class="card-img-top" alt="Promociones">
 					<div class="card-body">
-						<h3 class="card-title tituloCard">SALAMANDRA ÑUKE</h3>
-						<p class="card-text">Lorem ipsum dolor sit amet.</p>
+						<h3 class="card-title tituloCard">SALAMANDRA LEX 030- ÑUKE</h3>
 					</div> 
 					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
 						+ info
 					</button>		
 				</div>
 				<div class="card ml-5">
-					<img src="multimedia/ptres.jpeg" class="card-img-top" alt="Promociones">
+					<img src="multimedia/par-10.jpeg" class="card-img-top" alt="PROMOCIONES PARRILLA TROMEN BBQ IRON 02">
 					<div class="card-body">
-						<h3 class="card-title tituloCard">SALAMANDRA LEX</h3>
-						<p class="card-text textCardDes">Lorem ipsum dolor sit amet.</p>
+						<h3 class="card-title tituloCard">PARRILLA TROMEN BBQ IRON 02</h3>
 					</div>
 					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
 						+ info
@@ -216,18 +250,16 @@
 				<div class="card ml-5">
 					<img src="multimedia/pdos.jpeg" class="card-img-top" alt="Promociones">
 					<div class="card-body">
-						<h3 class="card-title tituloCard">SALAMANDRA TROMEN</h3>
-						<p class="card-text textCardDes">Lorem ipsum dolor sit amet.</p>
+						<h3 class="card-title tituloCard">SALAMANDRA WO METALICA 003- TROMEN</h3>
 					</div>
 					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
 						+ info
 					</button>
 				</div>
 				<div class="card ml-5">
-					<img src="multimedia/ptres.jpeg" class="card-img-top" alt="Promociones">
+					<img src="multimedia/par-7.jpeg" class="card-img-top" alt="PROMOCION PARRILLA TROMEN GAUCHA">
 					<div class="card-body">
-						<h3 class="card-title tituloCard">SALAMANDRA LEX</h3>
-						<p class="card-text textCardDes">Lorem ipsum dolor sit amet.</p>
+						<h3 class="card-title tituloCard">PARRILLA TROMEN GAUCHA</h3>
 					</div>
 					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
 						+ info
@@ -238,14 +270,14 @@
 	</div>	
 	<!--DESTACADOS-->
 	<div id="destacados">
-		<div class="contenedor"></div>
+		<div class="contenedor">
 			<h1 class="tituloDestacados ml-3">DESTACADOS</h1>
 			<div class="row">
 				<div class="card ml-5">
 				    <img src="multimedia/destacados-1.jpg" class="card-img-top" alt="Destacados">
 					<div class="card-body">
 					</div> 
-					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+					<button type="button" class="btn btn-primary chul" data-toggle="modal" data-target="#staticBackdrop">
 						CHULENGO
 					</button>		
 				</div>

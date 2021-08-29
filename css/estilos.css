@@ -71,6 +71,20 @@ body {
   margin-bottom: 195px;
 }
 
+#carouselExampleCaptions .fotoDos {
+  font-size: 9.25rem;
+  color: #c70d0d;
+  margin-bottom: 150px;
+  margin-left: 726px;
+}
+
+#carouselExampleCaptions .fotoTres {
+  font-size: 6.25rem;
+  text-align: center;
+  color: #cbe5ff;
+  margin-bottom: 150px;
+}
+
 /*HISTORIA*/
 #historia {
   width: 100%;
@@ -554,7 +568,6 @@ footer .footer-below {
   font-weight: bold;
   color: #f1eeee;
   margin-top: 60px;
-  padding-left: 30px;
   padding-bottom: 50px;
 }
 
@@ -570,13 +583,17 @@ footer .footer-below {
   margin-bottom: 50px;
 }
 
-#productosParrillas .row .card .tituloCard {
+#productosParrillas .row .card .card-body {
+  padding: 1.95rem;
+}
+
+#productosParrillas .row .card .card-body .tituloCard {
   text-align: center;
   font-size: 0.9rem;
   color: #000;
 }
 
-#productosParrillas .row .card .card-text {
+#productosParrillas .row .card .card-body .card-text {
   text-align: center;
   font-size: 0.8rem;
   color: #000;
@@ -693,7 +710,6 @@ footer .footer-below {
   color: #f1eeee;
   margin-top: 60px;
   padding-bottom: 50px;
-  padding-left: 30px;
 }
 
 #productosSalamandras .row {
@@ -1101,9 +1117,10 @@ footer .footer-below {
 
 #gFormularios .estilotextarea {
   background-color: #fdd;
+  outline: none;
+  border: 0;
   width: 395px;
   height: 153px;
-  border: none;
 }
 
 #gFormularios .correo {
@@ -1166,7 +1183,8 @@ footer .footer-below {
 
 .recuadro {
   background-color: #fdd;
-  border: none;
+  border: 0;
+  outline: none;
   width: 390px;
   height: 50px;
 }
@@ -1199,6 +1217,9 @@ footer .footer-below {
   /*DESTACADOS*/
   #destacados .tituloDestacados {
     padding-right: 716px;
+  }
+  #destacados .btn {
+    left: -3px;
   }
   /*PROVEEDORES*/
   #proveedores img {
@@ -1284,12 +1305,17 @@ footer .footer-below {
     font-size: 1.8rem;
     font-weight: 400;
   }
+  #carouselExampleCaptions {
+    z-index: 1 !important;
+  }
+  #carouselExampleCaptions .fotoDos {
+    font-size: 9.25rem;
+    color: #cbe5ff;
+    margin-bottom: 261px;
+    margin-left: 310px;
+  }
   .non {
     display: none;
-  }
-  .w-100 {
-    width: 100%;
-    height: 1020px;
   }
   /*HISTORIA*/
   #historia .titleHistoria {
@@ -1455,6 +1481,7 @@ footer .footer-below {
     font-weight: bold;
     color: #f1eeee;
     margin-top: 35px;
+    padding-left: 15px;
   }
   #productosParrillas .row {
     margin: 20px !important;
@@ -1485,6 +1512,7 @@ footer .footer-below {
   #productosSalamandras .tituloSalamandras {
     margin-top: 35px;
     padding-bottom: 50px;
+    padding-left: 15px;
   }
   #productosSalamandras .row {
     margin: 20px !important;
@@ -1606,7 +1634,8 @@ footer .footer-below {
   #gFormularios .recuadro {
     width: 400px;
     height: 70px;
-    border: 0px solid #f1eeee !important;
+    outline: none;
+    border: 0;
   }
   #gFormularios .correo {
     -ms-grid-row: 3;
@@ -1633,7 +1662,8 @@ footer .footer-below {
   #gFormularios .estilotextarea {
     width: 400px;
     height: 125px;
-    border: none;
+    outline: none;
+    border: 0;
   }
   #gFormularios .mensaje {
     -ms-grid-row: 5;
@@ -1682,10 +1712,6 @@ footer .footer-below {
   .non {
     display: none;
   }
-  .w-100 {
-    width: 150%s;
-    height: 400px !important;
-  }
   /*HISTORIA*/
   #historia .titleHistoria {
     font-size: 1.6rem;
@@ -1693,7 +1719,7 @@ footer .footer-below {
     font-weight: bold;
     color: #f1eeee;
     margin-top: 27px;
-    margin-left: 0;
+    margin-left: 10px;
   }
   #historia .textoHistoria {
     display: inline-block;
@@ -1702,6 +1728,7 @@ footer .footer-below {
     text-align: left;
     color: #f1eeee;
     margin-left: 0;
+    text-align: center;
   }
   /*ENVIOS*/
   #carouselExampleControlsNoTouching {
@@ -1787,10 +1814,11 @@ footer .footer-below {
     color: #f1eeee;
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: 0;
+    margin-right: 45px;
+    text-align: center;
   }
   #promociones .row {
-    margin: 0px !important;
+    margin: 5px !important;
   }
   #promociones .row .card {
     width: 7rem;
@@ -1866,8 +1894,8 @@ footer .footer-below {
   #promociones .row .card button {
     margin: 133px 0px 0px 44px;
     position: absolute;
-    left: 5px;
-    top: 95px;
+    left: -33px;
+    top: -15px;
     -webkit-transform: translateX(-334%);
         -ms-transform: translateX(-334%);
             transform: translateX(-334%);
@@ -1885,12 +1913,13 @@ footer .footer-below {
     font-weight: bold;
     text-align: left;
     color: #A93226;
+    text-align: center;
     margin-top: 27px;
-    margin-bottom: 20px;
-    padding-right: 0px;
+    margin-bottom: 0px;
+    padding-right: 50px;
   }
   #destacados .row {
-    margin: 0px !important;
+    margin: 27px !important;
   }
   #destacados .row .card {
     border: 1px solid #A93226;
@@ -1970,6 +1999,9 @@ footer .footer-below {
     -o-transition: all .4s ease;
     transition: all .4s ease;
   }
+  #destacados .row .card .chul {
+    left: 380px;
+  }
   /*PROVEEDORES*/
   #proveedores {
     height: 220px;
@@ -1980,12 +2012,12 @@ footer .footer-below {
     font-weight: bold;
     color: #f1eeee;
     margin-top: 30px;
-    margin-left: 0;
+    margin-left: 40px;
   }
   #proveedores img {
     max-width: 30%;
     margin-bottom: 8px;
-    margin-left: 20px;
+    margin-left: 35px;
   }
   /*PARRILLAS*/
   #productosParrillas {
@@ -1999,8 +2031,12 @@ footer .footer-below {
     font-weight: bold;
     color: #f1eeee;
     margin-top: 15px;
-    padding-left: 1px;
+    padding-right: 77px;
     padding-bottom: 30px;
+    text-align: center;
+  }
+  #productosParrillas .qutral {
+    padding-right: 65px;
   }
   #productosParrillas .row {
     margin: 0px !important;
@@ -2012,15 +2048,14 @@ footer .footer-below {
     margin-bottom: 35px;
     margin-right: -12px;
   }
-  #productosParrillas .row .card .card-title {
+  #productosParrillas .row .card .card-body {
+    padding: 0.80rem;
+  }
+  #productosParrillas .row .card .card-body .tituloCard {
     text-align: center;
     font-size: 0.6rem;
     color: #000;
-  }
-  #productosParrillas .row .card .card-text {
-    text-align: center;
-    font-size: 0.5rem;
-    color: #000;
+    font-size: 0.6rem;
   }
   #productosParrillas .row .card:hover {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(169, 50, 38, 0.8)), to(rgba(169, 50, 38, 0.8)));
@@ -2081,8 +2116,8 @@ footer .footer-below {
   #productosParrillas .row .card button {
     margin: 133px 0px 0px 44px;
     position: absolute;
-    left: 5px;
-    top: 95px;
+    left: -33px;
+    top: -15px;
     -webkit-transform: translateX(-334%);
         -ms-transform: translateX(-334%);
             transform: translateX(-334%);
@@ -2105,6 +2140,9 @@ footer .footer-below {
     padding-left: 1px;
     padding-bottom: 30px;
   }
+  #productosSalamandras .ñuk {
+    padding-left: 10px;
+  }
   #productosSalamandras .row {
     margin: 0px !important;
   }
@@ -2115,15 +2153,14 @@ footer .footer-below {
     margin-bottom: 35px;
     margin-right: -12px;
   }
-  #productosSalamandras .row .card .card-title {
+  #productosSalamandras .row .card .card-body {
+    padding: 0.80rem;
+  }
+  #productosSalamandras .row .card .card-body .tituloCard {
     text-align: center;
     font-size: 0.6rem;
     color: #000;
-  }
-  #productosSalamandras .row .card .card-text {
-    text-align: center;
-    font-size: 0.5rem;
-    color: #000;
+    font-size: 0.6rem;
   }
   #productosSalamandras .row .card:hover {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(169, 50, 38, 0.8)), to(rgba(169, 50, 38, 0.8)));
@@ -2184,8 +2221,8 @@ footer .footer-below {
   #productosSalamandras .row .card button {
     margin: 133px 0px 0px 44px;
     position: absolute;
-    left: 5px;
-    top: 95px;
+    left: -33px;
+    top: -15px;
     -webkit-transform: translateX(-334%);
         -ms-transform: translateX(-334%);
             transform: translateX(-334%);
